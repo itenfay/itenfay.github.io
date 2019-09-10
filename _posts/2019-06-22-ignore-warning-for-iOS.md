@@ -1,3 +1,11 @@
+---
+layout: post
+title: ignore-warning-for-iOS
+date: 2019-06-22
+tag: iOS
+site: https://dgynfi.github.io
+---
+
 ## 消除iOS代码中的警告
 
 在iOS开发过程中，我们可能会碰到一些警告，例如：系统弃用方法，没有实现的selector等一些警告。对于有强迫症的程序猿来说，十分不能忍受，那么我们今天就来解决它吧！

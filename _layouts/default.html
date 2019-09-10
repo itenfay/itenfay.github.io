@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:wb="https://open.weibo.com/wb"><!-- 微博分享 在HTML标签中增加XML命名空间 -->
+
+
+  {% include head.html %}
+
+  <body>
+
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-5776998009494842"></amp-auto-ads>
+
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXGLR9F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <span class="mobile btn-mobile-menu">        
+      <div class="nav_container">
+         <nav class="nav-menu-item" style = "float:right">
+            <i class="nav-menu-item">
+              <a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">  {{site.blog_button.title}}
+              </a>
+            </i>
+            {% for item in site.nav %}
+                <i class="nav-menu-item">
+
+                  <a href="{{item.url}}" title="{{item.description}}" class="btn-mobile-menu__icon">
+                      {{item.title}}
+                  </a>
+                </i>
+            {% endfor %}
+          </nav>
+      </div>
+    </span>
+    {% include side-panel.html %}
+
+    <div class="content-wrapper" >
+        <div class="content-wrapper__inner">
+            {{ content }}
+            {% include footer.html %}
+                {% include csegoogle.html %}<!--  20171212 新增-->
+        </div>
+    </div>
+    
+    {% include external.html %}
+    {% include sharebaidu.html %}
+
+    
+  </body>
+
+</html>
