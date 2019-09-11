@@ -6,18 +6,18 @@ My Blog
 ![](http://dgynfi.github.io/img/blog-desktop.jpg)
 
 
-Boilerplate (beta)
+Templete 
 ------------------
 
-**Repo has been serveral verisons outdated. Helps wanted for updating it on par with the main repo.**
+**Templete has been serveral verisons outdated. Helps wanted for updating it on par with the main repo.**
 
-Want to clone a repo instead of my buzz blog? Here comes this!  
+Want to clone a templete instead of my buzz blog? Here comes this!  
 
 ```
 $ git clone https://github.com/dgynfi/dgynfi.github.io.git
 ```
 
-**[View Boilerplate Here &rarr;](http://github.com/dgynfi/dgynfi.github.io/)**
+**[View Templete Here &rarr;](http://github.com/dgynfi/dgynfi.github.io/)**
 
 
 Porting 
@@ -363,14 +363,3 @@ $ gem install jekyll-paginate
 ```
 
 This blog started in Jekyll 2 time when `jekyll-paginate` is standard. With Jekyll 3, it's a plugin we included in `_config.yml`.
-
-
-
-License
--------
-
-Apache License 2.0.
-Copyright (c) 2015-2020 Dgynfi
-
-MengFei Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
-Copyright (c) 2013-2016 Blackrock Digital LLC.
