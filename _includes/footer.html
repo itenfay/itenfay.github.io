@@ -1,123 +1,185 @@
-<section class="footer">
-    <footer>
-        <div class = "footer_div">  
-        <nav class="cover-navigation navigation--social">
-          <ul class="navigation">
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    {% if site.RSS %}
+                    <li>
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.twitter_username %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
 
-          {% if site.social.weibo %}
-          <!-- Weibo -->
-          <li class="navigation__item_social">
-            <a href="http://weibo.com/{{site.social.weibo}}" title="@{{site.social.weibo}} 的微博" target="_blank">
-              <i class='social fa fa-weibo fa-2x'></i>
-              <span class="label">Weibo</span>
-            </a>
-          </li>
-          {% endif %}
-
-          {% if site.social.github %}
-          <!-- Github -->
-          <li class="navigation__item_social">
-            <a href="https://github.com/{{site.social.github}}" title="@{{site.social.github}} 的 Github" target="_blank">
-              <i class='social fa fa-github fa-2x'></i>
-              <span class="label">Github</span>
-            </a>
-          </li>
-          {% endif %}
-          
-          {% if site.social.twitter %}
-          <!-- Twitter -->
-          <li class="navigation__item_social">
-            <a href="http://twitter.com/{{site.social.twitter}}" title="@{{site.social.twitter}}" target="_blank">
-              <i class='social fa fa-twitter fa-2x'></i>
-              <span class="label">Twitter</span>
-            </a>
-          </li>
-          {% endif %}
-
-          {% if site.social.gplus %}
-          <!-- Google Plus -->
-          <li class="navigation__item_social">
-            <a href="https://plus.google.com/{{site.social.gplus}}" rel="author" title="Google+" target="_blank">
-              <i class='social fa fa-google-plus-square fa-2x'></i>
-              <span class="label">Google Plus</span>
-            </a>
-          </li>
-          {% endif %}
-
-          <!-- RSS -->
-          <li class="navigation__item_social">
-            <a href="/feed.xml" rel="author" title="RSS" target="_blank">
-              <i class='social fa fa-rss fa-2x'></i>
-              <span class="label">RSS</span>
-            </a>
-          </li>
-
-          {% if site.social.mail %}
-          <!-- Email -->
-          <li class="navigation__item_social">
-            <a href="mailto:{{site.social.mail}}" title="Contact me">
-              <i class='social fa fa-envelope fa-2x'></i>
-              <span class="label">Email</span>
-            </a>
-          </li>
-          {% endif %}
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    {% if site.zhihu_username %}
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.weibo_username %}
+                    <li>
+                        <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
 
 
-         
-
-          <!-- linkedin  medium start 
-        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="zh_CN" data-type="vertical" data-theme="light" data-vanity="iosre"><a class="LI-simple-link" href='https://cn.linkedin.com/in/iosre?trk=profile-badge'>张坤楠</a></div>
-linkedin  medium end  -->
-
-
-
-
-
-          </ul>
-        </nav>
-
+                    {% if site.facebook_username %}
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.github_username %}
+                    <li>
+                        <a target="_blank" href="https://github.com/{{ site.github_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
         </div>
+    </div>
+</footer>
 
-        <div class = "footer_div"  itemscope itemtype="https://schema.org/BlogPosting" >  
-           <p class="copyright text-muted"  itemprop="author">
+<!-- jQuery -->
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
-            Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }} Theme by <a href="{{site.url}}">kn</a> |
-            <iframe  itemprop="image"
-                style="margin-left: 2px; margin-bottom:-5px;"
-                frameborder="0" scrolling="0" width="170px" height="20px"
-                src="https://ghbtns.com/github-btn.html?user={{site.user}}&repo={{site.user}}.github.io&type=star&count=true" >
-            </iframe>
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
-            <iframe 
-            style="margin-left: 2px; margin-bottom:-5px;"
-            src="https://ghbtns.com/github-btn.html?user={{site.user}}&repo={{site.user}}.github.io&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-
-            <iframe
-            style="margin-left: 2px; margin-bottom:-5px;"
-             src="https://ghbtns.com/github-btn.html?user={{site.user}}&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-
-             <wb:follow-button uid="2939794294" type="red_2" width="136" height="24" scrolling="0"  style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" ></wb:follow-button>
-
-             <iframe width="100%" height="500"  frameborder="0" scrolling="no" src="https://widget.weibo.com/livestream/listlive.php?language=zh_cn&width=0&height=500&uid=5934185471&skin=1&refer=1&appkey=3233061066&pic=0&titlebar=1&border=1&publish=1&atalk=1&recomm=0&at=0&atopic=iOS%E9%80%86%E5%90%91&ptopic=iOS%E9%80%86%E5%90%91&dpc=1"></iframe>
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
 
 
-            
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
 
 
-            </p>
-        	<div align="right">
-    			<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
 
-          <!-- 访问统计 -->
-          <span id="busuanzi_container_site_pv">
-            本站总访问量
-            <span id="busuanzi_value_site_pv"></span>次
-          </span>
-
-        </div>
-        <div>
-
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
 
 
-    </footer>
-</section>
+<!-- Google Analytics -->
+{% if site.ga_track_id %}
+<script>
+    // dynamic User by Hux
+    var _gaId = '{{ site.ga_track_id }}';
+    var _gaDomain = '{{ site.ga_domain }}';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+{% endif %}
+
+
+<!-- Baidu Tongji -->
+{% if site.ba_track_id %}
+<script>
+    // dynamic User by Hux
+    var _baId = '{{ site.ba_track_id }}';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+{% endif %}

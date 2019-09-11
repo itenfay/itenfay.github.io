@@ -3,7 +3,6 @@ layout: post
 title: ignore-warning-for-iOS
 date: 2019-06-22
 tag: iOS
-site: https://dgynfi.github.io
 ---
 
 ## 消除iOS代码中的警告

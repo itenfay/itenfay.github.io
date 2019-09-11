@@ -1,79 +1,100 @@
-# Basic https://www.jekyll.com.cn/docs/configuration/
-title: iOS/Mac Development Engineering
-user: dgynfi
-subtitle: Personal Website
-description: dgynfi's blog
-# 头像里面的标题
-avatarTitle: dgynfi
-# 头像里面的描述
-avatarDesc: iOSre / Anti
-url: "https://dgynfi.github.io"
-mainEntityOfPage: "https://dgynfi.github.io/archive/"
-
-# Comment
-comment:
-    disqus: iOS/Mac/Flutter/...
-    # uyan: 2143225  # 有言id,登录有言官网申请
-    gitment: yes
-
-gitcomments:
-    repo: githubpages-comments
-    client_id: eb8baa6afd018fb78abf
-    client_secret: c7b3a1a69585b929f76b9b849a5266c6198d8498
+# Site settings
+title: Your Blog
+SEOTitle: 你的博客 | Your Blog
+header-img: img/home-bg.jpg
+email: vinphy.teng@foxmail.com
+description: ""
+keyword: ""
+url: "http://dgynfi.github.io"      # your host, for absolute URL
+#baseurl: "/"                       # for example, '/blog' if your blog hosted on 'host/blog'
 
 
-# Social
-social:
-    github: dgynfi
-    mail: vinphy.teng@foxmail.com
-    technical_exchange_group: 155353383.
 
-# 百度统计 
-# 使用博客模板请去掉或者更换 id 
-baidu:
-    id: e7f6d46714fcd28fb24be011203bee5f  
-
-# Google Analytics
-# 使用博客模板请去掉或者更换 id
-ga:
-    id: UA-111030597-1
-    host: auto  
-
-Params: 
-    Search: 站内搜索
-
-# 《----------------- 上面的信息修改成你自己的 ---------------------------》
-#
-#
-#  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址： https://dgynfi.github.io
-#
-#
-# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
+# SNS settings
+RSS: false
+weibo_username:     MF_梦飞6
+zhihu_username:     梦飞
+github_username:    dgynfi
+#twitter_username:  
+#facebook_username:  
 
 
-permalink: /:year/:month/:title/
-# Format
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-textColor: #FF0000
 
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
 
-# The blog button should not be removed.
-blog_button:
-    title: 博客主页
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
 
-# Navigation buttons in the front page.s
-nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
-    
 
-# Pagination 分页功能
-plugins: [jekyll-paginate,jekyll-sitemap,jekyll-feed]
-paginate: 20
-paginate_path: "page/:num/"
 
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+# duoshuo_username: 
+# Share component is depend on Comment so we can NOT use share only.
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+# ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+# ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
+sidebar-avatar: /img/avatar.jpg         # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "MengFei Blog",
+        href: "http://dgynfi.github.io"
+    },{
+        title: "Foo",
+        href: "#"
+    },{
+        title: "Bar",
+        href: "#"
+    },{
+        title: "Example Friends",
+        href: "#"
+    },{
+        title: "It helps SEO",
+        href: "#"
+    }
+]
