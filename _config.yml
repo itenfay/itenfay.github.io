@@ -11,13 +11,13 @@ url: "https://dgynfi.github.io"      # your host, for absolute URL
 
 
 # SNS settings
-RSS: true
-zhihu_username:     dgynfi
-jianshu_username:   u/7fc76f1179cc
-weibo_username:     u/2617525300
 github_username:    dgynfi
+jianshu_username:   u/7fc76f1179cc
+zhihu_username:     dgynfi
+weibo_username:     u/2617525300
 #twitter_username:  
 #facebook_username:  
+RSS: true
 
 
 
