@@ -1,19 +1,20 @@
 # Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+title: Dgynfi Blog
+SEOTitle: 梦飞的博客 | Dgynfi Blog
 header-img: img/home-bg.jpg
 email: vinphy.teng@foxmail.com
 description: ""
 keyword: ""
-url: "http://dgynfi.github.io"      # your host, for absolute URL
+url: "https://dgynfi.github.io"      # your host, for absolute URL
 #baseurl: "/"                       # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     MF_梦飞6
-zhihu_username:     梦飞
+zhihu_username:     dgynfi
+jianshu_username:   u/7fc76f1179cc
+weibo_username:     u/2617525300
 github_username:    dgynfi
 #twitter_username:  
 #facebook_username:  
@@ -82,9 +83,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "MengFei Blog",
-        href: "http://dgynfi.github.io"
-    },{
         title: "Foo",
         href: "#"
     },{
