@@ -11,7 +11,7 @@ url: "https://dgynfi.github.io"      # your host, for absolute URL
 
 
 # SNS settings
-RSS: false
+RSS: true
 zhihu_username:     dgynfi
 jianshu_username:   u/7fc76f1179cc
 weibo_username:     u/2617525300
@@ -54,7 +54,6 @@ kramdown:
 # duoshuo_username: 
 # Share component is depend on Comment so we can NOT use share only.
 # duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
 
 
 
