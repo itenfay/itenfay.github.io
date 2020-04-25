@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "手把手教会你用 Markdown写作"
+title: "手把手教会你用 Markdown 写作"
 author: "dyf"
 date: 2019-06-10
 tag: tool
 ---
 
-## 手把手教会你用 Markdown写作
+## 手把手教会你用 Markdown 写作
 
 Markdown 是一种「电子邮件」风格的「标记语言」，我强烈推荐所有写作者学习和掌握该语言。为什么？可以参考：
 
