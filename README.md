@@ -1,8 +1,8 @@
-## Dgynfi Blog 
+## Handsen Blog 
 
-#### [我的博客在这里→](http://dgynfi.github.io)
+#### [我的博客在这里→](https://dgynfi.github.io)
 
-![](http://dgynfi.github.io/img/dgynfi-blog.png)
+![](https://dgynfi.github.io/img/handsen-blog.png)
 
 ## 各版本特性
 
@@ -52,9 +52,9 @@
 
 ```
 # Site settings
-title: Dgynfi Blog                # 你的博客网站标题
-SEOTitle: 梦飞的博客 | Dgynfi Blog  # 在后面会详细谈到
-description: "Dgynfi Blog"        # 随便说点，描述一下
+title: Handsen Blog                # 你的博客网站标题
+SEOTitle: 汉生的博客 | Handsen Blog  # 在后面会详细谈到
+description: "Handsen Blog"        # 随便说点，描述一下
 
 # SNS settings      
 github_username: dgynfi           # 你的github账号
@@ -214,7 +214,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### SEO Title
 
-我的博客标题是 **“Dgynfi Blog”** 但是我想要在搜索的时候显示 **“梦飞的博客 | Dgynfi Blog”** ，这个就需要SEO Title来定义了。
+我的博客标题是 **“Handsen Blog”** 但是我想要在搜索的时候显示 **“汉生的博客 | Handsen Blog”** ，这个就需要SEO Title来定义了。
 
 其实这个SEO Title 就是定义了<head><title>标题</title></head>这个里面的东西和多说分享的标题，你可以自行修改的。
 

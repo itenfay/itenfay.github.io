@@ -1,21 +1,21 @@
 # Site settings
-title: Dgynfi Blog
-SEOTitle: 阿飞的博客 | Dgynfi Blog
+title: Handsen Blog
+SEOTitle: 汉生的博客 | Handsen Blog
 header-img: img/home-bg.jpg
 email: vinphy.teng@foxmail.com
 description: ""
 keyword: ""
-url: "https://dgynfi.github.io"      # your host, for absolute URL
-#baseurl: "/"                       # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://dgynfi.github.io" # your host, for absolute URL
+#baseurl: "/" # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-github_username:    dgynfi
-jianshu_username:   u/7fc76f1179cc
-zhihu_username:     dgynfi
-weibo_username:     u/2617525300
+github_username: dgynfi
+jianshu_username: u/7fc76f1179cc
+zhihu_username: dgynfi
+#weibo_username: u/2617525300
 #twitter_username:  
 #facebook_username:  
 
@@ -27,7 +27,7 @@ highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 
 
 
@@ -43,7 +43,7 @@ gems: [jekyll-paginate]
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM # use Github Flavored Markdown !important
 
 
 
@@ -53,7 +53,7 @@ kramdown:
 # Duoshuo settings
 # duoshuo_username: 
 # Share component is depend on Comment so we can NOT use share only.
-# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# duoshuo_share: true # set to false if you want to use Comment without Sharing
 
 
 
@@ -61,37 +61,49 @@ kramdown:
 # Baidu Analytics
 # ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
-# ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+# ga_track_id: 'UA-49627206-1' # Format: UA-xxxxxx-xx
 # ga_domain: huangxuan.me
 
 
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar.jpg         # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: true # whether or not using Sidebar.
+sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩多看看。"
+sidebar-avatar: /img/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-tags: true  # whether or not using Feature-Tags
+featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
 
 
 
 # Friends
 friends: [
     {
-        title: "Foo",
-        href: "#"
+        title: "唐巧",
+        href: "https://blog.devtang.com"
     },{
-        title: "Bar",
-        href: "#"
+        title: "KenshinCui",
+        href: "https://www.cnblogs.com/kenshincui"
     },{
-        title: "Example Friends",
-        href: "#"
+        title: "念茜",
+        href: "https://blog.csdn.net/yiyaaixuexi"
     },{
-        title: "It helps SEO",
-        href: "#"
+        title: "iOSer",
+        href: "https://www.jianshu.com/c/afb29f0c7bbd"
+    },{
+        title: "iOSer",
+        href: "https://www.jianshu.com/c/afb29f0c7bbd"
+    },{
+        title: "iOSer",
+        href: "https://www.jianshu.com/c/afb29f0c7bbd"
+    },{
+        title: "iOSer",
+        href: "https://www.jianshu.com/c/afb29f0c7bbd"
+    },{
+        title: "iOSer",
+        href: "https://www.jianshu.com/c/afb29f0c7bbd"
     }
 ]
