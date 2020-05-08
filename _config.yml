@@ -1,13 +1,12 @@
 # Site settings
-title: Handsen Blog
-SEOTitle: 汉森的博客 | Handsen Blog
+title: Handsen's Blog
+SEOTitle: Handsen's Blog | 汉森的博客
 header-img: img/home-bg.jpg
 email: vinphy.teng@foxmail.com
 maintainer: dyf
 description: ""
 keyword: ""
-mygithub: "My GitHub"
-url: "https://github.com/dgynfi" # your host, for absolute URL
+url: "https://dgynfi.github.io" # your host, for absolute URL
 #baseurl: "/" # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -84,28 +83,70 @@ featured-condition-size: 1 # A tag will be featured if the size of it is more th
 # Friends
 friends: [
     {
-        title: "唐巧",
+        title: "唐巧的博客",
         href: "https://blog.devtang.com"
     },{
-        title: "KenshinCui",
-        href: "https://www.cnblogs.com/kenshincui"
+        title: "OneV's Den",
+        href: "https://onevcat.com"
     },{
-        title: "念茜",
-        href: "https://blog.csdn.net/yiyaaixuexi"
+        title: "Vincent Gable’s Blog",
+        href: "http://vgable.com/blog/"
     },{
-        title: "iOSer",
-        href: "https://www.jianshu.com/c/afb29f0c7bbd"
+        title: "念茜的博客",
+        href: "https://blog.csdn.net/yiyaaixuexi/"
     },{
-        title: "iOSer",
-        href: "https://www.jianshu.com/c/afb29f0c7bbd"
+        title: "Kenshin Cui's Blog",
+        href: "https://www.cnblogs.com/kenshincui/"
     },{
-        title: "iOSer",
-        href: "https://www.jianshu.com/c/afb29f0c7bbd"
+        title: "NSHipster",
+        href: "https://nshipster.cn"
     },{
-        title: "iOSer",
-        href: "https://www.jianshu.com/c/afb29f0c7bbd"
+        title: "Limboy's HQ",
+        href: "https://limboy.me/"
     },{
-        title: "iOSer",
+        title: "Kevin Blog",
+        href: "https://blog.kevinzhow.com"
+    },{
+        title: "sunnyxx的技术博客",
+        href: "https://blog.sunnyxx.com"
+    },{
+        title: "coderyi",
+        href: "http://coderyi.com"
+    },{
+        title: "bang's blog",
+        href: "https://blog.cnbang.net"
+    },{
+        title: "Chen_Yilong - 博客园",
+        href: "https://www.cnblogs.com/ChenYilong"
+    },{
+        title: "摇滚诗人 - 博客园",
+        href: "https://www.cnblogs.com/biosli"
+    },{
+        title: "Bison的技术博客 – iOS开发",
+        href: "https://allluckly.cn/"
+    },{
+        title: "老谭笔记",
+        href: "https://www.tanhao.me"
+    },{
+        title: "Kitten's 时间胶囊",
+        href: "https://kittenyang.com"
+    },{
+        title: "阿毛的蛋疼地",
+        href: "https://xiangwangfeng.com"
+    },{
+        title: "极客 IO",
+        href: "http://zengxianhua.com/"
+    },{
+        title: "Blogs | nswebfrog",
+        href: "https://blog.nswebfrog.com"
+    },{
+        title: "hengshujiyi_CSDN博客",
+        href: "https://blog.csdn.net/hengshujiyi"
+    },{
+        title: "think12_CSDN博客",
+        href: "https://blog.csdn.net/think12"
+    },{
+        title: "iOSer - 专题",
         href: "https://www.jianshu.com/c/afb29f0c7bbd"
     }
 ]
