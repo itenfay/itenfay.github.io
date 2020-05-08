@@ -53,7 +53,7 @@
 ```
 # Site settings
 title: Handsen Blog                # 你的博客网站标题
-SEOTitle: 汉生的博客 | Handsen Blog  # 在后面会详细谈到
+SEOTitle: 汉森的博客 | Handsen Blog # 在后面会详细谈到
 description: "Handsen Blog"        # 随便说点，描述一下
 
 # SNS settings      
@@ -95,7 +95,7 @@ tags: Life
 # Sidebar settings
 sidebar: true  #添加侧边栏
 sidebar-about-description: "简单的描述一下你自己"
-sidebar-avatar: /img/avatar.jpg     #你的大头贴，请使用绝对地址.
+sidebar-avatar: /img/avatar.jpg #你的大头贴，请使用绝对地址.
 ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
@@ -214,7 +214,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### SEO Title
 
-我的博客标题是 **“Handsen Blog”** 但是我想要在搜索的时候显示 **“汉生的博客 | Handsen Blog”** ，这个就需要SEO Title来定义了。
+我的博客标题是 **“Handsen Blog”** 但是我想要在搜索的时候显示 **“汉森的博客 | Handsen Blog”** ，这个就需要SEO Title来定义了。
 
 其实这个SEO Title 就是定义了<head><title>标题</title></head>这个里面的东西和多说分享的标题，你可以自行修改的。
 
