@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "我干了什么，究竟拿了时间换了什么"
+description: "问渠那得清如许？为有源头活水来" # 我做了什么，究竟拿了时间换了什么
 ---
 
 {% for post in paginator.posts %}
@@ -18,9 +18,16 @@ description: "我干了什么，究竟拿了时间换了什么"
             {{ post.content | strip_html | truncate:200 }}
         </div>
     </a>
+    <br />
     <p class="post-meta">
         <!-- Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }} -->
         {{ post.date | date: "%B %-d, %Y" }}
+
+        {% if post.tag %}
+        <a href="{{ site.baseurl }}/tags/#{{ post.tag }}" style="display: block;text-align: right;">
+            {{ post.tag }}
+        </a>
+        {% endif %}
     </p>
 </div>
 <hr>

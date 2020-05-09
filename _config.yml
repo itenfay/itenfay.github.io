@@ -10,16 +10,14 @@ url: "https://dgynfi.github.io" # your host, for absolute URL
 #baseurl: "/" # for example, '/blog' if your blog hosted on 'host/blog'
 
 
-
 # SNS settings
-RSS: false
+RSS: true
 github_username: dgynfi
 jianshu_username: u/7fc76f1179cc
 zhihu_username: dgynfi
 #weibo_username: u/2617525300
 #twitter_username:  
 #facebook_username:  
-
 
 
 # Build settings
@@ -31,11 +29,9 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 
 
-
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate]
-
 
 
 # Markdown settings
@@ -47,7 +43,6 @@ kramdown:
   input: GFM # use Github Flavored Markdown !important
 
 
-
 # Disqus settings
 #disqus_username: _your_disqus_short_name_
 
@@ -55,7 +50,6 @@ kramdown:
 # duoshuo_username: 
 # Share component is depend on Comment so we can NOT use share only.
 # duoshuo_share: true # set to false if you want to use Comment without Sharing
-
 
 
 # Analytics settings
@@ -66,18 +60,19 @@ kramdown:
 # ga_domain: huangxuan.me
 
 
-
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩多看看。"
 sidebar-avatar: /img/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
-
 # Featured Tags
-featured-tags: true  # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 36 # A tag will be featured if the size of it is more than this condition value
 
+
+# QRcode settings
+qrcode: true # whether or not showing QRcode
 
 
 # Friends

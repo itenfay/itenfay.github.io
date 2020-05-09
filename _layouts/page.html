@@ -82,6 +82,7 @@ layout: default
                 col-xs-12
                 sidebar-container
             ">
+
                 <!-- Featured Tags -->
                 {% if site.featured-tags %}
                 <section>
@@ -184,6 +185,17 @@ layout: default
                         </ul>
                     </div>
                 </section>
+
+                <!-- QRcode -->
+                {% if site.qrcode %}
+                <section class="visible-md visible-lg">
+                    <hr><h5>QRCODES</h5>
+                    <div class="qrcode" align="center">
+                        <img src="/img/icon_wechat.png" alt="Group QRcode" width="150" height="166" />
+                    </div>
+                </section>
+                {% endif %}
+
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
