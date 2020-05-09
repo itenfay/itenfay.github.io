@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "一份精心策划的开源项目清单 (超级全面)"
-header-img: "img/tag-bg.jpg"
+header-img: "img/post-bg-rest.jpg"
 author: "dyf"
 date: 2019-05-15
 tag: IT
