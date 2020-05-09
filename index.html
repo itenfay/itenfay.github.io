@@ -21,10 +21,11 @@ description: "问渠那得清如许？为有源头活水来" # 我做了什么�
     <p class="post-meta">
         <div class="post-meta-date-tag-contain">
             <!-- Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }} -->
-            <span class="left">{{ post.date | date: "%B %-d, %Y" }}</span>
+            {{ post.date | date: "%B %-d, %Y" }}
+
             {% if post.tag %}
             <span class="right">
-            <a href="{{ site.baseurl }}/tags/#{{ post.tag }}" title="#{{ post.tag }}" rel="post.tag[1].size" style="font-size: 16px;display: block;text-align: right;">
+            <a href="{{ site.baseurl }}/tags/#{{ post.tag }}" style="font-size: 16px;display: block;text-align: right;">
                 #{{ post.tag }}
             </a>
             </span>
@@ -33,8 +34,6 @@ description: "问渠那得清如许？为有源头活水来" # 我做了什么�
         <style type="text/css">
             .post-meta-date-tag-contain {
                 text-align: left;
-            }
-            .left {
             }
             .right {
                 float: right;
