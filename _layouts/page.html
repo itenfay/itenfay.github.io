@@ -40,13 +40,27 @@ layout: default
                     <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                            <!-- {% if tag[1].size > {{site.featured-condition-size}} %}
                 				<a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                                     {{ tag[0] }}
                                 </a>
-                            {% endif %}
+                            {% endif %} -->
+                            <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
         				{% endfor %}
         			</div>
+                </section>
+                {% endif %}
+
+                <!-- QRcode -->
+                {% if site.qrcode %}
+                <section class="visible-md visible-lg">
+                    <hr><h5>QRCODES</h5>
+                    <div class="qrcode" align="left">
+                        <p>{{ site.qrcode-ios-description }}</p>
+                        <img src="/img/qrcode/g614799921.jpg" alt="Group 1" width="200" height="221" />
+                        <p>{{ site.qrcode-other-description }}</p>
+                        <img src="/img/qrcode/qq155353383.jpg" alt="Group 2" width="200" height="213" />
+                    </div>
                 </section>
                 {% endif %}
 
@@ -90,11 +104,12 @@ layout: default
                     <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
                     <div class="tags">
                         {% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                            <!-- {% if tag[1].size > {{site.featured-condition-size}} %}
                                 <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                                     {{ tag[0] }}
                                 </a>
-                            {% endif %}
+                            {% endif %} -->
+                            <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
                         {% endfor %}
                     </div>
                 </section>
@@ -190,11 +205,11 @@ layout: default
                 {% if site.qrcode %}
                 <section class="visible-md visible-lg">
                     <hr><h5>QRCODES</h5>
-                    <div class="qrcode" align="center">
+                    <div class="qrcode" align="left">
                         <p>{{ site.qrcode-ios-description }}</p>
-                        <img src="/img/qrcode/g614799921.jpg" alt="Group QRcode 1" width="200" height="221" />
+                        <img src="/img/qrcode/g614799921.jpg" alt="Group 1" width="200" height="221" />
                         <p>{{ site.qrcode-other-description }}</p>
-                        <img src="/img/qrcode/qq155353383.jpg" alt="Group QRcode 2" width="200" height="213" />
+                        <img src="/img/qrcode/qq155353383.jpg" alt="Group 2" width="200" height="213" />
                     </div>
                 </section>
                 {% endif %}
