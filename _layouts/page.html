@@ -55,9 +55,11 @@ layout: default
                 <section class="visible-md visible-lg">
                     <hr><h5>QRCODES</h5>
                     <div class="qrcode" align="left">
-                        <p>{{ site.qrcode-ios-description }}</p>
+                        <!-- Group 1: g614799921.jpg -->
+                        <h6>{{ site.qrcode-ios-description }}</h6>
                         <img src="/img/qrcode/g614799921.jpg" alt="Group 1" width="200" height="221" />
-                        <p>{{ site.qrcode-other-description }}</p>
+                        <!-- Group 2: qq155353383.jpg -->
+                        <h6>{{ site.qrcode-other-description }}</h6>
                         <img src="/img/qrcode/qq155353383.jpg" alt="Group 2" width="200" height="213" />
                     </div>
                 </section>
@@ -66,7 +68,12 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>FRIENDS</h5>
+                <h5>FRIENDS                        <!-- Group 1: g614799921.jpg -->
+                        <h6>{{ site.qrcode-ios-description }}</h6>
+                        <img src="/img/qrcode/g614799921.jpg" alt="Group 1" width="200" height="221" />
+                        <!-- Group 2: qq155353383.jpg -->
+                        <h6>{{ site.qrcode-other-description }}</h6>
+                        <img src="/img/qrcode/qq155353383.jpg" alt="Group 2" width="200" height="213" /></h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
@@ -204,9 +211,11 @@ layout: default
                 <section class="visible-md visible-lg">
                     <hr><h5>QRCODES</h5>
                     <div class="qrcode" align="left">
-                        <p>{{ site.qrcode-ios-description }}</p>
+                        <!-- Group 1: g614799921.jpg -->
+                        <h6>{{ site.qrcode-ios-description }}</h6>
                         <img src="/img/qrcode/g614799921.jpg" alt="Group 1" width="200" height="221" />
-                        <p>{{ site.qrcode-other-description }}</p>
+                        <!-- Group 2: qq155353383.jpg -->
+                        <h6>{{ site.qrcode-other-description }}</h6>
                         <img src="/img/qrcode/qq155353383.jpg" alt="Group 2" width="200" height="213" />
                     </div>
                 </section>
