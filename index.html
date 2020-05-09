@@ -19,14 +19,14 @@ description: "问渠那得清如许？为有源头活水来" # 我做了什么�
         </div>
     </a>
     <div class="post-meta">
-        <div style="float: left;">
+        <div style="float: left;margin-top: 8px;">
         <!-- Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }} -->
         {{ post.date | date: "%B %-d, %Y" }}
         </div>
 
         {% if post.tag %}
-        <div style="float: right;">
-        <a href="{{ site.baseurl }}/tags/#{{ post.tag }}" title="#{{ post.tag }}">
+        <div style="float: right; margin-bottom: 8px;">
+        <a href="{{ site.baseurl }}/tags/#{{ post.tag }}" style="color: #808080;font-size: 16px;">
             #{{ post.tag }}
         </a>
         </div>
