@@ -1,12 +1,12 @@
 # Site settings
 title: Handsen's Blog
 SEOTitle: Handsen's Blog | 汉森的博客
-header-img: img/home-bg.jpg
+header-img: images/home-bg.jpg
 email: vinphy.teng@foxmail.com
 maintainer: dyf
 description: ""
 keyword: ""
-url: "https://dgynfi.github.io" # your host, for absolute URL
+url: "https://blog.handsenteng.com" # your host, for absolute URL
 #baseurl: "/" # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -48,7 +48,7 @@ kramdown:
 
 # Duoshuo settings
 # duoshuo_username: 
-# Share component is depend on Comment so we can NOT use share only.
+# Share component is depend on Comment so we can not use share only.
 # duoshuo_share: true # set to false if you want to use Comment without Sharing
 
 
@@ -57,13 +57,13 @@ kramdown:
 # ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 # ga_track_id: 'UA-49627206-1' # Format: UA-xxxxxx-xx
-# ga_domain: huangxuan.me
+# ga_domain: handsenteng.com
 
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩多看看。"
-sidebar-avatar: /img/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "努力学习奋斗，相信好运藏在努力里。"
+sidebar-avatar: /images/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 # Featured Tags
@@ -73,8 +73,8 @@ featured-condition-size: 0 # A tag will be featured if the size of it is more th
 
 # QRcode settings
 qrcode: true # whether or not showing QRcode
-qrcode-ios-description: Group 1 - iOS/macOS X  # TC Group => Technical Communication Group
-qrcode-other-description: Group 2 - Other Dev Language # TC Group => Technical Communication Group
+qrcode-ios-description: Group I - iOS/macOS X  # TC Group => Technical Communication Group
+qrcode-other-description: Group II - Other Dev Language # TC Group => Technical Communication Group
 
 
 # Friends
@@ -82,67 +82,92 @@ friends: [
     {
         title: "唐巧的博客",
         href: "https://blog.devtang.com"
-    },{
+    },
+    {
         title: "OneV's Den",
         href: "https://onevcat.com"
-    },{
+    },
+    {
+        title: "Garan no dou | 一只魔法师的工坊",
+        href: "https://blog.ibireme.com"
+    },
+    {
         title: "Vincent Gable’s Blog",
         href: "http://vgable.com/blog/"
-    },{
+    },
+    {
         title: "念茜的博客",
         href: "https://blog.csdn.net/yiyaaixuexi/"
-    },{
+    },
+    {
         title: "Kenshin Cui's Blog",
         href: "https://www.cnblogs.com/kenshincui/"
-    },{
+    },
+    {
         title: "NSHipster",
         href: "https://nshipster.cn"
-    },{
+    },
+    {
         title: "Limboy's HQ",
         href: "https://limboy.me/"
-    },{
+    },
+    {
         title: "Kevin Blog",
         href: "https://blog.kevinzhow.com"
-    },{
+    },
+    {
         title: "sunnyxx的技术博客",
         href: "https://blog.sunnyxx.com"
-    },{
+    },
+    {
         title: "coderyi",
         href: "http://coderyi.com"
-    },{
+    },
+    {
         title: "bang's blog",
         href: "https://blog.cnbang.net"
-    },{
+    },
+    {
         title: "Chen_Yilong - 博客园",
         href: "https://www.cnblogs.com/ChenYilong"
-    },{
+    },
+    {
         title: "摇滚诗人 - 博客园",
         href: "https://www.cnblogs.com/biosli"
-    },{
+    },
+    {
         title: "Bison的技术博客 – iOS开发",
         href: "https://allluckly.cn/"
-    },{
+    },
+    {
         title: "老谭笔记",
         href: "https://www.tanhao.me"
-    },{
+    },
+    {
         title: "Kitten's 时间胶囊",
         href: "https://kittenyang.com"
-    },{
+    },
+    {
         title: "阿毛的蛋疼地",
         href: "https://xiangwangfeng.com"
-    },{
+    },
+    {
         title: "极客 IO",
         href: "http://zengxianhua.com/"
-    },{
+    },
+    {
         title: "Blogs | nswebfrog",
         href: "https://blog.nswebfrog.com"
-    },{
+    },
+    {
         title: "hengshujiyi_CSDN博客",
         href: "https://blog.csdn.net/hengshujiyi"
-    },{
+    },
+    {
         title: "think12_CSDN博客",
         href: "https://blog.csdn.net/think12"
-    },{
+    },
+    {
         title: "iOSer - 专题",
         href: "https://www.jianshu.com/c/afb29f0c7bbd"
     }

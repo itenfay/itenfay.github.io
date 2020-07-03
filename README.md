@@ -1,8 +1,8 @@
 ## Handsen's Blog 
 
-#### [我的博客在这里→](https://dgynfi.github.io)
+#### [我的博客在这里→](https://blog.handsenteng.com)
 
-![](https://dgynfi.github.io/img/handsen-blog.png)
+![](https://blog.handsenteng.com/images/handsen-blog.png)
 
 ## 各版本特性
 
@@ -17,7 +17,7 @@
 ## 支持
 
 * 你可以自由的 fork 。如果你能将我的信息和 github 的地址放在你的页面底部做成链接，我将非常感谢你。
-* 如果你喜欢我的这个博客模板，请在 `dgynfi.github.io` 这个 repository 点个赞——右上角 **star** 一下。
+* 如果你喜欢我的这个博客模板，请在 `blog.handsenteng.com` 这个 repository 点个赞——右上角 **star** 一下。
 
 ## 说明文档
 
@@ -79,7 +79,7 @@ title:      "Hello 2015"
 subtitle:   "Hello World, Hello Blog"
 date:       2015-01-29 12:00:00
 author:     "dyf"
-header-img: "img/post-bg-2015.jpg"
+header-img: "images/post-bg-2015.jpg"
 tags: Life
 ---
 
@@ -88,14 +88,14 @@ tags: Life
 #### SideBar
 
 长这样:
-![](http://dgynfi.github.io/img/blog-sidebar.png)
+![](http://blog.handsenteng.com/images/blog-sidebar.png)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 ```
 # Sidebar settings
 sidebar: true  #添加侧边栏
 sidebar-about-description: "简单的描述一下你自己"
-sidebar-avatar: /img/avatar.jpg #你的大头贴，请使用绝对地址.
+sidebar-avatar: /images/avatar.jpg #你的大头贴，请使用绝对地址.
 ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
@@ -146,7 +146,7 @@ friends: [
 
 HTML5 幻灯片的排版：
 
-![](http://dgynfi.github.io/img/blog-keynote.png)
+![](http://blog.handsenteng.com/image/blog-keynote.png)
 
 这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放 html 幻灯的功能呢~
 
@@ -192,7 +192,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'  # Format: UA-xxxxxx-xx
-ga_domain: dgynfi.github.io
+ga_domain: blog.handsenteng.com
 ```
 
 #### Customization
@@ -220,7 +220,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 ## 致谢
 
-1. 这个模板是从这里 [Huxpro/huxpro.github.io](https://github.com/Huxpro/huxpro.github.io) cloned 的。感谢这个作者。 
+1. 这个模板是从这里 [Huxpro/huxpro.github.io](https://github.com/Huxpro/huxpro.github.io) cloned 的，非常感谢这个作者。 
 
 2. 感谢 [IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll) 这个作者。 
 

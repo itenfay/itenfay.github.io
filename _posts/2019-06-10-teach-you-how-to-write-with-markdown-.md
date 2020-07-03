@@ -20,7 +20,7 @@ Markdown 是一种「电子邮件」风格的「标记语言」，我强烈推�
 - 格式转换方便，Markdown 的文本你可以轻松转换为 html、电子书等。
 - Markdown 的标记语法有极好的可读性。
 
-当然，我既然如此推崇 Markdown ，也必定会教会你使用 Markdown ，这也是本文的目的所在。不过，虽然 [Markdown 的语法](https://link.jianshu.com?t=https://guides.github.com/features/mastering-markdown/)已经足够简单，但是现有的 Markdown 语法说明更多的是写给 web 从业者看的，对于很多写作者来说，学习起来效率很低，现在，我特为写作者量身定做本指南，从写作者的实际需求出发，介绍写作者真正实用的常用格式，深入浅出、图文并茂地让您迅速掌握 Markdown 语法。
+当然，我既然如此推崇 Markdown ，也必定会教会你使用 Markdown ，这也是本文的目的所在。不过，虽然 [Markdown 的语法](https://guides.github.com/features/mastering-markdown/)已经足够简单，但是现有的 Markdown 语法说明更多的是写给 web 从业者看的，对于很多写作者来说，学习起来效率很低，现在，我特为写作者量身定做本指南，从写作者的实际需求出发，介绍写作者真正实用的常用格式，深入浅出、图文并茂地让您迅速掌握 Markdown 语法。
 
 ## 标题
 
@@ -152,10 +152,9 @@ Markdown 的粗体和斜体也非常简单，用两个 * 包含一段文本就�
 
 ![Woaw!](https://upload-images.jianshu.io/upload_images/1776763-353d70a2fa35b46e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
 ## 结语
 
-以上几种格式是比较常用的格式，所以我针对这些语法做了比较详细的说明。除这些之外，Markdown 还有其他语法，如想了解和学习更多，可以参考这篇[『Markdown 语法说明』](https://link.jianshu.com?t=https://guides.github.com/features/mastering-markdown/)。
+以上几种格式是比较常用的格式，所以我针对这些语法做了比较详细的说明。除这些之外，Markdown 还有其他语法，如想了解和学习更多，可以参考这篇[『Markdown 语法说明』](https://guides.github.com/features/mastering-markdown/)。
 
 ## 参考
 - [献给写作者的 Markdown 新手指南](https://www.jianshu.com/p/q81RER)

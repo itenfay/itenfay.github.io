@@ -1,120 +1,118 @@
 ---
 layout: post
-title: "一份精心策划的开源项目清单 (超级全面)"
-header-img: "img/post-bg-rest.jpg"
+title: "Github 优秀开源项目大全"
+header-img: "images/opensource/open_source.jpg"
 author: "dyf"
 date: 2019-05-15
 tag: IT
 ---
 
-## [OpenSource](https://github.com/dgynfi/OpenSource)
 
-🔥🔥🔥
+在互联网飞速发展的今天，相信很多程序开发者对 GitHub 很熟悉，我们在这里学习知识、分享自己的开源库或者开源代码、寻找良好的框架或解决方案和帮助其他开发者答疑解惑。
 
-一份精心策划的开源项目清单，涵盖了 iOS, Mac, Blockchain, Flutter, Weex, H5, Games, C++, Script 等各个方面的内容，其中，iOS包涵以下几个方面：
+既然我们在 GitHub 上做了这么多事情，我们就来思索一下，在 GitHub 上有哪些值得关注学习的开源项目呢？
 
-1. 常用第三方库：AFNetworking & Alamofire, SDWebImage, ReactiveCocoa & RxSwift, Masonry & SnapKit, YYKit；
-2. 支付: 内购 (IAP) , ApplePay 和 第三方支付；
-3. 播放器: 视频播放器和音乐播放器；
-4. IM和直播；
-5. 图像渲染和绘制 (OpenGLES, Metal, GPUImage, CoreGraphics) ；
-6. 逆向开发；
-7. 安全攻防和应用加固, 数据安全和算法；
-8. 导航栏和状态栏；
-9. 数据持久 (Data Persistence) ；
-10. 侧边菜单 (Side Menu), 蓝牙, 手势指纹面容ID密码解锁, 扫码, 下拉刷新和上拉加载, 指示器, Toast, Menu和弹出视图, WebView和进度条, 图片浏览器, 动画, 选择器, 搜索, 分享, 图片验证码, 获取设备相关信息, 广告, Sensor, Privacy, 高仿项目及Demo等等。
+不知道的没有关系，在这里我汇总了许多 [Github 优秀开源项目](https://github.com/dgynfi/OpenSource) 和主流开发使用的网站、解决问题方案收集以及学习网站或资料以分享给大家，此开源项目指南涵盖了 iOS, Mac OSX, Blockchain, Flutter, Weex, H5, Games, C++, Script 等多个方面的内容，其中，iOS大致包涵以下内容：
 
-🔥🔥🔥 
+- 1、常用第三方库：AFNetworking & Alamofire, SDWebImage, ReactiveCocoa & RxSwift, Masonry & SnapKit, YYKit；
+- 2、支付: 内购 (IAP) , ApplePay 和 第三方支付；
+- 3、播放器: 视频播放器和音乐播放器；
+- 4、IM和直播；
+- 5、图像渲染和绘制 (OpenGLES, Metal, GPUImage, CoreGraphics) ；
+- 6、逆向开发；
+- 7、安全攻防和应用加固, 数据安全和算法；
+- 8、导航栏和状态栏；
+- 9、数据持久 (Data Persistence) ；
+- 10、侧边菜单 (Side Menu), 蓝牙, 手势指纹面容 ID 密码解锁, 扫码, 下拉刷新和上拉加载, 指示器, Toast, Menu 和弹出视图, WebView 和进度条, 图片浏览器, 动画, 选择器, 搜索, 分享, 图片验证码, 获取设备相关信息, 广告, Sensor, Privacy, 高仿项目及 Demo 等等。
 
 
 ## Group
 
 |  ID                 |  QRCode                                         | Description                                    |
 | :-------------: | :--------------------------------------: | :-------------------------------------: |
-|  614799921  | ![614799921](https://github.com/dgynfi/OpenSource/raw/master/images/g614799921.jpg) | For iOS & Mac technical communication |
-|  155353383  | ![155353383](https://github.com/dgynfi/OpenSource/raw/master/images/qq155353383.jpg) | For other categories technical communication |
+|  614799921  | ![614799921](https://blog.handsenteng.com/images/qrcode/g614799921.jpg) | For iOS & Mac technical communication |
+|  155353383  | ![155353383](https://blog.handsenteng.com/images/qrcode/qq155353383.jpg) | For other categories technical communication |
 
 
 ## 目录
 
-- [OpenSource](https://github.com/dgynfi/OpenSource#OpenSource)
-- [Group](https://github.com/dgynfi/OpenSource#Group)
-- [iOS](https://github.com/dgynfi/OpenSource#iOS)
-   - [Apple Developer](https://github.com/dgynfi/OpenSource#Apple-Developer)
-   - [常用第三方库](https://github.com/dgynfi/OpenSource#常用第三方库)
-      - [AFNetworking和Alamofire](https://github.com/dgynfi/OpenSource#AFNetworking和Alamofire)
-      - [SDWebImage](https://github.com/dgynfi/OpenSource#SDWebImage)
-      - [ReactiveCocoa和RxSwift](https://github.com/dgynfi/OpenSource#ReactiveCocoa和RxSwift)
-      - [Masonry和SnapKit](https://github.com/dgynfi/OpenSource#Masonry和SnapKit)
-      - [YYKit](https://github.com/dgynfi/OpenSource#YYKit)
-   - [网络相关](https://github.com/dgynfi/OpenSource#网络相关)
-   - [导航栏和状态栏](https://github.com/dgynfi/OpenSource#导航栏和状态栏)
-   - [Side Menu](https://github.com/dgynfi/OpenSource#Side-Menu)
-   - [支付](https://github.com/dgynfi/OpenSource#支付)
-      - [内购IAP](https://github.com/dgynfi/OpenSource#内购IAP)
-      - [ApplePay](https://github.com/dgynfi/OpenSource#ApplePay)
-      - [第三方支付](https://github.com/dgynfi/OpenSource#第三方支付)
-   - [播放器](https://github.com/dgynfi/OpenSource#播放器)
-      - [视频播放器](https://github.com/dgynfi/OpenSource#视频播放器) 
-      - [音乐播放器](https://github.com/dgynfi/OpenSource#音乐播放器)
-   - [IM和直播](https://github.com/dgynfi/OpenSource#IM和直播)
-   - [Runtime](https://github.com/dgynfi/OpenSource#Runtime)
-   - [Data Persistence](https://github.com/dgynfi/OpenSource#Data-Persistence)
-   - [逆向开发](https://github.com/dgynfi/OpenSource#逆向开发)
-      - [fishhook](https://github.com/dgynfi/OpenSource#fishhook)
-      - [逆向辅助工具](https://github.com/dgynfi/OpenSource#逆向辅助工具)
-      - [逆向案例](https://github.com/dgynfi/OpenSource#逆向案例)
-   - [安全攻防和应用加固](https://github.com/dgynfi/OpenSource#安全攻防和应用加固)
-   - [数据安全和算法](https://github.com/dgynfi/OpenSource#数据安全和算法)
-   - [蓝牙](https://github.com/dgynfi/OpenSource#蓝牙)
-   - [手势指纹面容ID密码解锁](https://github.com/dgynfi/OpenSource#手势指纹面容ID密码解锁)
-   - [布局](https://github.com/dgynfi/OpenSource#布局)
-   - [图像渲染和绘制](https://github.com/dgynfi/OpenSource#图像渲染和绘制)
-      - [OpenGLES](https://github.com/dgynfi/OpenSource#OpenGLES)
-      - [Metal](https://github.com/dgynfi/OpenSource#Metal)
-      - [GPUImage](https://github.com/dgynfi/OpenSource#GPUImage)
-      - [CoreGraphics](https://github.com/dgynfi/OpenSource#CoreGraphics)
-   - [图像模糊化](https://github.com/dgynfi/OpenSource#图像模糊化)
-   - [图片浏览器](https://github.com/dgynfi/OpenSource#图片浏览器)
-   - [扫码](https://github.com/dgynfi/OpenSource#扫码)
-   - [下拉刷新和上拉加载](https://github.com/dgynfi/OpenSource#下拉刷新和上拉加载)
-   - [指示器](https://github.com/dgynfi/OpenSource#指示器)
-   - [Toast](https://github.com/dgynfi/OpenSource#Toast)
-   - [Menu和弹出视图](https://github.com/dgynfi/OpenSource#Menu和弹出视图)
-   - [WebView和进度条](https://github.com/dgynfi/OpenSource#WebView和进度条)
-   - [动画](https://github.com/dgynfi/OpenSource#动画)
-   - [选择器](https://github.com/dgynfi/OpenSource#选择器)
-   - [搜索](https://github.com/dgynfi/OpenSource#搜索)
-   - [分享](https://github.com/dgynfi/OpenSource#分享)
-   - [图片验证码](https://github.com/dgynfi/OpenSource#图片验证码)
-   - [获取设备相关信息](https://github.com/dgynfi/OpenSource#获取设备相关信息)
-   - [广告](https://github.com/dgynfi/OpenSource#广告)
-   - [高仿项目及Demo](https://github.com/dgynfi/OpenSource#高仿项目及Demo)
-   - [类目](https://github.com/dgynfi/OpenSource#类目)
-   - [越狱检测](https://github.com/dgynfi/OpenSource#越狱检测) 
-   - [Others](https://github.com/dgynfi/OpenSource#Others)
-      - [Sensor](https://github.com/dgynfi/OpenSource#Sensor)
-      - [Privacy](https://github.com/dgynfi/OpenSource#Privacy)
-      - [未归类](https://github.com/dgynfi/OpenSource#未归类)
-- [Mac](https://github.com/dgynfi/OpenSource#Mac)
-- [其他汇总](https://github.com/dgynfi/OpenSource#其他汇总)
-- [区块链](https://github.com/dgynfi/OpenSource#区块链)
-- [Flutter](https://github.com/dgynfi/OpenSource#Flutter)
-    - [Flutter和Dart](https://github.com/dgynfi/OpenSource#Flutter和Dart)
-    - [Flutter Project](https://github.com/dgynfi/OpenSource#Flutter-Project)
-- [Weex](https://github.com/dgynfi/OpenSource#Weex)
-- [H5](https://github.com/dgynfi/OpenSource#H5)
-- [Web开发](https://github.com/dgynfi/OpenSource#Web开发)
-- [游戏](https://github.com/dgynfi/OpenSource#游戏)
-   - [Cocos2d](https://github.com/dgynfi/OpenSource#Cocos2d)
-   - [棋牌](https://github.com/dgynfi/OpenSource#棋牌)
-   - [游戏示例](https://github.com/dgynfi/OpenSource#游戏示例)
-- [C-plus-plus](https://github.com/dgynfi/OpenSource#C-plus-plus)
-- [Script](https://github.com/dgynfi/OpenSource#Script)
-   - [Mix](https://github.com/dgynfi/OpenSource#Mix)
-   - [Shell](https://github.com/dgynfi/OpenSource#Shell)
-   - [Python](https://github.com/dgynfi/OpenSource#Python)
-- [Database](https://github.com/dgynfi/OpenSource#Database)
+- [Group](#Group)
+- [iOS](#iOS)
+   - [Apple Developer](#Apple-Developer)
+   - [常用第三方库](#常用第三方库)
+      - [AFNetworking和Alamofire](#AFNetworking和Alamofire)
+      - [SDWebImage](#SDWebImage)
+      - [ReactiveCocoa和RxSwift](#ReactiveCocoa和RxSwift)
+      - [Masonry和SnapKit](#Masonry和SnapKit)
+      - [YYKit](#YYKit)
+   - [网络相关](#网络相关)
+   - [导航栏和状态栏](#导航栏和状态栏)
+   - [Side Menu](#Side-Menu)
+   - [支付](#支付)
+      - [内购IAP](#内购IAP)
+      - [ApplePay](#ApplePay)
+      - [第三方支付](#第三方支付)
+   - [播放器](#播放器)
+      - [视频播放器](#视频播放器) 
+      - [音乐播放器](#音乐播放器)
+   - [IM和直播](#IM和直播)
+   - [Runtime](#Runtime)
+   - [Data Persistence](#Data-Persistence)
+   - [逆向开发](#逆向开发)
+      - [fishhook](#fishhook)
+      - [逆向辅助工具](#逆向辅助工具)
+      - [逆向案例](#逆向案例)
+   - [安全攻防和应用加固](#安全攻防和应用加固)
+   - [数据安全和算法](#数据安全和算法)
+   - [蓝牙](#蓝牙)
+   - [手势指纹面容ID密码解锁](#手势指纹面容ID密码解锁)
+   - [布局](#布局)
+   - [图像渲染和绘制](#图像渲染和绘制)
+      - [OpenGLES](#OpenGLES)
+      - [Metal](#Metal)
+      - [GPUImage](#GPUImage)
+      - [CoreGraphics](#CoreGraphics)
+   - [图像模糊化](#图像模糊化)
+   - [图片浏览器](#图片浏览器)
+   - [扫码](#扫码)
+   - [下拉刷新和上拉加载](#下拉刷新和上拉加载)
+   - [指示器](#指示器)
+   - [Toast](#Toast)
+   - [Menu和弹出视图](#Menu和弹出视图)
+   - [WebView和进度条](#WebView和进度条)
+   - [动画](#动画)
+   - [选择器](#选择器)
+   - [搜索](#搜索)
+   - [分享](#分享)
+   - [图片验证码](#图片验证码)
+   - [获取设备相关信息](#获取设备相关信息)
+   - [广告](#广告)
+   - [高仿项目及Demo](#高仿项目及Demo)
+   - [类目](#类目)
+   - [越狱检测](#越狱检测) 
+   - [Others](#Others)
+      - [Sensor](#Sensor)
+      - [Privacy](#Privacy)
+      - [未归类](#未归类)
+- [Mac](#Mac)
+- [其他汇总](#其他汇总)
+- [区块链](#区块链)
+- [Flutter](#Flutter)
+    - [Flutter和Dart](#Flutter和Dart)
+    - [Flutter Project](#Flutter-Project)
+- [Weex](#Weex)
+- [H5](#H5)
+- [Web开发](#Web开发)
+- [游戏](#游戏)
+   - [Cocos2d](#Cocos2d)
+   - [棋牌](#棋牌)
+   - [游戏示例](#游戏示例)
+- [C-plus-plus](#C-plus-plus)
+- [Script](#Script)
+   - [Mix](#Mix)
+   - [Shell](#Shell)
+   - [Python](#Python)
+- [Database](#Database)
 
 ## iOS
 
@@ -142,15 +140,16 @@ tag: IT
 
 - [App Store 加急](https://developer.apple.com/contact/app-store/?topic=expedite)
 
-- [iOS 加急审核](https://www.jianshu.com/p/5a11f59a264c) https://docs-assets.developer.apple.com/published/cc0d0e0844/OfferingCompletingAndRestoringInAppPurchases.zip
-
+- [iOS 加急审核](https://www.jianshu.com/p/5a11f59a264c) 
 
 ### 常用第三方库
 
 #### AFNetworking和Alamofire
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - A delightful networking framework for iOS, macOS, watchOS, and tvOS. 
-![](https://camo.githubusercontent.com/1560be050811ab73457e90aee62cd1cd257c7fb9/68747470733a2f2f7261772e6769746875622e636f6d2f41464e6574776f726b696e672f41464e6574776f726b696e672f6173736574732f61666e6574776f726b696e672d6c6f676f2e706e67)
+    <div align=center>
+    <img src="https://camo.githubusercontent.com/1560be050811ab73457e90aee62cd1cd257c7fb9/68747470733a2f2f7261772e6769746875622e636f6d2f41464e6574776f726b696e672f41464e6574776f726b696e672f6173736574732f61666e6574776f726b696e672d6c6f676f2e706e67" width="50%" />
+    </div>
 
 **NSURLSession:**
 - `AFURLSessionManager `
@@ -182,7 +181,9 @@ tag: IT
 ---
 
 - [Alamofire](https://github.com/Alamofire/Alamofire) - Alamofire is an HTTP networking library written in Swift.
-![]https://raw.githubusercontent.com/Alamofire/Alamofire/master/alamofire.png)
+    <div align=center>
+    <img src="https://raw.githubusercontent.com/Alamofire/Alamofire/master/alamofire.png"  width="50%" />
+    </div>
 
 **Core目录下各个文件的功能简述:**
 - Alamofire.swift -- 该文件中主要是给用户提供一些便利的调用方法，用户可以直接调用该文件中的便利方法来使用Alamofire相关功能。
@@ -208,7 +209,9 @@ tag: IT
 #### SDWebImage
 
 - [SDWebImage](https://github.com/SDWebImage/SDWebImage) - This library provides an async image downloader with cache support. For convenience, we added categories for UI elements like UIImageView, UIButton, MKAnnotationView ([Examples](https://github.com/SDWebImage/SDWebImage/tree/master/Examples)). 
-![](https://raw.githubusercontent.com/SDWebImage/SDWebImage/master/SDWebImage_logo.png)
+    <div align=center>
+    <img src="https://raw.githubusercontent.com/SDWebImage/SDWebImage/master/SDWebImage_logo.png" width="50%" />
+    </div>
 
 **Coders for additional image formats**
 - SDWebImageWebPCoder - coder for WebP image format. Based on libwebp
@@ -235,7 +238,9 @@ tag: IT
 *响应式编程*
 
 - [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) - Reactive extensions to Cocoa frameworks, built on top of [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift)), It Offers composable, declarative and flexible primitives that are built around the grand concept of streams of values over time. These primitives can be used to uniformly represent common Cocoa and generic programming patterns that are fundamentally an act of observation. 
-![]https://github.com/ReactiveCocoa/ReactiveCocoa/raw/master/Logo/PNG/logo.png)
+    <div align=center>
+    <img src="https://github.com/ReactiveCocoa/ReactiveCocoa/raw/master/Logo/PNG/logo.png" width="50%" />
+    </div>
 
 - [RxSwift](https://github.com/ReactiveX/RxSwift) - Reactive Programming in Swift ([RxExample](https://github.com/ReactiveX/RxSwift/tree/master/RxExample)). 
 RxSwift comprises five separate components depending on eachother in the following way:
@@ -352,9 +357,7 @@ class MyViewController: UIViewController {
 
 #### 内购IAP
 
-- [InAppPurchase-for-iOS](https://github.com/dgynfi/InAppPurchase-for-iOS) - iOS StoreKit wrapper for In-App purchases and demo. 
-
-- [DYFStore-Swift](https://github.com/dgynfi/DYFStore) - A lightweight and easy-to-use iOS library for In-App Purchases. `DYFStore` uses blocks and notifications to wrap `StoreKit`, provides receipt verification and transaction persistence and doesn't require any external dependencies. ( [Objective-C](https://github.com/dgynfi/DYFStoreKit) )
+- [DYFStore-Swift](https://github.com/dgynfi/DYFStore) - A lightweight and easy-to-use iOS library for In-App Purchases. `DYFStore` uses blocks and notifications to wrap `StoreKit`, provides receipt verification and transaction persistence and doesn't require any external dependencies. ( [DYFStoreKit](https://github.com/dgynfi/DYFStoreKit) (Objective-C) )
 
 - [RMStore](https://github.com/robotmedia/RMStore) - A lightweight iOS library for In-App Purchases.
 
@@ -364,7 +367,13 @@ class MyViewController: UIViewController {
 
 - [SwiftyStoreKit](https://github.com/bizz84/SwiftyStoreKit) - SwiftyStoreKit is a lightweight In App Purchases framework for iOS 8.0+, tvOS 9.0+ and macOS 10.10+. 【 [Priview 1](https://github.com/bizz84/SwiftyStoreKit/raw/master/Screenshots/Preview.jpg) 】
 
+- [OfferingCompletingAndRestoringInAppPurchases.zip](https://docs-assets.developer.apple.com/published/cc0d0e0844/OfferingCompletingAndRestoringInAppPurchases.zip) - Offering completing and restoring In-App Purchases.
+
 - [Receipt Validation Programming Guide](https://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Introduction.html#//apple_ref/doc/uid/TP40010573-CH105-SW1)
+
+- [DYFStoreReceiptVerifier_Swift](https://github.com/dgynfi/DYFStoreReceiptVerifier_Swift) - This class is developed in Swift language, which is used to verify App Store receipts.
+
+- [DYFStoreReceiptVerifier](https://github.com/dgynfi/DYFStoreReceiptVerifier_Swift) - This class is developed in Objective-C language, which is used to verify App Store receipts.
 
 - [VerifyStoreReceiptiOS](https://github.com/rmaddy/VerifyStoreReceiptiOS) - A helper class for verifying App Store receipts under iOS.
 
@@ -493,9 +502,9 @@ class MyViewController: UIViewController {
 
 - [ObjC runtime opensource](https://opensource.apple.com/source/objc4/) - Source code comes from Apple opensource.
 
-- [SwiftRuntimeProvider](https://github.com/dgynfi/DYFSwiftRuntimeProvider) - Swift Runtime 包装，可快速使用字典转模型、归档解档、添加一个方法、交换两个方法、获取所有属性名和方法名。
+- [DYFSwiftRuntimeProvider](https://github.com/dgynfi/DYFSwiftRuntimeProvider) - Swift Runtime 包装，可快速使用字典转模型、归档解档、添加一个方法、交换两个方法、获取所有属性名和方法名。
 
-- [RuntimeProvider](https://github.com/dgynfi/DYFRuntimeProvider) -  Objective-C Runtime 包装，可快速使用字典转模型、归档解档、添加一个方法、交换两个方法、获取所有属性名和方法名。
+- [DYFRuntimeProvider](https://github.com/dgynfi/DYFRuntimeProvider) -  Objective-C Runtime 包装，可快速使用字典转模型、归档解档、添加一个方法、交换两个方法、获取所有属性名和方法名。
 
 - [Runtime Exploration](https://github.com/dgynfi/Runtime-exploration) - Runtime是iOS系统中重要的组成部分，面试也是必问的问题，所以Runtime是一个iOS工程师必须掌握的知识点。
 
@@ -527,7 +536,7 @@ class MyViewController: UIViewController {
 
 *DB, Keychain, NSUserDefaults, Write*
 
-- [DYFSwiftKeychain](https://github.com/dgynfi/DYFSwiftKeychain) - `DYFSwiftKeychain` is used to save text and data in Keychain securely for iOS, OS X, tvOS and watchOS. ( [Objective-C](https://github.com/dgynfi/DYFKeychain) )
+- [DYFSwiftKeychain](https://github.com/dgynfi/DYFSwiftKeychain) - `DYFSwiftKeychain` is used to save text and data in Keychain securely for iOS, OS X, tvOS and watchOS. ( [DYFKeychain](https://github.com/dgynfi/DYFKeychain) (Objective-C) )
 
 - [UICKeyChainStore](https://github.com/kishikawakatsumi/UICKeyChainStore) - UICKeyChainStore is a simple wrapper for Keychain on iOS, watchOS, tvOS and macOS. Makes using Keychain APIs as easy as NSUserDefaults.
 
@@ -543,12 +552,14 @@ class MyViewController: UIViewController {
 #### fishhook
 
 - [fishhook](https://github.com/facebook/fishhook) - A library that enables dynamically rebinding symbols in Mach-O binaries running on iOS. 
-![](https://camo.githubusercontent.com/18243516844d12b1bd158ce3687635d6e48d2e2e/687474703a2f2f692e696d6775722e636f6d2f4856587148437a2e706e67)
+    <div align=center>
+    <img src="https://camo.githubusercontent.com/18243516844d12b1bd158ce3687635d6e48d2e2e/687474703a2f2f692e696d6775722e636f6d2f4856587148437a2e706e67" width="50%" />
+    </div>
 
 #### 逆向辅助工具
 
 - [iOSOpenDev](http://iosopendev.com) - [Github](https://github.com/kokoabim/iOSOpenDev)
-- [theos](http://iphonedevwiki.net/index.php/Theos/Setup) - 一个越狱开发工具包 ([Github](https://github.com/theos/theos).)
+- [theos](http://iphonedevwiki.net/index.php/Theos/Setup) - 一个越狱开发工具包 ([Github](https://github.com/theos/theos))
 - [class-dump](https://github.com/nygard/class-dump) - Generate Objective-C headers from Mach-O files. 
 - [Clutch](https://github.com/KJCracks/Clutch) - a high-speed iOS decryption tool. It supports the iPhone, iPod Touch, and iPad.
 - [optool](https://github.com/alexzielenski/optool) - Command Line Tool for interacting with MachO binaries on OSX/iOS.
@@ -1142,7 +1153,9 @@ __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
   - [Download Geth](https://geth.ethereum.org/downloads/) - Binary archives are published.
 
 - [web3swift](https://github.com/BANKEX/web3swift) - Elegant Web3js functionality in Swift. Native ABI parsing and smart contract interactions on Ethereum network ([web3.swift-Example](https://github.com/MercuryProtocol/web3.swift-Example) - Example on how to use web3.swift). 
-![](https://user-images.githubusercontent.com/3356474/34412791-5b58962c-ebf0-11e7-8460-5592b12e6e9d.png)
+   <div align=center>
+   <img src="https://user-images.githubusercontent.com/3356474/34412791-5b58962c-ebf0-11e7-8460-5592b12e6e9d.png" width="50%" />
+   </div>
 
 - [web3j](https://github.com/web3j/web3j) - web3j is a lightweight, highly modular, reactive, type safe Java and Android library for working with Smart Contracts and integrating with clients (nodes) on the Ethereum network. 【 [Priview 1](https://github.com/web3j/web3j-docs/blob/master/docs/img/web3j_network.png) 】
 
@@ -1166,18 +1179,39 @@ __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
 ### Flutter和Dart
 
 - [Flutter中文网](https://flutterchina.club) 
-- [Flutter SDK Archive](https://flutter.io/sdk-archive/#macos) 
-- [Dart Packages](https://pub.flutter-io.cn)
-- [Dart2 中文文档](https://www.kancloud.cn/marswill/dark2_document/709087) 
+  - [Flutter文档](https://flutterchina.club/docs/)
+  - [Flutter中文网开源项目](https://flutterchina.club/opensource.html)
+  - [Flutter实战](https://book.flutterchina.club)
+
+- [Flutter SDK releases](https://flutter.dev/docs/development/tools/sdk/releases#macos) - The Stable channel contains the most stable Flutter builds. See [Flutter’s channels](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels) for details.
+
+- [Flutter Samples](https://github.com/flutter/samples) - A collection of Flutter examples and demos.
+
+- [Flutter Documentation](https://flutter.dev/docs)
+
+- [FlutterHub](https://www.flutterhub.cn)
+
+- [Dart packages](https://pub.flutter-io.cn) - Find and use packages to build [Dart↗](https://dart.cn/) and [Flutter↗](https://flutter.cn/) apps.
+
+- [Dart API docs](https://api.flutter.dev) - The API reference herein covers all libraries that are exported by the Flutter SDK.
+
+- [Dart 编程语言中文网](https://www.dartcn.com)
+
+- [简单Dart示例 · Dart2 中文文档 · 看云](https://www.kancloud.cn/marswill/dark2_document/709087) - Dart2 语法、特性的讲解以及一些简单 Dart 示例参考。
+  - *[A tour of the Dart language](https://www.dartlang.org/guides/language/language-tour) - 英文原版参考。*
+
+- [DartPad](https://dartpad.dartlang.org/) - 使用 DartPad 来体验 Dart 语言的更多特性。
 
 ### Flutter Project
 
-- [dart_crypto](https://github.com/dgynfi/dart_crypto) - 🔥集成Base64, MD5, AES, RSA等算法。
+- [dart_crypto](https://github.com/dgynfi/dart_crypto) - 🔥`DYFCryptoProvider`类封装了Base64, 32/16 Bits MD5, AES, RSA等算法，并提供了示例代码。
 
-- [grab_ethtoken_info](https://github.com/dgynfi/grab_ethtoken_info) - 🔥爬取etherscan的一个钱包地址的所有token信息( address, name, balance, symbol, value)，并编写界面进行展示。
+- [grab_ethtoken_info](https://github.com/dgynfi/grab_ethtoken_info) - 🔥 从以太坊区块链 (Ethereum Blockchain) etherscan 上抓取任意一个钱包地址的所有token信息 (Address, Name, Balance, Symbol, Value)，并编写界面进行展示。
 
 - [flutter_study](https://github.com/dgynfi/flutter_study) - Flutter基础，Dart基础，实践教学。
-![](https://raw.githubusercontent.com/luhenchang/IMAGE/master/img_bizhan/WeChat3d4501c5ea03165d48b5270ac7944463.png)
+    <div align=center>
+    <img src="https://raw.githubusercontent.com/luhenchang/IMAGE/master/img_bizhan/WeChat3d4501c5ea03165d48b5270ac7944463.png" width="70%" />
+    </div>
 
 
 ## Weex
@@ -1185,7 +1219,7 @@ __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
 - [Weex](https://github.com/apache/incubator-weex) - A framework for building Mobile cross-platform UI. 
 
 | platform | status |
-| -------- | ------ |
+| :--------: | :------: |
 | Android | [![Download](https://api.bintray.com/packages/alibabaweex/maven/weex_sdk/images/download.svg)](https://bintray.com/alibabaweex/maven/weex_sdk/_latestVersion) |
 | iOS | [![Pod version](https://badge.fury.io/co/WeexSDK.svg)](https://cocoapods.org/pods/WeexSDK) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) |
 | [Mobile Web](https://github.com/weexteam/weex-vue-render) | [![npm version](https://badge.fury.io/js/weex-html5.svg)](https://www.npmjs.com/package/weex-vue-render) |
@@ -1369,7 +1403,7 @@ __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
 
 ### Mix
 
-- [Script](https://github.com/dgynfi/Script) - 编写了 iOS 自动化打包脚本，编写和收集 Shell, Python, Ruby 等其它的实用脚本。(Writes automated packaging scripts for iOS, writes and collects some useful scripts about Shell, Python, Ruby, etc.)
+- [Script](https://github.com/dgynfi/Script) - 编写了 iOS 自动化打包脚本，编写和收集 Shell, Python, Ruby 等一些实用脚本。(Writes automated packaging scripts for iOS, writes and collects some useful scripts about Shell, Python, Ruby, etc.)
 
 ### Shell
 

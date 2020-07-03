@@ -1,8 +1,8 @@
 {
-    "name": "Handsen-blog",
-    "title": "Handsen Blog",
+    "name": "handsen-blog",
+    "title": "Handsen's Blog",
     "version": "1.0.0",
-    "homepage": "http://dgynfi.github.io",
+    "homepage": "blog.handsenteng.com",
     "author": "dyf",
     "devDependencies": {
         "grunt": "~0.4.5",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/dgynfi/dgynfi.github.io"
+        "url": "https://github.com/dgynfi/blog.handsenteng.com"
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
