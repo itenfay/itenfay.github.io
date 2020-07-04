@@ -1,8 +1,8 @@
 ## Handsen's Blog 
 
-#### [我的博客在这里→](https://blog.handsenteng.com)
+#### [我的博客在这里→](https://dgynfi.github.io)
 
-![](https://blog.handsenteng.com/images/handsen-blog.png)
+![](https://dgynfi.github.io/images/hansen-blog.png)
 
 ## 各版本特性
 
@@ -11,13 +11,10 @@
 * `-apple-system`被添加到了字体规则里面了，这套字体格式能将 iOS9 默认的新字体 **San Francisco** 表现的非常漂亮。
 * 解决了代码过长自动换行的 bug , 替换为横向滚动条。
 
-###### 其他历史版本个人觉得没有必要了解，看看英文就行了。
-
-
 ## 支持
 
 * 你可以自由的 fork 。如果你能将我的信息和 github 的地址放在你的页面底部做成链接，我将非常感谢你。
-* 如果你喜欢我的这个博客模板，请在 `blog.handsenteng.com` 这个 repository 点个赞——右上角 **star** 一下。
+* 如果你喜欢我的这个博客模板，请在 `dgynfi.github.io` 这个 repository 点个赞——右上角 **star** 一下。
 
 ## 说明文档
 
@@ -52,9 +49,9 @@
 
 ```
 # Site settings
-title: Handsen's Blog                # 你的博客网站标题
-SEOTitle: Handsen's Blog | 汉森的博客 # 在后面会详细谈到
-description: "Handsen's Blog"        # 随便说点，描述一下
+title: Hansen's Blog                # 你的博客网站标题
+SEOTitle: Hansen's Blog | 汉生的博客 # 在后面会详细谈到
+description: "Hansen's Blog"        # 随便说点，描述一下
 
 # SNS settings      
 github_username: dgynfi           # 你的github账号
@@ -88,7 +85,7 @@ tags: Life
 #### SideBar
 
 长这样:
-![](http://blog.handsenteng.com/images/blog-sidebar.png)
+![](http://dgynfi.github.io/images/blog-sidebar.png)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 ```
@@ -146,7 +143,7 @@ friends: [
 
 HTML5 幻灯片的排版：
 
-![](http://blog.handsenteng.com/image/blog-keynote.png)
+![](http://dgynfi.github.io/image/blog-keynote.png)
 
 这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放 html 幻灯的功能呢~
 
@@ -155,7 +152,7 @@ HTML5 幻灯片的排版：
 ```
 ---
 layout: keynote
-iframe: "http://huangxuan.me/js-module-7day/"
+iframe: "http://hansenteng.com/js-module-7day/"
 ---
 ```
 
@@ -192,7 +189,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'  # Format: UA-xxxxxx-xx
-ga_domain: blog.handsenteng.com
+ga_domain: hansenteng.com
 ```
 
 #### Customization
@@ -214,7 +211,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### SEO Title
 
-我的博客标题是 **“Handsen's Blog”** 但是我想要在搜索的时候显示 **“Handsen's Blog | 汉森的博客”** ，这个就需要SEO Title来定义了。
+我的博客标题是 **“Handsen's Blog”** 但是我想要在搜索的时候显示 **“Hansen's Blog | 汉生的博客”** ，这个就需要SEO Title来定义了。
 
 其实这个SEO Title 就是定义了<head><title>标题</title></head>这个里面的东西和多说分享的标题，你可以自行修改的。
 

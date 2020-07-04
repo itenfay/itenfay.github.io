@@ -19,7 +19,7 @@ const PRECACHE_LIST = [
   "./js/bootstrap.min.js",
   "./js/hux-blog.min.js",
   "./js/snackbar.js",
-  //"./images/icon_wechat.png",
+  "./images/icon_wechat.png",
   "./images/avatar.jpg",
   "./images/home-bg.jpg",
   "./images/404-bg.jpg",
@@ -31,7 +31,7 @@ const PRECACHE_LIST = [
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "handsenteng.com",
+  "hansenteng.com",
   "yanshuo.io",
   "cdnjs.cloudflare.com"
 ]

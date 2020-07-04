@@ -1,13 +1,13 @@
 # Site settings
-title: Handsen's Blog
-SEOTitle: Handsen's Blog | 汉森的博客
+title: Hansen's Blog
+SEOTitle: Hansen's Blog | 汉生的博客
 header-img: images/home-bg.jpg
 email: vinphy.teng@foxmail.com
 maintainer: dyf
 description: ""
 keyword: ""
-url: "https://blog.handsenteng.com" # your host, for absolute URL
-#baseurl: "/" # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://dgynfi.github.io" # your host, for absolute URL
+baseurl: "/" # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 # SNS settings
@@ -57,12 +57,12 @@ kramdown:
 # ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 # ga_track_id: 'UA-49627206-1' # Format: UA-xxxxxx-xx
-# ga_domain: handsenteng.com
+# ga_domain: hansenteng.com
 
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "努力学习奋斗，相信好运藏在努力里。"
+sidebar-about-description: "努力奋斗学习，相信好运藏在努力里。"
 sidebar-avatar: /images/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
