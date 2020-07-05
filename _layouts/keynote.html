@@ -37,7 +37,8 @@ layout: default
                         {% comment %} if page.subtitle {% endcomment %}
                         <h2 class="subheading">{{ page.subtitle }}</h2>
                         {% comment %} endif {% endcomment %}
-                        <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                        <!-- <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span> -->
+                        <span class="meta">| <a href="https://github.com/dgynfi/" title="{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}"> | {{ page.date | date: "%Y-%m-%d" }} |</span>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@ layout: default
                     style="text-align: right"
                     data-thread-key="{{page.id}}" data-title="{{page.title}}"
                     data-images="{{ site.url }}{{site.baseurl}}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
-                    data-content="{{ content | strip_html | truncate:80 }} | Hux Blog，@Hux黄玄 的个人博客"
+                    data-content="{{ content | strip_html | truncate:80 }} | Hansen Blog，@Hansen汉生 的个人博客"
                     data-url="{{site.url}}{{site.baseurl}}{{page.url}}">
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
