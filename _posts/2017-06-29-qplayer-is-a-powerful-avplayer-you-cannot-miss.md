@@ -17,27 +17,27 @@ tag: iOS
 
 ## QQ群 (ID:614799921)
 
-![614799921](https://blog.handsenteng.com/images/qrcode/g614799921.jpg)
+![614799921](https://dgynfi.github.io/images/qrcode/g614799921.jpg)
 
 ## 预览
 
 -  本地视频
 
-![local_videos.png](https://blog.handsenteng.com/images/qplayer/local_videos.png)
+![local_videos.png](https://dgynfi.github.io/images/qplayer/local_videos.png)
 
 - 直播和电视
 
-![ms_live.png](https://blog.handsenteng.com/images/qplayer/ms_live.png)
+![ms_live.png](https://dgynfi.github.io/images/qplayer/ms_live.png)
 
-![live_tv.png](https://blog.handsenteng.com/images/qplayer/live_tv.png)
+![live_tv.png](https://dgynfi.github.io/images/qplayer/live_tv.png)
 
 - 网页视频
 
-![web_videos.png](https://blog.handsenteng.com/images/qplayer/web_videos.png)
+![web_videos.png](https://dgynfi.github.io/images/qplayer/web_videos.png)
 
 - 应用介绍
 
-![app_intro.png](https://blog.handsenteng.com/images/qplayer/app_intro.png)
+![app_intro.png](https://dgynfi.github.io/images/qplayer/app_intro.png)
 
 ## 要求
 

@@ -3,7 +3,7 @@ layout: post
 title: "Github 优秀开源项目大全"
 header-img: "images/opensource/open_source.jpg"
 author: "dgynfi"
-date: 2019-05-15
+date: 2016-07-24
 tag: IT
 ---
 
@@ -12,26 +12,28 @@ tag: IT
 
 既然我们在 GitHub 上做了这么多事情，我们就来思索一下，在 GitHub 上有哪些值得关注学习的开源项目呢？
 
-不知道的没有关系，在这里我汇总了许多 [Github 优秀开源项目](https://github.com/dgynfi/OpenSource) 和主流开发使用的网站、解决问题方案收集以及学习网站或资料以分享给大家，此开源项目指南涵盖了 iOS, Mac OSX, Blockchain, Flutter, Weex, H5, Games, C++, Script 等多个方面的内容，其中，iOS大致包涵以下内容：
+不知道的没有关系，在这里我汇总了许多 [Github 优秀开源项目](https://github.com/dgynfi/OpenSource) 和主流开发使用的网站、解决问题方案收集以及学习网站或资料以分享给大家，此开源项目指南涵盖了 iOS, macOS X, Blockchain, Flutter, Weex, H5, Games, C++, Script 等多个方面的内容，其中，iOS大致包涵以下内容：
 
 - 1、常用第三方库：AFNetworking & Alamofire, SDWebImage, ReactiveCocoa & RxSwift, Masonry & SnapKit, YYKit；
-- 2、支付: 内购 (IAP) , ApplePay 和 第三方支付；
+- 2、支付: 内购（IAP）, ApplePay和第三方支付；
 - 3、播放器: 视频播放器和音乐播放器；
 - 4、IM和直播；
-- 5、图像渲染和绘制 (OpenGLES, Metal, GPUImage, CoreGraphics) ；
+- 5、图像处理和绘制（OpenGL, OpenGLES, Metal, GPUImage, CoreGraphics）；
 - 6、逆向开发；
 - 7、安全攻防和应用加固, 数据安全和算法；
 - 8、导航栏和状态栏；
-- 9、数据持久 (Data Persistence) ；
-- 10、侧边菜单 (Side Menu), 蓝牙, 手势指纹面容 ID 密码解锁, 扫码, 下拉刷新和上拉加载, 指示器, Toast, Menu 和弹出视图, WebView 和进度条, 图片浏览器, 动画, 选择器, 搜索, 分享, 图片验证码, 获取设备相关信息, 广告, Sensor, Privacy, 高仿项目及 Demo 等等。
+- 9、数据持久（Data Persistence）；
+- 10、侧边菜单（Side Menu）, 蓝牙, 手势指纹面容ID密码解锁, 扫码, 下拉刷新和上拉加载, 指示器, Toast, Menu 和弹出视图, WebView 和进度条, 图片浏览器, 动画, 选择器, 搜索, 分享, 图片验证码, 获取设备相关信息, 广告, Sensor, Privacy, 高仿项目及Demo等。
+
+🔥🔥🔥
 
 
 ## Group
 
-|  ID                 |  QRCode                                         | Description                                    |
+|  ID             |  QRCode                                  | Description                             |
 | :-------------: | :--------------------------------------: | :-------------------------------------: |
-|  614799921  | ![614799921](https://blog.handsenteng.com/images/qrcode/g614799921.jpg) | For iOS & Mac technical communication |
-|  155353383  | ![155353383](https://blog.handsenteng.com/images/qrcode/qq155353383.jpg) | For other categories technical communication |
+| 614799921 | ![614799921](https://dgynfi.github.io/images/qrcode/g614799921.jpg)  | Technology communication group for iOS & macOS X |
+| 155353383 | ![155353383](https://dgynfi.github.io/images/qrcode/qq155353383.jpg) | Technology communication group for other development language |
 
 
 ## 目录
@@ -67,8 +69,8 @@ tag: IT
    - [蓝牙](#蓝牙)
    - [手势指纹面容ID密码解锁](#手势指纹面容ID密码解锁)
    - [布局](#布局)
-   - [图像渲染和绘制](#图像渲染和绘制)
-      - [OpenGLES](#OpenGLES)
+   - [图像处理和绘制](#图像处理和绘制)
+      - [OpenGL和OpenGLES](#OpenGL和OpenGLES)
       - [Metal](#Metal)
       - [GPUImage](#GPUImage)
       - [CoreGraphics](#CoreGraphics)
@@ -675,9 +677,11 @@ class MyViewController: UIViewController {
 | [Priview 1](https://github.com/ONECATYU/WSCollectionViewFlowLayout/raw/master/Demo.gif) |
 
 
-### 图像渲染和绘制
+### 图像处理和绘制
 
-#### OpenGLES
+#### OpenGL和OpenGLES
+
+- [goosers·OpenGL](https://github.com/goosers/cube/wiki/OpenGL)
 
 - [Apple OpenGLES Programming Guide](https://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793-CH1-SW1)
 
@@ -686,8 +690,6 @@ class MyViewController: UIViewController {
 - [uwuneng·OpenGLES](https://github.com/uwuneng/OpenGLES)
 
 - [XanderXu·OpenGLESExamples](https://github.com/XanderXu/OpenGLESExamples)
-
-- [goosers·OpenGL](https://github.com/goosers/cube/wiki/OpenGL)
 
 #### Metal
 

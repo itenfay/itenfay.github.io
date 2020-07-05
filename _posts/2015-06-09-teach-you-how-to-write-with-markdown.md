@@ -2,7 +2,7 @@
 layout: post
 title: "手把手教会你用 Markdown 写作"
 author: "dgynfi"
-date: 2019-06-10
+date: 2015-06-09
 tag: tool
 ---
 
@@ -157,4 +157,5 @@ Markdown 的粗体和斜体也非常简单，用两个 * 包含一段文本就�
 以上几种格式是比较常用的格式，所以我针对这些语法做了比较详细的说明。除这些之外，Markdown 还有其他语法，如想了解和学习更多，可以参考这篇[『Markdown 语法说明』](https://guides.github.com/features/mastering-markdown/)。
 
 ## 参考
+
 - [献给写作者的 Markdown 新手指南](https://www.jianshu.com/p/q81RER)

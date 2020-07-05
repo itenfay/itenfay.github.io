@@ -47,7 +47,7 @@ vii. 更新快
 
 ## QQ群 (ID:614799921)
 
-![614799921](https://blog.handsenteng.com/images/qrcode/g614799921.jpg)
+![614799921](https://dgynfi.github.io/images/qrcode/g614799921.jpg)
 
 ## 预览
 
@@ -878,9 +878,9 @@ Hook 的版本只需要按照解压 ipa (Unzip ipa)，重签名应用 (Resign ap
 
 可以将动态库 **wapleodtcorexpc** 和 **waplesubstrate** 修改自己想要的名字，只需要将 **wapleodtcorexpc** 工程名和 **Makefile、control、xxx.plist** 文件内的部分信息一并修改，然后从步骤 **编译 tweak 项目 (Compile Tweak Project)** 重新开始操作。
 
-## 我的简书
+## 简书
 
-- [iOS逆向 -- 实现微信自动抢红包-伪定位-防撤回消息 (非越狱)](https://www.jianshu.com/p/8fa5f61af3e4)
+- [iOS逆向 - 实现微信自动抢红包-伪定位-防撤回消息 (非越狱)](https://www.jianshu.com/p/8fa5f61af3e4)
 
 ## 参考文章
 
