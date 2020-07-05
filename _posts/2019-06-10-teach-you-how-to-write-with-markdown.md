@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "手把手教会你用 Markdown 写作"
-author: "dyf"
+author: "dgynfi"
 date: 2019-06-10
 tag: tool
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "iOS 定制自己的直播/音视频播放器 QPlayer"
 header-img: "images/qplayer/post-bg-qplayer.png"
-author: "dyf"
+author: "dgynfi"
 date: 2017-06-29
 tag: iOS
 ---

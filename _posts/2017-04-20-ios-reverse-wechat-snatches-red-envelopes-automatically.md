@@ -2,7 +2,7 @@
 layout: post
 title: "iOS逆向 - 实现微信自动抢红包-伪定位-防撤回消息 (非越狱)"
 header-img: "images/post-bg-wechat-tweak.jpg"
-author: "dyf"
+author: "dgynfi"
 date: 2017-04-20
 tag: iOSre
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "消除 iOS 代码中的警告"
-author: "dyf"
+author: "dgynfi"
 date: 2019-06-22
 tag: iOS
 ---
