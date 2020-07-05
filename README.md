@@ -3,7 +3,7 @@
 
 #### [我的博客在这里→](https://dgynfi.github.io)
 
-![](https://dgynfi.github.io/images/hansen-blog.png)
+![](https://github.com/dgynfi/dgynfi.github.io/raw/master/images/hansen-blog.png)
 
 
 ## 各版本特性
@@ -92,7 +92,7 @@ tags: Life
 #### SideBar
 
 长这样:
-![](http://dgynfi.github.io/images/blog-sidebar.png)
+![](https://github.com/dgynfi/dgynfi.github.io/raw/master/images/blog-sidebar.png)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 ```
@@ -151,7 +151,7 @@ friends: [
 
 HTML5 幻灯片的排版：
 
-![](http://dgynfi.github.io/images/blog-keynote.png)
+![](https://github.com/dgynfi/dgynfi.github.io/raw/master/images/blog-keynote.png)
 
 这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放 html 幻灯的功能呢~
 
