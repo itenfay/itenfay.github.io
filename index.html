@@ -21,7 +21,8 @@ description: "问渠那得清如许？为有源头活水来"
     <div class="post-meta">
         <div style="float: left;margin-top: 8px;">
         <!-- Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }} -->
-        {{ post.date | date: "%B %-d, %Y" }}
+        <!-- {{ post.date | date: "%B %-d, %Y" }} -->
+        {{ post.date | date: "%Y-%m-%d" }}
         </div>
 
         {% if post.tag %}
