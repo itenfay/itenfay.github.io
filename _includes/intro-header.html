@@ -43,7 +43,8 @@
                     <h1>{{ page.title }}</h1>
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                    <!-- <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span> -->
+                    <span class="meta">| <a href="https://github.com/dgynfi/" title="{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}"> | {{ page.date | date: "%Y-%m-%d" }} |</span>
                 </div>
             </div>
         </div>
@@ -81,8 +82,9 @@
                     <h1>{{ page.title }}</h1>
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}
-                        on {{ page.date | date: "%B %-d, %Y" }}</span>
+                    <!-- <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}
+                        on {{ page.date | date: "%B %-d, %Y" }}</span> -->
+                    <span class="meta">| <a href="https://github.com/dgynfi/" title="{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}"> | {{ page.date | date: "%Y-%m-%d" }} |</span>
                 </div>
             </div>
         </div>
