@@ -8,15 +8,15 @@ tag: iOS
 ---
 
 
-在 Github 上，我发现很多开源库的 README 里都有 gif 文件，平时聊天我也发现经常有些小伙伴发一些自制的 gif 文件。怎么将 mov，mp4 等其他格式的文件转为 gif 文件呢？网上有很多介绍各种软件的，大家可以去搜索一下。
+在 Github 上，我发现很多开源库的 README 里都有 gif 文件，平时聊天我也发现经常有些小伙伴发一些自制的 gif 文件。怎么将 mov，mp4 等其他视频格式的文件转为 gif 文件呢？网上有很多介绍各种软件的，大家可以去搜索一下。
 
-我今天给大家讲讲怎么用 **终端+命令行** 的方式实现 mov/mp4 等其他视频格式转成 gif 文件。
+今天我给大家讲讲怎么用 **终端+命令行** 的方式实现 mov/mp4 等其他视频格式转成 gif 文件。
 
-### 安装
+## 安装
 
 在执行转换命令之前，我们得先安装几个软件包。
 
-#### Homebrew
+### Homebrew
 
 如果你已经装好了 [Homebrew](https://www.jianshu.com/p/de6f1d2d37bf)，就当没看见这一步。否则把下面两行脚本粘贴到你的终端，并执行。首先：
 
@@ -32,7 +32,7 @@ xcode-select --install
 
 等待，不出意外的话，Homebrew 就装好了。
 
-#### gifify
+### gifify
 
 接下来就要安装真正的主角了。
 
@@ -42,19 +42,19 @@ xcode-select --install
 brew install node
 ```
 
-其次，安装 [FFmpeg](https://link.jianshu.com?t=http%3A%2F%2Fffmpeg.org%2F)
+其次，安装 [FFmpeg](https://ffmpeg.org)
 
 ```
 brew install ffmpeg
 ```
 
-然后，安装 [convert](https://link.jianshu.com?t=http://www.imagemagick.org/script/convert.php)
+然后，安装 [convert](http://www.imagemagick.org/script/convert.php)
 
 ```
 brew install imagemagick
 ```
 
-再安装 [giflossy](https://link.jianshu.com?t=https://github.com/kornelski/giflossy/)
+再安装 [giflossy](https://github.com/kornelski/giflossy/)
 
 ```
 brew install giflossy
@@ -95,7 +95,7 @@ Options:
   -h, --help              output usage information
 ```
 
-#### 简单使用
+## 简单使用
 
 进入到你要转换文件的目录下，比如我的 mov 文件放在文档目录，执行
 
@@ -109,7 +109,7 @@ cd ~/Documents/
 gifify ru.mov -o ru.gif
 ```
 
-#### 使用 ffmpeg 转换
+## 使用 ffmpeg 转换
 
 - 将视频 MP4 转化为 GIF
 
@@ -163,6 +163,7 @@ ffmpeg -i input.mov -r 16 -filter:v "setpts=0.125*PTS" -an output.mov
 ```
 
 - 慢倍速播放视频
+
 ```
 ffmpeg -i input.mov -filter:v "setpts=2.0*PTS" output.mov
 ```
@@ -175,6 +176,7 @@ ffmpeg -i input.mov -an mute-output.mov
 ```
 
 - 视频提取帧
+
 ```
 # 将视频提取10帧
 ffmpeg -i index.mp4 -r 10 %03d.jpg;
