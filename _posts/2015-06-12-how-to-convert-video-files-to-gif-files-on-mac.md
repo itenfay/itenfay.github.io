@@ -4,7 +4,7 @@ title: "怎么在 Mac 上将视频文件转成 gif 文件？"
 header-img: "images/workenv-bg.jpg"
 author: "dgynfi"
 date: 2015-06-12
-tag: iOS
+tag: cmd
 ---
 
 
@@ -111,78 +111,78 @@ gifify ru.mov -o ru.gif
 
 ## 使用 ffmpeg 转换
 
-- 将视频 MP4 转化为 GIF
+**1. 将视频 MP4 转化为 GIF**
 
 ```
 ffmpeg -i small.mp4 small.gif
 ```
 
-- 将视频 MP4 指定宽高和帧率转化为 GIF
+**2. 将视频 MP4 指定宽高和帧率转化为 GIF**
 
 ```
 ffmpeg -i small.mp4 -s 414x736 -r 15 small.gif
 ```
 
-- 将视频中的一部分转换为 GIF
+**3. 将视频中的一部分转换为 GIF**
 
 ```
 # 从视频中第二秒开始，截取时长为3秒的片段转化为 gif
 ffmpeg -t 3 -ss 00:00:02 -i small.mp4 small-clip.gif
 ```
 
-- 转化高质量 GIF
+**4. 转化高质量 GIF**
 
 ```
 # 默认转化是中等质量模式，若要转化出高质量的 gif，可以修改比特率
 ffmpeg -i small.mp4 -b 2048k small.gif
 ```
 
-- 将 GIF 转化为 MP4
+**5. 将 GIF 转化为 MP4**
 
 ```
 ffmpeg -f gif -i animation.gif animation.mp4
 ```
 
-- 将 Gif 转为其他视频格式
+**6. 将 Gif 转为其他视频格式**
 
 ```
 ffmpeg -f gif -i animation.gif animation.mpeg
 ffmpeg -f gif -i animation.gif animation.webm
 ```
 
-- 加倍速播放视频
+**7. 加倍速播放视频**
 
 ```
 ffmpeg -i input.mov -filter:v "setpts=0.5*PTS" output.mov
 ```
 
-- 定义帧率 16fps:
+**8. 定义帧率 16fps**
 
 ```
 ffmpeg -i input.mov -r 16 -filter:v "setpts=0.125*PTS" -an output.mov
 ```
 
-- 慢倍速播放视频
+**9. 慢倍速播放视频**
 
 ```
 ffmpeg -i input.mov -filter:v "setpts=2.0*PTS" output.mov
 ```
 
-- 静音视频（移除视频中的音频）
+**10. 静音视频（移除视频中的音频）**
 
 ```
 # -an 就是禁止音频输出
 ffmpeg -i input.mov -an mute-output.mov
 ```
 
-- 视频提取帧
+**11. 视频提取帧**
 
 ```
 # 将视频提取10帧
 ffmpeg -i index.mp4 -r 10 %03d.jpg;
 ```
 
-- 主要参数
+**12. 主要参数**
 
 ```
 -i——设置输入档名。
@@ -212,8 +212,8 @@ ffmpeg -i index.mp4 -r 10 %03d.jpg;
 
 #### 参考链接
 
-- [Homebrew](https://link.jianshu.com?t=http%3A%2F%2Fbrew.sh%2Findex_zh-cn.html)
-- [FFmpeg](https://link.jianshu.com?t=http%3A%2F%2Fffmpeg.org%2F)
-- [convert](https://link.jianshu.com?t=http%3A%2F%2Fwww.imagemagick.org%2Fscript%2Fconvert.php)
-- [pornel/giflossy](https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fpornel%2Fgiflossy%2Freleases)
-- [vvo/gifify](https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fvvo%2Fgifify)
+- [Homebrew](http://brew.sh/index_zh-cn.html)
+- [FFmpeg](https://ffmpeg.org/)
+- [convert](http://www.imagemagick.org/script/convert.php)
+- [pornel/giflossy](https://github.com/kornelski/giflossy/releases)
+- [vvo/gifify](https://github.com/vvo/gifify)
