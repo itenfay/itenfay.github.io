@@ -4,7 +4,7 @@ title: "怎么在 Mac 上将视频文件转成 gif 文件？"
 header-img: "images/workenv-bg.jpg"
 author: "dgynfi"
 date: 2015-06-12
-tag: cmd
+tag: CMD
 ---
 
 
