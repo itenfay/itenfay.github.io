@@ -12,7 +12,7 @@ tag: iOS
 
 ## 一、什么是 CocoaPods
 
-每种语言发展到一个阶段，就会出现相应的依赖管理工具，例如 Java 语言的 Maven，nodejs 的 npm。随着 iOS 开发者的增多，业界也出现了为 iOS 程序提供依赖管理的工具，它的名字叫做：CocoaPods。CocoaPods项目的源码在 Github 上管理。该项目开始于 2011 年 8 月 12 日，经过多年发展，现在已经成为 iOS 开发的依赖管理标准工具。开发 iOS 项目不可避免地要使用第三方开源库，CocoaPods 的出现使得我们可以节省设置和更新第三方开源库的时间。
+每种语言发展到一个阶段，就会出现相应的依赖管理工具，例如 Java 语言的 Maven，nodejs 的 npm。随着 iOS 开发者的增多，业界也出现了为 iOS 程序提供依赖管理的工具，它的名字叫做：CocoaPods。CocoaPods 项目的源码在 Github 上管理。该项目开始于 2011 年 8 月 12 日，经过多年发展，现在已经成为 iOS 开发的依赖管理标准工具。开发 iOS 项目不可避免地要使用第三方开源库，CocoaPods 的出现使得我们可以节省设置和更新第三方开源库的时间。
 
 
 ## 二、为什么要使用 CocoaPods
@@ -236,12 +236,15 @@ pod init
 open -e Podfile
 ```
 
-添加和修改：
+添加或者修改：
 
 ```
-platform :ios, '8.0' # (注明你的开发平台以及版本，'8.0'忽略不写即为最新版本)
+platform :ios, '8.0' # 注明你的开发平台以及版本，'8.0'忽略不写即为最新版本
 
-pod 'DYFCodeScanner', '~> 1.0.1' # ('~> 1.0.1'为版本号，忽略不写即为最新版本)
+target 'TestMj' do
+    # use_frameworks!
+    pod 'DYFCodeScanner', '~> 1.0.1' # '~> 1.0.1'为版本号，忽略不写即为最新版本
+end
 ```
 
 一个 QPlayer 项目的 Podfile 文件的完整格式，例如：
@@ -299,7 +302,7 @@ pod --version
 
 ### 如何使用 CocoaPods 的镜像索引？
 
-所有项目的 Podspec 文件都托管在[https://github.com/CocoaPods/Specs](https://github.com/CocoaPods/Specs)，第一次执行 pod setup 时，CocoaPods 会将这些 podspec 索引文件更新到本地的 ~/.cocoapods 目录下，这个索引文件比较大，所以第一次更新时非常慢，友好人士在国内的服务器建立了 Cocoapods 索引库的镜像，所以执行索引跟新操作时候会快很多，具体操作方法如下：
+所有项目的 Podspec 文件都托管在 [https://github.com/CocoaPods/Specs](https://github.com/CocoaPods/Specs)，第一次执行 pod setup 时，CocoaPods 会将这些 podspec 索引文件更新到本地的 ~/.cocoapods 目录下，这个索引文件比较大，所以第一次更新时非常慢，友好人士在国内的服务器建立了 Cocoapods 索引库的镜像，所以执行索引跟新操作时候会快很多，具体操作方法如下：
 
 ```
 pod repo remove master
@@ -307,5 +310,5 @@ pod repo add master https://gitee.com/akuandev/specs.git
 pod repo update
 ```
 
-这是使用 oschina 上的镜像，将以上代码中的 [https://gitee.com/akuandev/specs.git](https://gitee.com/akuandev/specs.git)  替换成[https://gitcafe.com/akuandev/specs.git](https://gitcafe.com/akuandev/specs.git)，即可使用 gitcafe 上的镜像。
+这是使用 oschina 上的镜像，将以上代码中的 [https://gitee.com/akuandev/specs.git](https://gitee.com/akuandev/specs.git)  替换成 [https://gitcafe.com/akuandev/specs.git](https://gitcafe.com/akuandev/specs.git)，即可使用 gitcafe 上的镜像。
 
