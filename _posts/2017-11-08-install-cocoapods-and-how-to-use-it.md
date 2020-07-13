@@ -3,7 +3,7 @@ layout: post
 title: "安装 CocoaPods 及使用详解"
 author: "dgynfi"
 date: 2017-11-08
-tag: iOS
+tag: tool
 ---
 
 
