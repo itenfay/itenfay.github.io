@@ -14,7 +14,7 @@ tag: CMD
 
 ## 一、Trunk
 
-1. 注册 Trunk
+1、注册 Trunk
 
 ```
 pod trunk register root921108@163.com 'root' --description='macOS Catalina' --verbose
@@ -27,7 +27,7 @@ pod trunk register root921108@163.com 'root' --description='macOS Catalina' --ve
 
 在注册成功后，你需要在注册时填写的邮箱里确认 trunk 账号信息，点击链接确认完成后，这样才能使用 trunk。
 
-2. 查看 Trunk
+2、查看 Trunk
 
 ```
 pod trunk me
@@ -61,14 +61,14 @@ $ pod trunk me
     - May 9th, 12:04 - December 31st, 05:26. IP: 115.171.171.74 Description: Mojave
 ```
 
-3. 添加/移除其他 Pods 维护者
+3、添加/移除其他 Pods 维护者
 
 ```
 pod trunk add-owner 公共库名 root921108@163.com #公共库名，email
 pod trunk remove-owner 公共库名 root921108@163.com #公共库名，email
 ```
 
-4. 查看某个 Pods 信息
+4、查看某个 Pods 信息
 
 ```
 pod trunk info DYFToast
@@ -87,7 +87,7 @@ DYFToast
 
 ## 二、通过 Trunk 发布 Pods 到 CocoaPods
 
-1. 公开库 DYFToast 发布到 Github 上，创建 LICENSE 文件，并打上 tag 版本号
+1、公开库 DYFToast 发布到 Github 上，创建 LICENSE 文件，并打上 tag 版本号
 
 ```
 cd ~/Documents/GitHub/DYFToast/
@@ -103,7 +103,7 @@ git tag
 
 ![](https://dgynfi.github.io/images/pod/push_tag.png)
 
-2. 在 DYFToast 项目目录下，创建 podspec 文件
+2、在 DYFToast 项目目录下，创建 podspec 文件
 
 ```
 pod spec create DYFToast
@@ -111,7 +111,7 @@ pod spec create DYFToast
 
 ![](https://dgynfi.github.io/images/pod/create_podspec.png)
 
-3. 配置 podspec 文件信息
+3、配置 podspec 文件信息
 
 ```
 Pod::Spec.new do |s|
@@ -144,7 +144,7 @@ podspec 文件介绍在这里不再叙述，推荐文章：
 - [《简书 - podspec文件介绍》](https://www.jianshu.com/p/a23397065e40)
 - [《简书 - podspec文件解析》](https://www.jianshu.com/p/9eea3e7cb3a1)
 
-4. 校验 podspec 文件
+4、校验 podspec 文件
 
 ```
 pod spec lint DYFToast.podspec --allow-warnings
@@ -152,7 +152,7 @@ pod spec lint DYFToast.podspec --allow-warnings
 
 ![](https://dgynfi.github.io/images/pod/spec_lint.png)
 
-5. 发布到 Trunk
+5、发布到 Trunk
 
 ```
 pod trunk push DYFToast.podspec --allow-warnings
@@ -160,7 +160,7 @@ pod trunk push DYFToast.podspec --allow-warnings
 
 ![](https://dgynfi.github.io/images/pod/lib_published.png)
 
-6. 更新 pod 库，并删除 pod 搜索索引
+6、更新 pod 库，并删除 pod 搜索索引
 
 ```
 pod setup
@@ -169,11 +169,11 @@ rm ~/Library/Caches/CocoaPods/search_index.json
 
 ![](https://dgynfi.github.io/images/pod/setup.png)
 
-7. 认领 Pod
+7、认领 Pod
 
 [Claim your Pod](https://trunk.cocoapods.org/claims/new)
 
-8. 搜索验证
+8、搜索验证
 
 ```
 pod search DYFToast
@@ -194,7 +194,7 @@ pod trunk deprecate DYFToast #将 pods 设置为过期
 
 ## 四、小技巧
 
-1. Unable to find a pod with name, author, summary, or description matching 'xxx'
+1、Unable to find a pod with name, author, summary, or description matching 'xxx'
 
 说明：
 
@@ -204,7 +204,7 @@ pod trunk deprecate DYFToast #将 pods 设置为过期
 
 > 输入指令：rm ~/Library/Caches/CocoaPods/search_index.json，完成即可重新搜索。
 
-2. CocoaPods was not able to update the `master` repo. If this is an unexpected issue and persists you can inspect it running `pod repo update --verbose`
+2、CocoaPods was not able to update the `master` repo. If this is an unexpected issue and persists you can inspect it running `pod repo update --verbose`
 
 其实刚看到这个问题，我是比较懵逼的，不过这句话其实已经告诉你了解决办法：-->> 更新本地库。
 
