@@ -1,6 +1,11 @@
+# User-specific files
 _site
 node_modules
+
+# Shell
+*.sh
+
+# Mac crap
 .DS_Store
 */.DS_Store
 */*/.DS_Store
-*.sh
