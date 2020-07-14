@@ -31,7 +31,7 @@ const PRECACHE_LIST = [
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "hansenteng.com",
+  "hansenteng.me",
   "yanshuo.io",
   "cdnjs.cloudflare.com"
 ]
@@ -241,6 +241,7 @@ function sendMessageToClientsAsync(msg) {
     sendMessageToAllClients(msg)
   }, 1000)
 }
+
 
 /**
  * if content modified, we can notify clients to refresh
