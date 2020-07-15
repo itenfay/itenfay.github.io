@@ -40,12 +40,18 @@
                         <a class="tag" href="{{ site.baseurl }}/archive/?tag={{ tag | url_encode }}" title="{{ tag }}">{{ tag }}</a>
                         {% endfor %}
                     </div>
-                    <!-- <h1>{{ page.title }}</h1> -->
-                    <h2>{{ page.title }}</h2>
+                    <!-- 
+                        <h1>{{ page.title }}</h1> 
+                    -->
+                    <h3>{{ page.title }}</h3>
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
-                    <!-- <h2 class="subheading">{{ page.subtitle }}</h2> -->
-                    <h3 class="subheading">{{ page.subtitle }}</h3>
-                    <!-- <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span> -->
+                    <!-- 
+                        <h2 class="subheading">{{ page.subtitle }}</h2> 
+                    -->
+                    <h4 class="subheading">{{ page.subtitle }}</h4>
+                    <!-- 
+                        <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span> 
+                    -->
                     <span class="meta">| <a href="https://github.com/dgynfi" title="dgynfi">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</a> | {{ page.date | date: "%Y-%m-%d" }} |</span>
                 </div>
             </div>
@@ -76,16 +82,26 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <!-- <div class="tags">
+                    <!-- 
+                    <div class="tags">
                         {% for tag in page.tags %}
                         <a class="tag" href="{{ site.baseurl }}/archive/?tag={{ tag | url_encode }}" title="{{ tag }}">{{ tag }}</a>
                         {% endfor %}
-                    </div> -->
-                    <h1>{{ page.title }}</h1>
+                    </div> 
+                    -->
+                    <!-- 
+                        <h1>{{ page.title }}</h1> 
+                    -->
+                    <h2>{{ page.title }}</h2>
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    <!-- <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}
-                        on {{ page.date | date: "%B %-d, %Y" }}</span> -->
+                    <!-- 
+                        <h2 class="subheading">{{ page.subtitle }}</h2> 
+                    -->
+                    <h3 class="subheading">{{ page.subtitle }}</h3>
+                    <!-- 
+                        <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}
+                        on {{ page.date | date: "%B %-d, %Y" }}</span> 
+                    -->
                     <span class="meta">| <a href="https://github.com/dgynfi" title="dgynfi">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</a> | {{ page.date | date: "%Y-%m-%d" }} | 
                     <span class="tags">
                         {% for tag in page.tags %}
@@ -110,8 +126,13 @@
         {% else %}
         <div class="site-heading">
         {% endif %}
-            <h1>{% if page.title %}{{ page.title }}{% endif %}</h1>
-            <!-- <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1> -->
+            <!-- 
+                <h1>{% if page.title %}{{ page.title }}{% endif %}</h1> 
+            -->
+            <h2>{% if page.title %}{{ page.title }}{% endif %}</h2>
+            <!-- 
+                <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1> 
+            -->
             <span class="subheading">{{ page.description }}</span>
         </div>
       </div>
