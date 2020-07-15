@@ -9,6 +9,7 @@ header-img: "images/office-bg.jpg"
 Credits: this page shamelessly borrowed a lot from:
 https://github.com/kitian616/jekyll-TeXt-theme
 -->
+
 <!-- Page Header -->
 {% include intro-header.html type='page' short=true %}
 
@@ -16,12 +17,11 @@ https://github.com/kitian616/jekyll-TeXt-theme
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
 			<!-- Tags (as filter) -->
 			<div id='tag_cloud' class="tags tags-sup js-tags">
-				<!-- 
-					<a class="tag-button--all" data-encode=""> 
-				-->
-				<a class="tag-button" data-encode="">
+				 
+				<a class="tag-button--all" data-encode=""> 
 					Show All
 					<sup>{{site.posts.size}}</sup>
 				</a>
@@ -37,22 +37,17 @@ https://github.com/kitian616/jekyll-TeXt-theme
 				</a>
 				{% endfor %}
 				{% endcapture %}
-				<!--
-					{{ tags | split:'</a>' | sort | join:'</a>' }} 
-				-->
-        		<!-- {{ tags | split:'</a>' | sort | join:'</a>' }} -->
+
+        		{{ tags | split:'</a>' | sort | join:'</a>' }}
 			</div>
 
             <!-- Article List -->
-            <!-- 
-            	<div class="mini-post-list js-result d-none">
-            -->
+            <!-- <div class="mini-post-list js-result d-none"> -->
 			<div class="mini-post-list js-result one-tag-list">
-			
+
 			{%- assign _sorted_list = site.posts -%}
 			{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
 			{%- assign _sorted_list = _sorted_list | reverse -%}
-
 
 			{%- for _article in _sorted_list -%}
 				{%- assign _tags = '' -%}
@@ -90,6 +85,7 @@ https://github.com/kitian616/jekyll-TeXt-theme
 					<hr>
 				</div>
 			{% endfor %}
+			
 		</div>
 	</div>
 </div>
