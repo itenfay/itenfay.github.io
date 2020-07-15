@@ -11,7 +11,7 @@ header-img: "images/tag-bg.jpg"
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading" id="tag-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <h2>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h2>
                     <span class="subheading">{{ page.description }}</span>
                 </div>
             </div>
@@ -24,7 +24,8 @@ header-img: "images/tag-bg.jpg"
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <!-- 标签云 -->
-			<div id='tag_cloud' class="tags">
+            <!-- <div id='tag_cloud' class="tags"> -->
+			<div class="tags">
 				{% for tag in site.tags %}
 				<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 				{% endfor %}
@@ -37,10 +38,12 @@ header-img: "images/tag-bg.jpg"
                     <span class="tag-text">{{ tag[0] }}</span>
                 </span>
 				{% for post in tag[1] %}
-				  <!-- <li class="listing-item">
+				<!-- 
+				  <li class="listing-item">
 				  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 				  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-				  </li> -->
+				  </li> 
+				-->
 				 <div class="post-preview">
 				    <a href="{{ post.url | prepend: site.baseurl }}">
 				        <h4 class="post-title">
