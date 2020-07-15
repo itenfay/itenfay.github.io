@@ -122,8 +122,6 @@ pod 'DYFToast'
 
 ## 最后
 
-附上 DYFToast 项目地址，觉得还行呢，麻烦顺手给个star。对开发实现 Toast 或者喜欢研究的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
-
-DYFToast =>【[https://github.com/dgynfi/DYFToast](https://github.com/dgynfi/DYFToast)】
+附上 DYFToast [项目地址](https://github.com/dgynfi/DYFToast)，觉得还行呢，麻烦顺手给个star。对开发实现 Toast 或者喜欢研究的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
 
 支持 Pods，在 Podfile 文件中添加：pod 'DYFToast'。

@@ -7,7 +7,7 @@ date: 2017-06-29
 tag: iOS
 ---
 
-`QPlayer`是一款你不容错过的强大的音视频播放器，支持 `M4V、WMV、MP4、MOV、AVI、MKV、MPEG、MPG、FLV、RM、RMVB、MP3` 等主流媒体格式。输入任何 `HTTP、RTMP、RTSP、HLS` 地址播放网络流或直播。`QPlayer` 使用了 `ffmpeg`，支持 `WiFi` 文件传输。聚合了多个直播、视频和短视频平台，可在线观看直播、视频和短视频。
+`QPlayer`是一款你不容错过的强大的音视频播放器，支持 M4V、WMV、MP4、MOV、AVI、MKV、MPEG、MPG、FLV、RM、RMVB、MP3 等主流媒体格式。输入任何 HTTP、RTMP、RTSP、HLS 地址播放网络流或直播。`QPlayer`使用了 ffmpeg，支持 WiFi 文件传输。聚合了多个直播、视频和短视频平台，可在线观看直播、视频和短视频。
 
 ## 免责声明
 
@@ -21,21 +21,21 @@ tag: iOS
 
 ## 预览
 
--  本地视频
+**1. 本地视频**
 
 ![local_videos.png](https://dgynfi.github.io/images/qplayer/local_videos.png)
 
-- 直播和电视
+**2. 直播和电视**
 
 ![ms_live.png](https://dgynfi.github.io/images/qplayer/ms_live.png)
 
 ![live_tv.png](https://dgynfi.github.io/images/qplayer/live_tv.png)
 
-- 网页视频
+**3. 网页视频**
 
 ![web_videos.png](https://dgynfi.github.io/images/qplayer/web_videos.png)
 
-- 应用介绍
+**4. 应用介绍**
 
 ![app_intro.png](https://dgynfi.github.io/images/qplayer/app_intro.png)
 
@@ -101,6 +101,5 @@ PS：建议使用PC浏览器（ Safari [Mac], Microsoft Edge [Win10], Google Chr
 
 ## 最后
 
-附上 `QPlayer` 源码地址，觉得还行呢，麻烦顺手给个`star`。适配了深色模式，在 App 设置里添加深色与浅色模式切换开关，开启后会自动跟随系统设置。喜欢 `iOS` 音视频开发的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路！！！
+附上 QPlayer [源码地址](https://github.com/dgynfi/QPlayer)，觉得还行呢，麻烦顺手给个`star`。适配了深色模式，在 App 设置里添加深色与浅色模式切换开关，开启后会自动跟随系统设置。喜欢 `iOS` 音视频开发的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
 
-源码地址 =>【[https://github.com/dgynfi/QPlayer](https://github.com/dgynfi/QPlayer)】
