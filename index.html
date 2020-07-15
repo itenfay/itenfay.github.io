@@ -7,13 +7,13 @@ description: "问渠那得清如许？为有源头活水来"
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
+        <h3 class="post-title">
             {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
         </h3>
+        {% if post.subtitle %}
+        <h4 class="post-subtitle">
+            {{ post.subtitle }}
+        </h4>
         {% endif %}
         <div class="post-content-preview">
             {{ post.content | strip_html | truncate:200 }}
@@ -38,6 +38,7 @@ description: "问渠那得清如许？为有源头活水来"
 </div>
 <hr>
 {% endfor %}
+
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
