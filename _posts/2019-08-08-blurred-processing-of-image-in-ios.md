@@ -9,7 +9,7 @@ tag: iOS
 
 在 iOS 开发中，我们经常会遇到给图像添加蒙版、模糊效果或者毛玻璃处理，为了提高开发效率和方便各位小伙伴使用，我专门写一个 `DYFBlurEffect` 类。
 
-我们使用 `DYFBlurEffect` 可以快速实现模糊图像，并支持系统UIVisualEffectView。
+我们使用 `DYFBlurEffect` 可以快速实现模糊图像，并支持系统 UIVisualEffectView。
 
 接下来一起阅读它的使用说明：
 
@@ -62,6 +62,6 @@ blurView.frame = self.imgView.bounds;
 
 ## 最后
 
-附上 DYFBlurEffect [项目地址](https://github.com/dgynfi/DYFBlurEffect)，觉得还行呢，麻烦顺手给个star。对开发实现图像的模糊处理功能的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
+附上 `DYFBlurEffect` 项目地址：[https://github.com/dgynfi/DYFBlurEffect](https://github.com/dgynfi/DYFBlurEffect)，觉得还行呢，麻烦顺手给个star。对开发实现图像的模糊处理功能的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
 
 支持 Pods，在 Podfile 文件中添加：pod 'DYFBlurEffect'。
