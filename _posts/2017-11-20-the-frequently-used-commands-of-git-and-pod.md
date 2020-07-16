@@ -137,8 +137,9 @@ pod trunk deprecate xxx #将某个pod 失效
 ```
 
 
-## 强烈推荐阅读！！！
+## 强烈推荐阅读
 
-1. [《 Git 教程 | 菜鸟教程 》](https://link.jianshu.com?t=https://www.runoob.com/git/git-tutorial.html)
-2. [《 入门教程 | Git基础 》](https://link.jianshu.com?t=https://git-scm.com/book/zh/v1/Git-基础)
-3. [《 Git教程 | 易百教程  》](https://link.jianshu.com?t=https://www.yiibai.com/git)
+1、[《 Git 教程 | 菜鸟教程 》](https://link.jianshu.com?t=https://www.runoob.com/git/git-tutorial.html)
+2、[《 入门教程 | Git基础 》](https://link.jianshu.com?t=https://git-scm.com/book/zh/v1/Git-基础)
+3、[《 Git教程 | 易百教程  》](https://link.jianshu.com?t=https://www.yiibai.com/git)
+
