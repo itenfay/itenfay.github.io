@@ -96,7 +96,7 @@ III) 填写联系信息
 
 ---
 
-最后，想了解更多详情：请查看我的 demo，记得给个 Star，😝😝
+最后，想了解更多详情，请查看我的 Demo，记得给个 Star，😝😝
 
-demo ( Objective-C )：[戳这里](https://github.com/dgynfi/DYFStoreKit) <br >
-demo ( Swift )：[戳这里](https://github.com/dgynfi/DYFStore)
+Demo ( Objective-C )：[戳这里](https://github.com/dgynfi/DYFStoreKit) <br >
+Demo ( Swift )：[戳这里](https://github.com/dgynfi/DYFStore)
