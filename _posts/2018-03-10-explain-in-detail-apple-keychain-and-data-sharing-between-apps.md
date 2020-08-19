@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "详解 Apple Keychain 和 App 之间数据共享"
-header-img: "images/keychain/keychain_services.png"
+title: "详解 Keychain 和 App 之间数据共享"
 author: "dgynfi"
 date: 2018-03-10
 tag: iOS
 ---
 
+![](https://dgynfi.github.io/images/keychain/keychain_services.png)
 
 ## Keychain 介绍
 
-Keychain Services 是 macOS 和 iOS 都提供一种安全地存储敏感信息的工具，比如：”网络密码：用于保存访问服务器或者网站，通用密码：用来保存应用程序或者数据库密码“。与此同时，用于认证的证书、密钥和身份信息，也可以存储在 Keychain 中。Keychain Services 的安全机制保证了存储这些敏感信息不会被窃取。简单说来，Keychain 就是一个安全容器。另附 [Keychain Services | Apple Developer Documentation](https://developer.apple.com/documentation/security/keychain_services)。
+Keychain Services 是 macOS 和 iOS 都提供一种安全地存储敏感信息的工具，比如：“网络密码：用于保存访问服务器或者网站，通用密码：用来保存应用程序或者数据库密码”。与此同时，用于认证的证书、密钥和身份信息，也可以存储在 Keychain 中。Keychain Services 的安全机制保证了存储这些敏感信息不会被窃取。简单说来，Keychain 就是一个安全容器。另附 *[Keychain Services - Apple Developer Documentation](https://developer.apple.com/documentation/security/keychain_services)*。
 
 *PS: 在 iOS 中 Keychian 依赖用于签名的 provisioning profile 描述文件，确保发布不同版本的时候，使用同一个 provisioning profile 文件。*
 
@@ -174,7 +174,7 @@ keychain.getData("key1", asReference: true)
 
 *PS: 需要 `Info.plist` 新增一个键值对 Key: AppIdentifierPrefix，Value: $(AppIdentifierPrefix)，方便取得 `Identifier Prefix`。*
 
-总结：写的有不好的地方希望大家指出，我会更正，大家有什么看不明白的，也可以在评论里面提问，我会尽力解答。另附 Apple 官方 [GenericKeychain](https://developer.apple.com/library/archive/samplecode/GenericKeychain/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007797)。
+另附 Apple 官方 [GenericKeychain](https://developer.apple.com/library/archive/samplecode/GenericKeychain/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007797)。
 
 ---
 
