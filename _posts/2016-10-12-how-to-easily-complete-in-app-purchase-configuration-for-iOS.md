@@ -93,10 +93,3 @@ III) 填写联系信息
 ## 开发实现
 
 推荐阅读[《iOS 内购完整的编程指南》](https://dgynfi.github.io/2016/10/16/in-app-purchase-complete-programming-guide-for-iOS/)，这里就不详细阐述了。
-
----
-
-最后，想了解更多详情，请查看我的 Demo，记得给个 Star，😝😝
-
-Demo ( Objective-C )：[戳这里](https://github.com/dgynfi/DYFStoreKit) <br >
-Demo ( Swift )：[戳这里](https://github.com/dgynfi/DYFStore)
