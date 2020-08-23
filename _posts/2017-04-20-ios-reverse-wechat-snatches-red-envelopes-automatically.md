@@ -17,9 +17,7 @@ tag: iOSre
 
 Terminal 一般 Mac 电脑自带，打开 Terminal 执行后续操作。
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/terminal.png" align="left" width="20%" />
-</p><br><br><br>
+<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/terminal.png" align="left" width="20%" /><br>
 
 ## 安装 theos
 
@@ -151,10 +149,7 @@ after-install::
 
 该文件中的 Bundles : 指定 bundle 为 tweak 的作用对象，也可添加多个 bundle ，指定多个为 tweak 作用对象。
 
-<span>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_plist.png" align="left" width="60%" />
-</span>
-<br>
+<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_plist.png" align="left" width="60%" /><br>
 
 - control
 
@@ -810,46 +805,34 @@ xcrun -sdk iphoneos PackageApplication -v Payload/WeChat.app -o ~/Desktop/WeChat
 
 - 插件设置
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_settings.png" align="left" width="30%" />
+<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_settings.png" align="left" width="30%" />
 &nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx1.png" align="left" width="30%" />
-&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png" align="left" width="30%" />
-</p><br><br><br>
+&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png" align="left" width="30%" /><br>
 
 - 自动抢红包
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_redenv.gif" align="left" width="30%" />
-</p><br><br><br>
+<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_redenv.gif" align="left" width="30%" /><br>
 
 - 屏蔽消息
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png" align="left" width="30%" />
-&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbxx.png" align="left" width="30%" /> 
-</p><br><br><br>
+<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png" align="left" width="30%" />
+&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbxx.png" align="left" width="30%" /><br>
 
 - 伪定位
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/fake_location.png" align="left" width="30%" />
-</p>
+<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/fake_location.png" align="left" width="30%" /><br>
 
 - 防止撤回消息
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/prevent_msg_revoc.png" align="left" width="30%" />
-</p><br><br><br>
+<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/prevent_msg_revoc.png" align="left" width="30%" /><br>
 
 
 ## 💰打赏作者
 
 如果觉得这个插件对你有帮助 (帮你抢到了比之前更多的红包，帮你发在国外高大尚的朋友圈，帮你屏蔽了厌烦并叨扰的人和群，帮你不再错过任何消息，...) ，那么不妨请我喝杯**咖啡☕**。
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/alipay_paymentcode.jpg" align="left" width="30%" />
-&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wechat_apprcode.jpg" align="left" width="40%" />
-</p><br><br><br>
+<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/alipay_paymentcode.jpg" align="left" width="30%" />
+&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wechat_apprcode.jpg" align="left" width="40%" /><br>
 
 
 ## Hook 版本下载
@@ -882,9 +865,7 @@ Hook 的版本只需要按照解压 ipa (Unzip ipa)，重签名应用 (Resign ap
 
 ## QQ群 (ID:614799921)
 
-<p>
-&emsp; <img src="https://dgynfi.github.io/images/qrcode/g614799921.jpg" align="left" width="30%" />
-</p><br><br><br>
+<img src="https://dgynfi.github.io/images/qrcode/g614799921.jpg" align="left" width="30%" /><br>
 
 
 ## 参考文章
