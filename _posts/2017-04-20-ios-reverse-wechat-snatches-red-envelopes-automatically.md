@@ -17,7 +17,7 @@ tag: iOSre
 
 Terminal 一般 Mac 电脑自带，打开 Terminal 执行后续操作。
 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/terminal.png" align="left" width="20%" /><br>
+![terminal](https://github.com/dgynfi/WeChat_tweak/raw/master/images/terminal.png)
 
 ## 安装 theos
 
@@ -107,10 +107,7 @@ tweak 定义是：对复杂的系统—通常是电子设备—进行微调或�
 
 如下图所示：
 
-<span>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/nic_create_tweak.png" align="left" width="60%" />
-</span>
-<br>
+![nic_create_tweak](https://github.com/dgynfi/WeChat_tweak/raw/master/images/nic_create_tweak.png)
 
 完成后会看到四个文件( make 后将生成 .theos 、obj 文件夹)：**Makefile,&nbsp; wcodtplugin.plist,&nbsp; control,&nbsp; Tweak.xm**。
 
@@ -149,7 +146,7 @@ after-install::
 
 该文件中的 Bundles : 指定 bundle 为 tweak 的作用对象，也可添加多个 bundle ，指定多个为 tweak 作用对象。
 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_plist.png" align="left" width="60%" /><br>
+![tweak_plist](https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_plist.png)
 
 - control
 
@@ -501,9 +498,7 @@ cd WeChat_tweak/WeChatPluginDev/wapleodtcorexpc/
 make
 ```
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_make.png" align="left" width="60%" />
-</p><br><br><br>
+![tweak_make](https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_make.png)
 
 编译时出现的问题或错误，请查看上述 **tweak** 小节中提及的 [编译（问题描述和解决方法）](#编译)。
 
@@ -531,9 +526,7 @@ cp WeChat_tweak/Dynamic\ library/dylib/libsubstrate.dylib ~/Desktop/
 
 右键 wapleodtcorexpc.dylib ，选择显示简介，在名称与扩展名处将 wapleodtcorexpc.dylib 修改成 wapleodtcorexpc ，回车并移除。
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/rm_ext.png" align="left" width="60%" />
-</p><br><br><br>
+![Remove Ext](https://github.com/dgynfi/WeChat_tweak/raw/master/images/rm_ext.png)
 
 同理，右键 libsubstrate.dylib ，选择显示简介，在名称与扩展名处将 libsubstrate.dylib 修改成 waplesubstrate ，回车并移除。
 
@@ -638,23 +631,17 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 - 进入 WeChat.app 目录
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/show_wechatapp_dir.png" align="left" width="60%" />
-</p><br><br><br>
+![Show WeChat.app](https://github.com/dgynfi/WeChat_tweak/raw/master/images/show_wechatapp_dir.png)
 
 - 找出 Info.plist 文件
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/found_Info.plist.png" align="left" width="60%" />
-</p><br><br><br>
+![Find Info.plist](https://github.com/dgynfi/WeChat_tweak/raw/master/images/found_Info.plist.png)
 
 双击，默认 Xcode 打开，修改 Info.plist 中的 Bundle display name 和 Bundle identifier，将 WeChatBundleVersion 的 Value 修改成 Bundle version 的 Value，将 URL types -> URL identifier 修改成新的 Bundle identifier，删除 build_time, by, path, rev, tag, uuid, ver 等 Key。
 
 - 删除 PlugIns 和 Watch 目录中的文件
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/del_files.png" align="left" width="60%" />
-</p><br><br><br>
+![Del Files](https://github.com/dgynfi/WeChat_tweak/raw/master/images/del_files.png)
 
 - 删除 _CFBundleDisplayName
 
@@ -677,9 +664,7 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 打开钥匙串访问
 
-<p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/keychain_access.png" align="left" width="20%" />
-</p><br><br><br>
+![Keychain Access](https://github.com/dgynfi/WeChat_tweak/raw/master/images/keychain_access.png)
 
 点击登录 -> 我的证书，找出要签名的证书，右击显示简介，找到常用名称，然后拷贝后面的字符串。
 
@@ -805,34 +790,34 @@ xcrun -sdk iphoneos PackageApplication -v Payload/WeChat.app -o ~/Desktop/WeChat
 
 - 插件设置
 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_settings.png" align="left" width="30%" />
-&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx1.png" align="left" width="30%" />
-&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png" align="left" width="30%" /><br>
+![s-1](https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_settings.png)
+![s-2](https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx1.png)
+![s-3](https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png)
 
 - 自动抢红包
 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_redenv.gif" align="left" width="30%" /><br>
+![redenv.gif](https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_redenv.gif)
 
 - 屏蔽消息
 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png" align="left" width="30%" />
-&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbxx.png" align="left" width="30%" /><br>
+![s-4](https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png)
+![s-5](https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbxx.png)
 
 - 伪定位
 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/fake_location.png" align="left" width="30%" /><br>
+![Fake Location](https://github.com/dgynfi/WeChat_tweak/raw/master/images/fake_location.png)
 
 - 防止撤回消息
 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/prevent_msg_revoc.png" align="left" width="30%" /><br>
+![s-6](https://github.com/dgynfi/WeChat_tweak/raw/master/images/prevent_msg_revoc.png)
 
 
 ## 💰打赏作者
 
 如果觉得这个插件对你有帮助 (帮你抢到了比之前更多的红包，帮你发在国外高大尚的朋友圈，帮你屏蔽了厌烦并叨扰的人和群，帮你不再错过任何消息，...) ，那么不妨请我喝杯**咖啡☕**。
 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/alipay_paymentcode.jpg" align="left" width="30%" />
-&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wechat_apprcode.jpg" align="left" width="40%" /><br>
+![alipay_paymentcode](https://github.com/dgynfi/WeChat_tweak/raw/master/images/alipay_paymentcode.jpg)
+![wechat_apprcode](https://github.com/dgynfi/WeChat_tweak/raw/master/images/wechat_apprcode.jpg)
 
 
 ## Hook 版本下载
@@ -865,7 +850,7 @@ Hook 的版本只需要按照解压 ipa (Unzip ipa)，重签名应用 (Resign ap
 
 ## QQ群 (ID:614799921)
 
-<img src="https://dgynfi.github.io/images/qrcode/g614799921.jpg" align="left" width="30%" /><br>
+![qq-614799921](https://dgynfi.github.io/images/qrcode/g614799921.jpg)
 
 
 ## 参考文章
