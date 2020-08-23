@@ -637,7 +637,7 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 ![Find Info.plist](https://github.com/dgynfi/WeChat_tweak/raw/master/images/found_Info.plist.png)
 
-双击，默认 Xcode 打开，修改 Info.plist 中的 Bundle display name 和 Bundle identifier，将 WeChatBundleVersion 的 Value 修改成 Bundle version 的 Value，将 URL types -> URL identifier 修改成新的 Bundle identifier，删除 build_time, by, path, rev, tag, uuid, ver 等 Key。
+  双击，默认 Xcode 打开，修改 Info.plist 中的 Bundle display name 和 Bundle identifier，将 WeChatBundleVersion 的 Value 修改成 Bundle version 的 Value，将 URL types -> URL identifier 修改成新的 Bundle identifier，删除 build_time, by, path, rev, tag, uuid, ver 等 Key。
 
 - 删除 PlugIns 和 Watch 目录中的文件
 
@@ -645,22 +645,22 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 - 删除 _CFBundleDisplayName
 
-删除  zh_CN.lproj  InfoPlist.strings  _CFBundleDisplayName  <br />
-删除  zh_HK.lproj  InfoPlist.strings  _CFBundleDisplayName  <br />
-删除  zh_TW.lproj  InfoPlist.strings  _CFBundleDisplayName  <br />
-删除  en.lproj     InfoPlist.strings  _CFBundleDisplayName  <br />
+  删除  zh_CN.lproj  InfoPlist.strings  _CFBundleDisplayName  <br />
+  删除  zh_HK.lproj  InfoPlist.strings  _CFBundleDisplayName  <br />
+  删除  zh_TW.lproj  InfoPlist.strings  _CFBundleDisplayName  <br />
+  删除  en.lproj     InfoPlist.strings  _CFBundleDisplayName  <br />
 
 - 删除 Entitlements
 
-删除  Entitlements_for_appstore.plist  <br />
-删除  Entitlements_for_ext.plist  <br />
-删除  Entitlements_for_jailbreak.plist  <br />
-删除  Entitlements_wc_for_ext.plist  <br />
-删除  Entitlements_wc.plist  <br />
-删除  Entitlements_wx_for_ext.plist  <br />
-删除  Entitlements_wx.plist  <br />
+  删除  Entitlements_for_appstore.plist  <br />
+  删除  Entitlements_for_ext.plist  <br />
+  删除  Entitlements_for_jailbreak.plist  <br />
+  删除  Entitlements_wc_for_ext.plist  <br />
+  删除  Entitlements_wc.plist  <br />
+  删除  Entitlements_wx_for_ext.plist  <br />
+  删除  Entitlements_wx.plist  <br />
 
- ### 重签名动态库 (Resign Dynamic Libraries)
+### 重签名动态库 (Resign Dynamic Libraries)
 
 打开钥匙串访问
 
@@ -816,8 +816,8 @@ xcrun -sdk iphoneos PackageApplication -v Payload/WeChat.app -o ~/Desktop/WeChat
 
 如果觉得这个插件对你有帮助 (帮你抢到了比之前更多的红包，帮你发在国外高大尚的朋友圈，帮你屏蔽了厌烦并叨扰的人和群，帮你不再错过任何消息，...) ，那么不妨请我喝杯**咖啡☕**。
 
-![alipay_paymentcode](https://github.com/dgynfi/WeChat_tweak/raw/master/images/alipay_paymentcode.jpg)
-![wechat_apprcode](https://github.com/dgynfi/WeChat_tweak/raw/master/images/wechat_apprcode.jpg)
+![alipay_paymentcode](https://dgynfi.github.io/images/qrcode/alipay_paymentcode.jpg)
+![wechat_apprcode](https://dgynfi.github.io/images/qrcode/wechat_apprcode.jpg)
 
 
 ## Hook 版本下载
