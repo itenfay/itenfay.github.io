@@ -840,7 +840,7 @@ Hook 的版本只需要按照解压 ipa (Unzip ipa)，重签名应用 (Resign ap
 
 ## 建议
 
-可以将动态库 **wapleodtcorexpc** 和 **waplesubstrate** 修改自己想要的名字，只需要将 **wapleodtcorexpc** 工程名和 **Makefile、control、xxx.plist** 文件内的部分信息一并修改，然后从步骤 **编译 tweak 项目 (Compile Tweak Project)** 重新开始操作。
+可以将动态库 **wapleodtcorexpc** 和 **waplesubstrate** 修改自己想要的名字，只需要将 **wapleodtcorexpc** 工程名和 **Makefile、control、xxx.plist** 文件内的部分信息一并修改，然后从步骤 **[编译 tweak 项目 (Compile Tweak Project)](#编译-tweak-项目-compile-tweak-project)** 重新开始操作。
 
 
 ## 免责声明
