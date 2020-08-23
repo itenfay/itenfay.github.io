@@ -109,9 +109,10 @@ tweak 定义是：对复杂的系统—通常是电子设备—进行微调或�
 
 如下图所示：
 
-<p>
+<span>
 &emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/nic_create_tweak.png" align="left" width="60%" />
-</p><br><br><br>
+</span>
+<br>
 
 完成后会看到四个文件( make 后将生成 .theos 、obj 文件夹)：**Makefile,&nbsp; wcodtplugin.plist,&nbsp; control,&nbsp; Tweak.xm**。
 
@@ -150,9 +151,10 @@ after-install::
 
 该文件中的 Bundles : 指定 bundle 为 tweak 的作用对象，也可添加多个 bundle ，指定多个为 tweak 作用对象。
 
-<p>
+<span>
 &emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_plist.png" align="left" width="60%" />
-</p><br><br><br>
+</span>
+<br>
 
 - control
 
