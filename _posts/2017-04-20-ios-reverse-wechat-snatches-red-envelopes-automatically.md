@@ -17,9 +17,9 @@ tag: iOSre
 
 Terminal 一般 Mac 电脑自带，打开 Terminal 执行后续操作。
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/terminal.png" style="float:left;display:block" width="20%" /></p>
-<div style="clear:both"></div>
-
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/terminal.png" align="left" width="20%" />
+</p><br>
 
 ## 安装 theos
 
@@ -109,8 +109,9 @@ tweak 定义是：对复杂的系统—通常是电子设备—进行微调或�
 
 如下图所示：
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/nic_create_tweak.png" style="float:left;display:block" width="60%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/nic_create_tweak.png" align="left" width="60%" />
+</p><br>
 
 完成后会看到四个文件( make 后将生成 .theos 、obj 文件夹)：**Makefile,&nbsp; wcodtplugin.plist,&nbsp; control,&nbsp; Tweak.xm**。
 
@@ -149,8 +150,9 @@ after-install::
 
 该文件中的 Bundles : 指定 bundle 为 tweak 的作用对象，也可添加多个 bundle ，指定多个为 tweak 作用对象。
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_plist.png" style="float:left;display:block" width="60%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_plist.png" align="left" width="60%" />
+</p><br>
 
 - control
 
@@ -502,8 +504,9 @@ cd WeChat_tweak/WeChatPluginDev/wapleodtcorexpc/
 make
 ```
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_make.png" style="float:left;display:block" width="60%" />
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/tweak_make.png" align="left" width="60%" />
+</p><br>
 
 编译时出现的问题或错误，请查看上述 **tweak** 小节中提及的 [编译（问题描述和解决方法）](#编译)。
 
@@ -531,8 +534,9 @@ cp WeChat_tweak/Dynamic\ library/dylib/libsubstrate.dylib ~/Desktop/
 
 右键 wapleodtcorexpc.dylib ，选择显示简介，在名称与扩展名处将 wapleodtcorexpc.dylib 修改成 wapleodtcorexpc ，回车并移除。
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/rm_ext.png" style="float:left;display:block" width="60%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/rm_ext.png" align="left" width="60%" />
+</p><br>
 
 同理，右键 libsubstrate.dylib ，选择显示简介，在名称与扩展名处将 libsubstrate.dylib 修改成 waplesubstrate ，回车并移除。
 
@@ -637,20 +641,23 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 - 进入 WeChat.app 目录
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/show_wechatapp_dir.png" style="float:left;display:block" width="60%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/show_wechatapp_dir.png" align="left" width="60%" />
+</p><br>
 
 - 找出 Info.plist 文件
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/found_Info.plist.png" style="float:left;display:block" width="60%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/found_Info.plist.png" align="left" width="60%" />
+</p><br>
 
 双击，默认 Xcode 打开，修改 Info.plist 中的 Bundle display name 和 Bundle identifier，将 WeChatBundleVersion 的 Value 修改成 Bundle version 的 Value，将 URL types -> URL identifier 修改成新的 Bundle identifier，删除 build_time, by, path, rev, tag, uuid, ver 等 Key。
 
 - 删除 PlugIns 和 Watch 目录中的文件
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/del_files.png" style="float:left;display:block" width="60%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/del_files.png" align="left" width="60%" />
+</p><br>
 
 - 删除 _CFBundleDisplayName
 
@@ -673,8 +680,9 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 打开钥匙串访问
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/keychain_access.png" style="float:left;display:block" width="20%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/keychain_access.png" align="left" width="20%" />
+</p><br>
 
 点击登录 -> 我的证书，找出要签名的证书，右击显示简介，找到常用名称，然后拷贝后面的字符串。
 
@@ -801,34 +809,35 @@ xcrun -sdk iphoneos PackageApplication -v Payload/WeChat.app -o ~/Desktop/WeChat
 - 插件设置
 
 <p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_settings.png" style="float:left;display:block" width="30%" /> 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx1.png" style="float:left;display:block" width="30%" /> 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png" style="float:left;display:block" width="30%" />
-</p>
-<div style="clear:both"></div>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_settings.png" align="left" width="30%" />
+&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx1.png" align="left" width="30%" />
+&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png" align="left" width="30%" />
+</p><br>
 
 - 自动抢红包
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_redenv.gif" style="float:left;display:block" width="30%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_redenv.gif" align="left" width="30%" />
+</p><br>
 
 - 屏蔽消息
 
 <p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png" style="float:left;display:block" width="30%" /> 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbxx.png" style="float:left;display:block" width="30%" /> 
-</p>
-<div style="clear:both"></div>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png" align="left" width="30%" />
+&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wcplugin_pbxx.png" align="left" width="30%" /> 
+</p><br>
 
 - 伪定位
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/fake_location.png" style="float:left;display:block" width="30%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/fake_location.png" align="left" width="30%" />
+</p>
 
 - 防止撤回消息
 
-<p>&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/prevent_msg_revoc.png" style="float:left;display:block" width="30%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/prevent_msg_revoc.png" align="left" width="30%" />
+</p><br>
 
 
 ## 💰打赏作者
@@ -836,10 +845,9 @@ xcrun -sdk iphoneos PackageApplication -v Payload/WeChat.app -o ~/Desktop/WeChat
 如果觉得这个插件对你有帮助 (帮你抢到了比之前更多的红包，帮你发在国外高大尚的朋友圈，帮你屏蔽了厌烦并叨扰的人和群，帮你不再错过任何消息，...) ，那么不妨请我喝杯**咖啡☕**。
 
 <p>
-&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/alipay_paymentcode.jpg" style="float:left;display:block" width="30%" /> 
-<img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wechat_apprcode.jpg" style="float:left;display:block" width="40%" />
-</p>
-<div style="clear:both"></div>
+&emsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/alipay_paymentcode.jpg" align="left" width="30%" />
+&nbsp; <img src="https://github.com/dgynfi/WeChat_tweak/raw/master/images/wechat_apprcode.jpg" align="left" width="40%" />
+</p><br>
 
 
 ## Hook 版本下载
@@ -872,8 +880,9 @@ Hook 的版本只需要按照解压 ipa (Unzip ipa)，重签名应用 (Resign ap
 
 ## QQ群 (ID:614799921)
 
-<p>&emsp; <img src="https://dgynfi.github.io/images/qrcode/g614799921.jpg" style="float:left;display:block" width="30%" /></p>
-<div style="clear:both"></div>
+<p>
+&emsp; <img src="https://dgynfi.github.io/images/qrcode/g614799921.jpg" align="left" width="30%" />
+</p><br>
 
 
 ## 参考文章
