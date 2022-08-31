@@ -2,7 +2,7 @@
 layout: post
 title: "谈谈 iOS 应用中的 IM 开发"
 header-img: "images/im/im_cover.png"
-author: "dgynfi"
+author: "chenxing"
 date: 2019-06-26
 tag: IM
 ---
@@ -51,7 +51,7 @@ tag: IM
 
 以上四种方式都可以不使用第三方框架，直接基于OS底层Socket去实现我们的自定义封装。其中MQTT和XMPP为聊天协议，是最上层的协议，而WebSocket是传输通讯协议，它是基于Socket封装的一个协议。而上面所说的QQ-IM的私有协议，就是基于WebSocket或者Socket原生进行封装的一个聊天协议。
 
-![聊天协议优劣对比](https://dgynfi.github.io/images/im/chat_protocol_comparison.png)
+![聊天协议优劣对比](https://chenxing640.github.io/images/im/chat_protocol_comparison.png)
 
 总之，iOS端要做一个真正的IM产品，一般都是基于Socket或WebSocket等，在之上加上一些私有协议来保证的。
 
@@ -61,7 +61,7 @@ tag: IM
 
 Socket其实并不是一个协议，Socket通常也称作”套接字”，是对TCP/IP 或者UDP/IP协议封装的一组编程接口，用于描述IP地址和端口，使用socket实现进程之间的通信（跨网络的）。它工作在 OSI 模型会话层（第5层），Socket是对TCP/IP等更底层协议封装的一个抽象层，是一个调用接口(API)。网络上的两个程序通过一个双向的通讯连接实现数据的交换，这个双向链路的一端称为一个Socket，一个Socket由一个IP地址和一个端口号唯一确定。
 
-![网络架构](https://dgynfi.github.io/images/im/network_framework.png)
+![网络架构](https://chenxing640.github.io/images/im/network_framework.png)
 
 先看下基于C的BSD Socket提供的接口：
 ```
@@ -369,7 +369,7 @@ static NSInteger KPingPongInterval = 5;
 
 心跳机制是不能完全保证消息的即时性的，业内的解决方案是辅助采用双向的PingPong机制。
 
-![PingPong机制](https://dgynfi.github.io/images/im/pingpong_mechanism.jpg)
+![PingPong机制](https://chenxing640.github.io/images/im/pingpong_mechanism.jpg)
 
 当服务端发出一个Ping，客户端没有在约定的时间内返回响应的ack，则认为客户端已经不在线，这时我们Server端会主动断开Socket连接，并且改由APNS推送的方式发送消息。同样的是，当客户端去发送一个消息，因为我们迟迟无法收到服务端的响应ack包，则表明客户端或者服务端已不在线，我们也会显示消息发送失败，并且断开Socket连接。
 
@@ -423,9 +423,9 @@ ProtocolBuffer可能会造成 APP 的包体积增大，通过 Google 提供的�
 
 对数据分别操作100次，1000次，10000次和100000次进行了测试，纵坐标是完成时间，单位是毫秒。
 
-![序列化](https://dgynfi.github.io/images/im/serialization.jpg)
+![序列化](https://chenxing640.github.io/images/im/serialization.jpg)
 
-![反序列化](https://dgynfi.github.io/images/im/serialization.jpg)
+![反序列化](https://chenxing640.github.io/images/im/serialization.jpg)
 
 [Xml, Json, Hessian, Protocol Buffers序列化对比](http%3A%2F%2Fwww.cnblogs.com%2Fbeyondbit%2Fp%2F4778264.html)
 

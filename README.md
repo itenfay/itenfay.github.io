@@ -1,9 +1,9 @@
-## Handsen's Blog 
+## Chenxing's Blog 
 
 
-#### [我的博客在这里→](https://dgynfi.github.io)
+#### [我的博客在这里→](https://chenxing640.github.io)
 
-![](https://github.com/dgynfi/dgynfi.github.io/raw/master/images/hansen-blog.png)
+![](https://github.com/chenxing640/dgynfi.github.io/raw/master/images/hansen-blog.png)
 
 
 ## 各版本特性
@@ -18,7 +18,7 @@
 ## 支持
 
 * 你可以自由的 fork 。如果你能将我的信息和 github 的地址放在你的页面底部做成链接，我将非常感谢你。
-* 如果你喜欢我的这个博客模板，请在 `dgynfi.github.io` 这个 repository 点个赞（右上角 **star** 一下）。
+* 如果你喜欢我的这个博客模板，请在 `chenxing640.github.io` 这个 repository 点个赞（右上角 **star** 一下）。
 
 
 ## 说明文档
@@ -55,12 +55,12 @@
 
 ```
 # Site settings
-title: Hansen's Blog                # 你的博客网站标题
-SEOTitle: Hansen's Blog | 汉生的博客  # 在后面会详细谈到
-description: "Hansen's Blog"        # 随便说点，描述一下
+title: Chenxing's Blog                # 你的博客网站标题
+SEOTitle: Chenxing's Blog | 辰星的博客  # 在后面会详细谈到
+description: "Chenxing's Blog"        # 随便说点，描述一下
 
 # SNS settings      
-github_username: dgynfi           # 你的github账号
+github_username: chenxing640      # 你的github账号
 weibo_username: u/2617525300      # 你的微博账号，底部链接会自动更新的。
 
 # Build settings
@@ -82,7 +82,7 @@ layout:     post
 title:      "Hello 2015"
 subtitle:   "Hello World, Hello Blog"
 date:       2015-01-29 12:00:00
-author:     "dyf"
+author:     "chenxing"
 header-img: "images/post-bg-distance.jpg"
 tags: Life
 ---
@@ -92,7 +92,7 @@ tags: Life
 #### SideBar
 
 长这样:
-![](https://github.com/dgynfi/dgynfi.github.io/raw/master/images/blog-sidebar.png)
+![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/blog-sidebar.png)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 ```
@@ -151,7 +151,7 @@ friends: [
 
 HTML5 幻灯片的排版：
 
-![](https://github.com/dgynfi/dgynfi.github.io/raw/master/images/blog-keynote.png)
+![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/blog-keynote.png)
 
 这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放 html 幻灯的功能呢~
 
@@ -160,7 +160,7 @@ HTML5 幻灯片的排版：
 ```
 ---
 layout: keynote
-iframe: "http://hansenteng.com/js-module-7day/"
+iframe: "http://chenxing640.com/js-module-7day/"
 ---
 ```
 
@@ -169,7 +169,7 @@ iframe 在不同的设备中，将会自动的调整大小。保留内边距是�
 
 #### Comment
 
-博客不仅的多说 [duoshuo](http://duoshuo.com) 评论系统，也支持 [disqus](http://disqus.com) 评论系统。
+博客不仅支持多说 [duoshuo](http://duoshuo.com) 评论系统，也支持 [disqus](http://disqus.com) 评论系统。
 
 disqus 国际比较流行，界面也很大气、简介，如果有人评论，还能实时通知，直接回复通知的邮件就行了。缺点是评论必须要去注册一个 disqus 账号，分享一般只有 Facebook 和 Twitter ，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点 [这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
 
@@ -198,7 +198,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'  # Format: UA-xxxxxx-xx
-ga_domain: hansenteng.com
+ga_domain: chenxing640.com
 ```
 
 
@@ -213,7 +213,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### Header Image
 
-标题底图是可以自己选的，看看几篇示例post你就知道如何设置了，详情请见：[【_posts】](https://github.com/dgynfi/dgynfi.github.io/tree/master/_posts)。
+标题底图是可以自己选的，看看几篇示例post你就知道如何设置了，详情请见：[【_posts】](https://github.com/chenxing640/chenxing640.github.io/tree/master/_posts)。
   
 标题底图的选取完全是看个人的审美了，我也帮不了你。每一篇文章可以有不同的底图，你想放什么就放什么，最后宽度要够，大小不要太大，否则加载慢啊。
 
@@ -222,7 +222,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### SEO Title
 
-我的博客标题是 **“Hansen's Blog”**，但是我想要在搜索的时候显示 **“Hansen's Blog | 汉生的博客”** ，这个就需要 **SEO Title** 来定义了。
+我的博客标题是 **“Chenxing's Blog”**，但是我想要在搜索的时候显示 **“Chenxing's Blog | 辰星的博客”** ，这个就需要 **SEO Title** 来定义了。
 
 其实这个 **SEO Title** 就是定义了<head><title>标题</title></head>，这个里面的东西和多说分享的标题，你可以自行修改的。
 
@@ -237,7 +237,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 ## 模板
 
-如果你需要构建自己的 GitHub 技术博客，你就从[这里](https://github.com/dgynfi/hstemplate.github.io.git)克隆模板。
+如果你需要构建自己的 GitHub 技术博客，你就从[这里](https://github.com/chenxing640/hstemplate.github.io.git)克隆模板。
 
 
 ## 欢迎反馈

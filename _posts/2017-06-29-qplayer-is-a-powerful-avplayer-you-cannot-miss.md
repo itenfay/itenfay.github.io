@@ -2,7 +2,7 @@
 layout: post
 title: "iOS 定制自己的直播/音视频播放器 QPlayer"
 header-img: "images/qplayer/post-bg-qplayer.png"
-author: "dgynfi"
+author: "chenxing"
 date: 2017-06-29
 tag: iOS
 ---
@@ -20,28 +20,28 @@ tag: iOS
 
 ## QQ群 (ID:614799921)
 
-![614799921](https://dgynfi.github.io/images/qrcode/g614799921.jpg)
+![614799921](https://chenxing640.github.io/images/qrcode/g614799921.jpg)
 
 
 ## 预览
 
 **1. 本地视频**
 
-![local_videos.png](https://dgynfi.github.io/images/qplayer/local_videos.png)
+![local_videos.png](https://chenxing640.github.io/images/qplayer/local_videos.png)
 
 **2. 直播和电视**
 
-![ms_live.png](https://dgynfi.github.io/images/qplayer/ms_live.png)
+![ms_live.png](https://chenxing640.github.io/images/qplayer/ms_live.png)
 
-![live_tv.png](https://dgynfi.github.io/images/qplayer/live_tv.png)
+![live_tv.png](https://chenxing640.github.io/images/qplayer/live_tv.png)
 
 **3. 网页视频**
 
-![web_videos.png](https://dgynfi.github.io/images/qplayer/web_videos.png)
+![web_videos.png](https://chenxing640.github.io/images/qplayer/web_videos.png)
 
 **4. 应用介绍**
 
-![app_intro.png](https://dgynfi.github.io/images/qplayer/app_intro.png)
+![app_intro.png](https://chenxing640.github.io/images/qplayer/app_intro.png)
 
 
 ## 要求
@@ -109,5 +109,5 @@ PS：建议使用PC浏览器（ Safari [Mac], Microsoft Edge [Win10], Google Chr
 
 ## 最后
 
-附上 `QPlayer` 源码地址：[https://github.com/dgynfi/QPlayer](https://github.com/dgynfi/QPlayer)，觉得还行呢，麻烦顺手给个`star`。适配了深色模式，在 App 设置里添加深色与浅色模式切换开关，开启后会自动跟随系统设置。喜欢 `iOS` 音视频开发的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
+附上 `QPlayer` 源码地址：[https://github.com/chenxing640/QPlayer](https://github.com/chenxing640/QPlayer)，觉得还行呢，麻烦顺手给个`star`。适配了深色模式，在 App 设置里添加深色与浅色模式切换开关，开启后会自动跟随系统设置。喜欢 `iOS` 音视频开发的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
 

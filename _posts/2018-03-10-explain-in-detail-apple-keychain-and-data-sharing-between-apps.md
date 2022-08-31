@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "详解 Keychain 和 App 之间数据共享"
-author: "dgynfi"
+author: "chenxing"
 date: 2018-03-10
 tag: iOS
 ---
 
-![](https://dgynfi.github.io/images/keychain/keychain_services.png)
+![](https://chenxing640.github.io/images/keychain/keychain_services.png)
 
 ## Keychain 介绍
 
@@ -14,7 +14,7 @@ Keychain Services 是 macOS 和 iOS 都提供一种安全地存储敏感信息�
 
 *PS: 在 iOS 中 Keychian 依赖用于签名的 provisioning profile 描述文件，确保发布不同版本的时候，使用同一个 provisioning profile 文件。*
 
-![Keychain Access FTP Server Flow](https://dgynfi.github.io/images/keychain/keychain_access_ftp_server_flow.png)
+![Keychain Access FTP Server Flow](https://chenxing640.github.io/images/keychain/keychain_access_ftp_server_flow.png)
 
 ## Keychain 的结构
 
@@ -41,11 +41,11 @@ Keychain 提供了以下的操作:
 - SecItemCopyMatching 搜索一个已存在的 Item
 - SecItemDelete 删除一个 Item
 
-推荐 Swift 开源库 [DYFSwiftKeychain](https://github.com/dgynfi/DYFSwiftKeychain)，另外，附上 (Objective-C) 版 [DYFKeychain](https://github.com/dgynfi/DYFKeychain)。
+推荐 Swift 开源库 [DYFSwiftKeychain](https://github.com/chenxing640/DYFSwiftKeychain)，另外，附上 (Objective-C) 版 [DYFKeychain](https://github.com/chenxing640/DYFKeychain)。
 
 ### 写入数据
 
-![Putting data into a keychain](https://dgynfi.github.io/images/keychain/putting_data_into_keychain.png)
+![Putting data into a keychain](https://chenxing640.github.io/images/keychain/putting_data_into_keychain.png)
 
 - 写入字符串
 
@@ -108,7 +108,7 @@ let keychain = DYFSwiftKeychain()
 keychain.set("xxx", forKey:"Key1", withAccess: .accessibleWhenUnlocked)
 ```
 
-查看所有可用[访问选项](https://github.com/dgynfi/DYFSwiftKeychain/blob/master/SwiftKeychain/DYFSwiftKeychain.swift)的列表。
+查看所有可用[访问选项](https://github.com/chenxing640/DYFSwiftKeychain/blob/master/SwiftKeychain/DYFSwiftKeychain.swift)的列表。
 
 **2. 与其他设备同步钥匙串Item**
 
@@ -160,15 +160,15 @@ keychain.getData("key1", asReference: true)
 
 进入 Capabilities，打开 Keychain Sharing 功能
 
-![Keychain Sharing](https://dgynfi.github.io/images/keychain/keychain_sharing.png)
+![Keychain Sharing](https://chenxing640.github.io/images/keychain/keychain_sharing.png)
 
 开启 `Keychain Sharing` 后，会自动新增一个 Keychain Group，使用的是 `Bundle Identifier`，同时也会自动新增一个 entitlements 文件，里面也会有一个 Access Group，名为 `$(AppIdentifierPrefix)+Your Bundle Identifier`。
 
-![Keychain Group Entitlements](https://dgynfi.github.io/images/keychain/keychain_group_entitlements.png)
+![Keychain Group Entitlements](https://chenxing640.github.io/images/keychain/keychain_group_entitlements.png)
 
 `AppIdentifierPrefix` 是开发者的账号需要登录才会有，也就是开发者证书后小括号内的英文数字组合。使用 `$(AppIdentifierPrefix)` 只能被同一个开发者账号的 App 来存取，以防被有心人盗取。
 
-![Xcode Signing](https://dgynfi.github.io/images/keychain/xcode_signing.png)
+![Xcode Signing](https://chenxing640.github.io/images/keychain/xcode_signing.png)
 
 若其他的 App 也要存取当前 Keychain 的数据，就必需在 `Keychain Sharing` 开启后，新增相同的 Keychain Group (Access Group 会根据 Keychain Group 自动新增)。
 
@@ -180,5 +180,5 @@ keychain.getData("key1", asReference: true)
 
 最后，想了解更多详情，请查看我的 Demo，记得给个 Star，😝😝
 
-Demo ( Objective-C )：[戳这里](https://github.com/dgynfi/DYFSwiftKeychain) <br >
-Demo ( Swift )：[戳这里](https://github.com/dgynfi/DYFKeychain)
+Demo ( Objective-C )：[戳这里](https://github.com/chenxing640/DYFSwiftKeychain) <br >
+Demo ( Swift )：[戳这里](https://github.com/chenxing640/DYFKeychain)

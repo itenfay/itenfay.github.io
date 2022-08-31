@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "iOS13 快速读懂深色模式 API"
-author: "dgynfi"
+author: "chenxing"
 date: 2020-05-27
 tag: iOS
 ---
 
-![](https://dgynfi.github.io/images/ios13_dark/iOS13_dark_mode.jpg)
+![](https://chenxing640.github.io/images/ios13_dark/iOS13_dark_mode.jpg)
 
 大概一年多以前，`Mac OS` 系统发布了深色模式外观，看着挺刺激，时至今日用着也还挺爽的。
 
@@ -114,4 +114,4 @@ override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollect
 
 ## 推荐阅读
 
-[《iOS13 深色模式与浅色模式适配讲解》](https://dgynfi.github.io/2020/06/01/adaptation-of-dark-mode-and-light-mode-in-iOS13)
+[《iOS13 深色模式与浅色模式适配讲解》](https://chenxing640.github.io/2020/06/01/adaptation-of-dark-mode-and-light-mode-in-iOS13)

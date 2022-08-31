@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "iOS 如何发布自己的 CocoaPods 公开库？"
-author: "dgynfi"
+author: "chenxing"
 date: 2017-12-06
 tag: CMD
 ---
 
 
-前面文章已经介绍了安装 CocoaPods 及使用详解，这一篇文章主要教大家制作自己的 CocoaPods 公开库，下面以 iOS 客户端 [(DYFToast)](https://github.com/dgynfi/DYFToast) 为例，做一个详细说明。
+前面文章已经介绍了安装 CocoaPods 及使用详解，这一篇文章主要教大家制作自己的 CocoaPods 公开库，下面以 iOS 客户端 [(DYFToast)](https://github.com/chenxing640/DYFToast) 为例，做一个详细说明。
 
 如果你是第一次发布自己的 CocoaPods 公开库，你就需要注册一个 trunk 账号。以下是 trunk 的相关内容。
 
@@ -101,7 +101,7 @@ git push --tags
 git tag
 ```
 
-![](https://dgynfi.github.io/images/pod/push_tag.png)
+![](https://chenxing640.github.io/images/pod/push_tag.png)
 
 2、在 DYFToast 项目目录下，创建 podspec 文件
 
@@ -109,7 +109,7 @@ git tag
 pod spec create DYFToast
 ```
 
-![](https://dgynfi.github.io/images/pod/create_podspec.png)
+![](https://chenxing640.github.io/images/pod/create_podspec.png)
 
 3、配置 podspec 文件信息
 
@@ -122,12 +122,12 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
     This project uses chain programming and point syntax operation to realize the simulation of Android's Toast in iOS, and its code is concise and efficient.
                    DESC
-  s.homepage     = "https://github.com/dgynfi/DYFToast"
+  s.homepage     = "https://github.com/chenxing640/DYFToast"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "dyf" => "vinphy.teng@foxmail.com" }
   s.platform     = :ios
   s.ios.deployment_target       = "8.0"
-  s.source       = { :git => "https://github.com/dgynfi/DYFToast.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/chenxing640/DYFToast.git", :tag => s.version.to_s }
 
   s.source_files = "Classes", "Classes/**/*.{h,m}"
   s.public_header_files = "Classes/**/*.h"
@@ -150,7 +150,7 @@ podspec 文件介绍在这里不再叙述，推荐文章：
 pod spec lint DYFToast.podspec --allow-warnings
 ```
 
-![](https://dgynfi.github.io/images/pod/spec_lint.png)
+![](https://chenxing640.github.io/images/pod/spec_lint.png)
 
 5、发布到 Trunk
 
@@ -158,7 +158,7 @@ pod spec lint DYFToast.podspec --allow-warnings
 pod trunk push DYFToast.podspec --allow-warnings
 ```
 
-![](https://dgynfi.github.io/images/pod/lib_published.png)
+![](https://chenxing640.github.io/images/pod/lib_published.png)
 
 6、更新 pod 库，并删除 pod 搜索索引
 
@@ -167,7 +167,7 @@ pod setup
 rm ~/Library/Caches/CocoaPods/search_index.json
 ```
 
-![](https://dgynfi.github.io/images/pod/setup.png)
+![](https://chenxing640.github.io/images/pod/setup.png)
 
 7、认领 Pod
 
@@ -179,7 +179,7 @@ rm ~/Library/Caches/CocoaPods/search_index.json
 pod search DYFToast
 ```
 
-![](https://dgynfi.github.io/images/pod/search_lib.png)
+![](https://chenxing640.github.io/images/pod/search_lib.png)
 
 
 ## 三、删除发布到 CocoaPods 上的 Pods

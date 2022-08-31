@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "谈谈 iOS 中对图像的模糊处理"
-author: "dgynfi"
+author: "chenxing"
 date: 2019-08-08
 tag: iOS
 ---
@@ -62,6 +62,6 @@ blurView.frame = self.imgView.bounds;
 
 ## 最后
 
-附上 `DYFBlurEffect` 项目地址：[https://github.com/dgynfi/DYFBlurEffect](https://github.com/dgynfi/DYFBlurEffect)，觉得还行呢，麻烦顺手给个star。对开发实现图像的模糊处理功能的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
+附上 `DYFBlurEffect` 项目地址：[https://github.com/chenxing640/DYFBlurEffect](https://github.com/chenxing640/DYFBlurEffect)，觉得还行呢，麻烦顺手给个star。对开发实现图像的模糊处理功能的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
 
 支持 Pods，在 Podfile 文件中添加：pod 'DYFBlurEffect'。

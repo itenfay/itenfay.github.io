@@ -2,7 +2,7 @@
 layout: post
 title: "iOS 内购完整的编程指南"
 header-img: "images/iap/asc_bg.png"
-author: "dgynfi"
+author: "chenxing"
 date: 2016-10-16
 tag: iOS
 ---
@@ -36,21 +36,21 @@ tag: iOS
 
 *  App Store Connect 后台配置内购项目
 
-  推荐阅读[《如何轻松搞定 iOS 内购配置》](https://dgynfi.github.io/2016/10/12/how-to-easily-complete-in-app-purchase-configuration-for-iOS/)，这里就不详细介绍了。
+  推荐阅读[《如何轻松搞定 iOS 内购配置》](https://chenxing640.github.io/2016/10/12/how-to-easily-complete-in-app-purchase-configuration-for-iOS/)，这里就不详细介绍了。
 
 *  Xcode 工程配置
 
-![Xcode Project Configuration](https://dgynfi.github.io/images/iap/iap_project_config.png)
+![Xcode Project Configuration](https://chenxing640.github.io/images/iap/iap_project_config.png)
 
 *  开发实现流程
 
-![IAP Implementation Flow](https://dgynfi.github.io/images/iap/iap_impl_flow.jpg)
+![IAP Implementation Flow](https://chenxing640.github.io/images/iap/iap_impl_flow.jpg)
 
 ## 二、开发实现
 
 *PS：每个开发者帐户可在该帐户的所有 App 中创建最多 10,000 个 App 内购买项目产品。App 内购买项目共有四种类型：消耗型、非消耗型、自动续期订阅和非续期订阅。*
 
-推荐 Swift 开源库（[DYFStore](https://link.jianshu.com?t=https://github.com/dgynfi/DYFStore)），使用此开源库可直接省去很多繁琐复杂的实现，提高工作效率。另附 Objective-C 版（[DYFStoreKit](https://link.jianshu.com?t=https://github.com/dgynfi/DYFStoreKit)）。
+推荐 Swift 开源库（[DYFStore](https://link.jianshu.com?t=https://github.com/chenxing640/DYFStore)），使用此开源库可直接省去很多繁琐复杂的实现，提高工作效率。另附 Objective-C 版（[DYFStoreKit](https://link.jianshu.com?t=https://github.com/chenxing640/DYFStoreKit)）。
 
 ### 接入 StoreKit 准备
 
@@ -173,7 +173,7 @@ private func addPayment(_ productId: String) {
 
 **策略2：** 在开始购买过程，首先必须清楚有哪些产品标识符。App 从应用程序商店获取有关产品的信息，并向用户显示其商店用户界面。App 中销售的每个产品都有唯一的产品标识符。App 使用这些产品标识符获取有关应用程序商店中可供销售的产品的信息，例如定价，并在用户购买这些产品时提交付款请求。
 
-![](https://dgynfi.github.io/images/iap/iap_flow.png)
+![](https://chenxing640.github.io/images/iap/iap_flow.png)
 
 ```
 func fetchProductIdentifiersFromServer() -> [String] {
@@ -430,7 +430,7 @@ private let productUrl = "https://buy.itunes.apple.com/verifyReceipt"
 
 *  常见的验证状态码和对应的描述
 
-![](https://dgynfi.github.io/images/iap/iap_status_code.png)
+![](https://chenxing640.github.io/images/iap/iap_status_code.png)
 
 ```
 /// Matches the message with the status code.
@@ -633,7 +633,7 @@ DispatchQueue.main.asyncAfter(delay: 1.5) {
 
   **特别注意：如果服务端进行收据验证，那么服务端一定要做好验证 URL 地址的切换。一般做法就是不管是沙盒还是生产环境，先去生产环境验证，如果获取的状态码为21007，那么可以去沙盒环境验证。**
 
-![](https://dgynfi.github.io/images/iap/receipt_verification_strategy.png)
+![](https://chenxing640.github.io/images/iap/receipt_verification_strategy.png)
 
 *  为什么我的沙盒账号提示不在此地区，请切回本地的应用商店？
 
@@ -783,8 +783,8 @@ param["transactionID"] = transaction.transactionIdentifier
 
 附上 iOS 内购开源库和 Demo 地址，觉得还行呢，麻烦顺手给个star。对内购感兴趣或者正在开发实现内购的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
 
-*  Swift库和Demo地址 =>【[https://github.com/dgynfi/DYFStore](https://github.com/dgynfi/DYFStore)】
-*  ObjC库和Demo地址 =>【[https://github.com/dgynfi/DYFStoreKit](https://github.com/dgynfi/DYFStoreKit)】
+*  Swift库和Demo地址 =>【[https://github.com/chenxing640/DYFStore](https://github.com/chenxing640/DYFStore)】
+*  ObjC库和Demo地址 =>【[https://github.com/chenxing640/DYFStoreKit](https://github.com/chenxing640/DYFStoreKit)】
 
 支持 Pods，在 Podfile 文件中添加：`pod 'DYFStore'` 或者 `pod 'DYFStoreKit'`。
 

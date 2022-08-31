@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "手机访问网络特慢且有时无法加载内容，配置好 DNS 完美解决"
-author: "dgynfi"
+author: "chenxing"
 date: 2020-05-21
 tag: iOS
 ---
 
-![](https://dgynfi.github.io/images/dns/bgp_anycast.png)
+![](https://chenxing640.github.io/images/dns/bgp_anycast.png)
 
 ## DNS 是什么?
 

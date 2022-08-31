@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "安装 CocoaPods 及使用详解"
-author: "dgynfi"
+author: "chenxing"
 date: 2017-11-08
 tag: tool
 ---
@@ -31,7 +31,7 @@ CocoaPods 可以方便地通过Mac自带的 RubyGems 安装。
 
 打开 Terminal（ Mac 电脑自带的终端），
 
-![Terminal](https://dgynfi.github.io/images/terminal.png)
+![Terminal](https://chenxing640.github.io/images/terminal.png)
 
 然后按照以下提示操作：
 
@@ -220,7 +220,7 @@ du -sh *
 
 这是因为之前 pod search 的时候生成了缓存文件 `search_index.json`， 执行 `rm ~/Library/Caches/CocoaPods/search_index.json` 来删除此文件，然后再次输入 pod search DYFCodeScanner 进行搜索，这时会提示 Creating search index for spec repo 'master'..，等待一会将会出现搜索结果如下：
 
-![Terminal](https://dgynfi.github.io/images/pod_search_result.png)
+![Terminal](https://chenxing640.github.io/images/pod_search_result.png)
 
 ## 五、Cocoapods 的具体使用
 

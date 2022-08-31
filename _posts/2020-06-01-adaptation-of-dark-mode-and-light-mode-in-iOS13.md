@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "iOS13 深色模式与浅色模式适配讲解"
-author: "dgynfi"
+author: "chenxing640"
 date: 2020-06-01
 tag: iOS
 ---
 
 
-![iOS 13](https://dgynfi.github.io/images/ios13_dark/iOS13_poster.jpg)
+![iOS 13](https://chenxing640.github.io/images/ios13_dark/iOS13_poster.jpg)
 
 
 2019年6月4日凌晨，苹果在开发者大会上推出了新一代手机操作系统 `iOS 13`，主要更新了照片应用、滑动输入和更多动画表情，还有就是增加了”深色模式“，优化了音量的调节方式。
@@ -16,17 +16,17 @@ tag: iOS
 
 在所有关于 `iOS13` 的更新项目里，“深色模式”是网友讨论最多的。该模式可以根据日出日落时间自动开启，开启后，不只有壁纸，所有的系统元素都会变成暗色，起到在夜里降低屏幕亮度、保护用户眼睛的作用。
 
-![Light and Dark Mode](https://dgynfi.github.io/images/ios13_dark/iOS13_light_dark.jpg)
+![Light and Dark Mode](https://chenxing640.github.io/images/ios13_dark/iOS13_light_dark.jpg)
 
 实际上，苹果用户很早就开始呼吁 `iOS` 加入这个深色模式。如今 `iOS13` 正式发布深色模式，媒体和网友评论的口吻都是“终于来了”，“迟到的深色模式”。
 
-![Dark Mode Apps](https://dgynfi.github.io/images/ios13_dark/iOS13_dark_app.jpg)
+![Dark Mode Apps](https://chenxing640.github.io/images/ios13_dark/iOS13_dark_app.jpg)
 
-对于 `iOS` 程序猿们而言，如何适配 `iOS13` 系统的深色模式 ( `Dark Mode` ) 呢？我推荐从以下几个方面去做适配，推荐参考项目 *[QPlayer](https://github.com/dgynfi/QPlayer)* 。
+对于 `iOS` 程序猿们而言，如何适配 `iOS13` 系统的深色模式 ( `Dark Mode` ) 呢？我推荐从以下几个方面去做适配，推荐参考项目 *[QPlayer](https://github.com/chenxing640/QPlayer)* 。
 
 ### 运用系统 API
 
-如何运用系统 `API`，请阅读这篇文章[《iOS13 快速读懂深色模式 API》](https://dgynfi.github.io/2020/05/27/quickly-understand-dark-mode-api-for-iOS13)。
+如何运用系统 `API`，请阅读这篇文章[《iOS13 快速读懂深色模式 API》](https://chenxing640.github.io/2020/05/27/quickly-understand-dark-mode-api-for-iOS13)。
 
 ### 颜色相关的适配
 
@@ -164,13 +164,13 @@ override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollect
 - 在 `iOS` 中，图片基本都是放在 `Assets.xcassets` 里面，所以图片的适配，我们就相对麻烦一些了。
 - 正常情况下都是下面这中处理方式。
 
-![Appearances None](https://dgynfi.github.io/images/ios13_dark/appearances_none.png)
+![Appearances None](https://chenxing640.github.io/images/ios13_dark/appearances_none.png)
 
 
 - 需要适配不同模式的情况下，需要两套不同的图片，并做如下设置。
 - 在设置 `Appearances` 时，我们选择 `Any, Dark` 就可以了 (只需要适配深色模式和非深色模式)。
 
-![Appearances Dark ](https://dgynfi.github.io/images/ios13_dark/appearances_dark.png)
+![Appearances Dark ](https://chenxing640.github.io/images/ios13_dark/appearances_dark.png)
 
 ### 适配相关
 

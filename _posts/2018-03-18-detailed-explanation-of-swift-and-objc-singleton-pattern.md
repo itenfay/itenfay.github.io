@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Swift 和 Objective-C 单例模式详解"
-author: "dgynfi"
+author: "chenxing"
 date: 2017-06-29
 tag: iOS
 ---
 
 
-![](https://dgynfi.github.io/images/singleton/singleton_pattern.jpg)
+![](https://chenxing640.github.io/images/singleton/singleton_pattern.jpg)
 
 
 单例模式要求一个类有一个实例，有公开接口可以访问这个实例。单例模式分为以下两种模式：
@@ -182,7 +182,7 @@ extension DispatchQueue {
 }
 ```
 
-[DYFStore](https://link.jianshu.com?t=https://github.com/dgynfi/DYFStore) (In-app Purchase in Swift for iOS) 属性 default 持有唯一的实例，对外公开。
+[DYFStore](https://link.jianshu.com?t=https://github.com/chenxing640/DYFStore) (In-app Purchase in Swift for iOS) 属性 default 持有唯一的实例，对外公开。
 
 重载 init() 方法，使其对外不可见，不可以在外部调用，防止在外部创建实例。
 
@@ -305,7 +305,7 @@ static DYFStore *_instance = nil;
 
 在 .h 文件中，用 NS_UNAVAILABLE 禁用初始化和拷贝方法，只允许用 defaultStore 方法访问唯一实例。
 
-静态变量 _instance 持有唯一的实例，通过 defaultStore 方法对外公开。由 dispatch_once 保证 _instance 只初始化一次。方法返回值的 nonnull 表示返回值不为空，这样写方便 Swift 调用。不加 nonnull，defaultStore 方法在 Swift 中的返回值是 optional 类型 (DYFStore?)，不方便使用；若加上 nonnull，则为 [DYFStore](https://github.com/dgynfi/DYFStoreKit) (In-app Purchase in Objective-C for iOS) 类型。
+静态变量 _instance 持有唯一的实例，通过 defaultStore 方法对外公开。由 dispatch_once 保证 _instance 只初始化一次。方法返回值的 nonnull 表示返回值不为空，这样写方便 Swift 调用。不加 nonnull，defaultStore 方法在 Swift 中的返回值是 optional 类型 (DYFStore?)，不方便使用；若加上 nonnull，则为 [DYFStore](https://github.com/chenxing640/DYFStoreKit) (In-app Purchase in Objective-C for iOS) 类型。
 
 NSObject 的类方法 new 相当于 alloc 和 init 方法。
 
@@ -367,5 +367,5 @@ NSObject 的类方法 new 相当于 alloc 和 init 方法。
 
 最后，想了解更多详情，请查看我的 Demo，记得给个 Star，😝😝
 
-Demo ( Objective-C )：[戳这里](https://github.com/dgynfi/DYFStoreKit) <br >
-Demo ( Swift )：[戳这里](https://github.com/dgynfi/DYFStore)
+Demo ( Objective-C )：[戳这里](https://github.com/chenxing640/DYFStoreKit) <br >
+Demo ( Swift )：[戳这里](https://github.com/chenxing640/DYFStore)

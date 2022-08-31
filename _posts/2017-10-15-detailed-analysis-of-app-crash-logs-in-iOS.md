@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS Crash 闪退日志详细解析教程"
-author: "dgynfi"
+author: "chenxing"
 date: 2017-10-15
 tag: iOS
 ---
@@ -29,7 +29,7 @@ tag: iOS
 
 ### 一、获取iOS 设备上闪退日志
 
-![crash_flow.png](https://dgynfi.github.io/images/crashreport/crash_flow.png)
+![crash_flow.png](https://chenxing640.github.io/images/crashreport/crash_flow.png)
 
 1、(windows 电脑) 使用爱思助手获取闪退日志将 iOS 设备和 windows 电脑连接，打开爱思助手，查看闪退日志，将闪退日志导出，导出后会得到一个后缀为ips的文件。修改后缀名为 xxx.crash。
 2、(Mac 电脑) 将设备连接到电脑，进入  ~/Library/Logs/CrashReporter/MobileDevice 文件夹可以获得闪退日志。
@@ -149,7 +149,7 @@ find /Applications/Xcode.app -name symbolicatecrash
 
 打开 finder 前往这个路径
 
-![symbolicatecrash.png](https://dgynfi.github.io/images/crashreport/symbolicatecrash.png)
+![symbolicatecrash.png](https://chenxing640.github.io/images/crashreport/symbolicatecrash.png)
 
 拷贝 symbolicatecrash
 
@@ -161,7 +161,7 @@ find /Applications/Xcode.app -name symbolicatecrash
 
 3、将 .crash 文件和拷贝出来的 symbolicatecrash 脚本以及闪退日志对应的 .dSYM 文件拷贝到同一个文件夹里面。然后打开终端进入这个文件夹。
 
-![cr.png](https://dgynfi.github.io/images/crashreport/cr_required_files.png)
+![cr.png](https://chenxing640.github.io/images/crashreport/cr_required_files.png)
 
 打开终端输入以下命令：
 
@@ -173,11 +173,11 @@ find /Applications/Xcode.app -name symbolicatecrash
 
 在终端输入 `vim .bash_profile `，如下图所示：
 
-![vim_bash_profile.png](https://dgynfi.github.io/images/crashreport/vim_bash_profile.png)
+![vim_bash_profile.png](https://chenxing640.github.io/images/crashreport/vim_bash_profile.png)
 
 添加`export DEVELOPER_DIR="/Applications/XCode.app/Contents/Developer"`，如下图所示，退出并保存。
 
-![export_developer_dir.png](https://dgynfi.github.io/images/crashreport/export_developer_dir.png)
+![export_developer_dir.png](https://chenxing640.github.io/images/crashreport/export_developer_dir.png)
 
 然后输入
 
@@ -187,12 +187,12 @@ find /Applications/Xcode.app -name symbolicatecrash
 
 等命令执行完成之后，我们可以在刚才的文件夹下面发现 vcrashLog.txt 符号化后的闪退日志。
 
- 1、[DYFStore](https://link.jianshu.com?t=https://github.com/dgynfi/DYFStore)-114939.crash -- 闪退日志
+ 1、[DYFStore](https://link.jianshu.com?t=https://github.com/chenxing640/DYFStore)-114939.crash -- 闪退日志
  2、DYFStore.app.dSYM -- dSYM 文件
  3、vcrashLog.txt -- 符号化后的日志
 
 我们可以在已经符号化后的闪退日志里面看到我们代码出错的地方。(可以直接定位到闪退发生在哪个文件的哪一行代码)
 
-![vcrashLog.png](https://dgynfi.github.io/images/crashreport/vcrashLog.png)
+![vcrashLog.png](https://chenxing640.github.io/images/crashreport/vcrashLog.png)
 
 ---
