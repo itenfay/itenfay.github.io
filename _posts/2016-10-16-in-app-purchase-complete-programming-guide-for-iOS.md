@@ -50,7 +50,7 @@ tag: iOS
 
 *PS：每个开发者帐户可在该帐户的所有 App 中创建最多 10,000 个 App 内购买项目产品。App 内购买项目共有四种类型：消耗型、非消耗型、自动续期订阅和非续期订阅。*
 
-推荐 Swift 开源库（[DYFStore](https://link.jianshu.com?t=https://github.com/chenxing640/DYFStore)），使用此开源库可直接省去很多繁琐复杂的实现，提高工作效率。另附 Objective-C 版（[DYFStoreKit](https://link.jianshu.com?t=https://github.com/chenxing640/DYFStoreKit)）。
+推荐 Swift 开源库（[DYFStore](https://github.com/chenxing640/DYFStore)），使用此开源库可直接省去很多繁琐复杂的实现，提高工作效率。另附 Objective-C 版（[DYFStoreKit](https://github.com/chenxing640/DYFStoreKit)）。
 
 ### 接入 StoreKit 准备
 
@@ -73,20 +73,24 @@ tag: iOS
 ```
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+    self.initIAPSDK()
+
+    return true
+}
+
+func initIAPSDK() {
+    DYFStoreManager.shared.addStoreObserver()
+    
     // Wether to allow the logs output to console.
     DYFStore.default.enableLog = true
-
+    
     // Adds an observer that responds to updated transactions to the payment queue.
     // If an application quits when transactions are still being processed, those transactions are not lost. The next time the application launches, the payment queue will resume processing the transactions. Your application should always expect to be notified of completed transactions.
     // If more than one transaction observer is attached to the payment queue, no guarantees are made as to the order they will be called in. It is recommended that you use a single observer to process and finish the transaction.
     DYFStore.default.addPaymentTransactionObserver()
-
+    
     // Sets the delegate processes the purchase which was initiated by user from the App Store.
     DYFStore.default.delegate = self
-
-    DYFStore.default.keychainPersister = DYFStoreKeychainPersistence()
-
-    return true
 }
 ```
 
@@ -97,7 +101,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 // Processes the purchase which was initiated by user from the App Store.
 func didReceiveAppStorePurchaseRequest(_ queue: SKPaymentQueue, payment: SKPayment, forProduct product: SKProduct) {
-    
     if !DYFStore.canMakePayments() {
         self.showTipsMessage("Your device is not able or allowed to make payments!")
         return
@@ -105,17 +108,22 @@ func didReceiveAppStorePurchaseRequest(_ queue: SKPaymentQueue, payment: SKPayme
     
     // Get account name from your own user system.
     let accountName = "Handsome Jon"
-    
     // This algorithm is negotiated with server developer.
-    let userIdentifier = DYF_SHA256_HashValue(accountName) ?? ""
+    let userIdentifier = DYFStore_supplySHA256(accountName) ?? ""
     DYFStoreLog("userIdentifier: \(userIdentifier)")
-    
     DYFStore.default.purchaseProduct(product.productIdentifier, userIdentifier: userIdentifier)
 }
 ```
 
 > Indicates whether the user is allowed to make payments.
 An iPhone can be restricted from accessing the Apple App Store. For example, parents can restrict their children’s ability to purchase additional content. Your application should confirm that the user is allowed to authorize payments before adding a payment to the queue. Your application may also want to alter its behavior or appearance when the user is not allowed to authorize payments.
+
+```
+if !DYFStore.canMakePayments() {
+    self.showTipsMessage("Your device is not able or allowed to make payments!")
+    return
+}
+```
 
 ### 创建商品查询的请求
 
@@ -125,28 +133,24 @@ An iPhone can be restricted from accessing the Apple App Store. For example, par
 
 ```
 @IBAction func fetchesProductAndSubmitsPayment(_ sender: Any) {
+    // You need to check whether the device is not able or allowed to make payments before requesting product.
+    if !DYFStore.canMakePayments() {
+        self.showTipsMessage("Your device is not able or allowed to make payments!")
+        return
+    }
     self.showLoading("Loading...")
     
     let productId = "com.hncs.szj.coin42"
-    
     DYFStore.default.requestProduct(withIdentifier: productId, success: { (products, invalidIdentifiers) in
-        
         self.hideLoading()
-        
         if products.count == 1 {
-            
             let productId = products[0].productIdentifier
             self.addPayment(productId)
-            
         } else {
-            
             self.showTipsMessage("There is no this product for sale!")
         }
-        
     }) { (error) in
-        
         self.hideLoading()
-        
         let value = error.userInfo[NSLocalizedDescriptionKey] as? String
         let msg = value ?? "\(error.localizedDescription)"
         self.sendNotice("An error occurs, \(error.code), " + msg)
@@ -154,19 +158,11 @@ An iPhone can be restricted from accessing the Apple App Store. For example, par
 }
 
 private func addPayment(_ productId: String) {
-    
-    if !DYFStore.canMakePayments() {
-        self.showTipsMessage("Your device is not able or allowed to make payments!")
-        return
-    }
-    
     // Get account name from your own user system.
     let accountName = "Handsome Jon"
-    
     // This algorithm is negotiated with server developer.
-    let userIdentifier = DYF_SHA256_HashValue(accountName) ?? ""
+    let userIdentifier = DYFStore_supplySHA256(accountName) ?? ""
     DYFStoreLog("userIdentifier: \(userIdentifier)")
-    
     DYFStore.default.purchaseProduct(productId, userIdentifier: userIdentifier)
 }
 ```
@@ -177,7 +173,6 @@ private func addPayment(_ productId: String) {
 
 ```
 func fetchProductIdentifiersFromServer() -> [String] {
-    
     let productIds = [
         "com.hncs.szj.coin42",   // 42 gold coins for ￥6.
         "com.hncs.szj.coin210",  // 210 gold coins for ￥30.
@@ -188,34 +183,29 @@ func fetchProductIdentifiersFromServer() -> [String] {
         "com.hncs.szj.vip1",     // non-renewable vip subscription for a month.
         "com.hncs.szj.vip2"      // Auto-renewable vip subscription for three months.
     ]
-    
     return productIds
 }
 
 @IBAction func fetchesProductsFromAppStore(_ sender: Any) {
+    // You need to check whether the device is not able or allowed to make payments before requesting products.
+    if !DYFStore.canMakePayments() {
+        self.showTipsMessage("Your device is not able or allowed to make payments!")
+        return
+    }
     self.showLoading("Loading...")
     
     let productIds = fetchProductIdentifiersFromServer()
-    
     DYFStore.default.requestProduct(withIdentifiers: productIds, success: { (products, invalidIdentifiers) in
-        
         self.hideLoading()
-        
         if products.count > 0 {
-            
             self.processData(products)
-            
         } else if products.count == 0 &&
-            invalidIdentifiers.count > 0 {
-            
+                    invalidIdentifiers.count > 0 {
             // Please check the product information you set up.
             self.showTipsMessage("There are no products for sale!")
         }
-        
     }) { (error) in
-        
         self.hideLoading()
-        
         let value = error.userInfo[NSLocalizedDescriptionKey] as? String
         let msg = value ?? "\(error.localizedDescription)"
         self.sendNotice("An error occurs, \(error.code), " + msg)
@@ -223,31 +213,20 @@ func fetchProductIdentifiersFromServer() -> [String] {
 }
 
 private func processData(_ products: [SKProduct]) {
-    
     var modelArray = [DYFStoreProduct]()
-    
     for product in products {
-        
         let p = DYFStoreProduct()
         p.identifier = product.productIdentifier
         p.name = product.localizedTitle
         p.price = product.price.stringValue
         p.localePrice = DYFStore.default.localizedPrice(ofProduct: product)
         p.localizedDescription = product.localizedDescription
-        
         modelArray.append(p)
     }
-    
     self.displayStoreUI(modelArray)
 }
 
 private func displayStoreUI(_ dataArray: [DYFStoreProduct]) {
-    
-    if !DYFStore.canMakePayments() {
-        self.showTipsMessage("Your device is not able or allowed to make payments!")
-        return
-    }
-    
     let storeVC = DYFStoreViewController()
     storeVC.dataArray = dataArray
     self.navigationController?.pushViewController(storeVC, animated: true)
@@ -267,37 +246,33 @@ DYFStore.default.purchaseProduct("com.hncs.szj.coin210")
 *  获取 SHA256 哈希值函数
 
 ```
-public func DYF_SHA256_HashValue(_ s: String) -> String? {
-
+public func DYFStore_supplySHA256(_ s: String) -> String? {
+    guard let cStr = s.cString(using: String.Encoding.utf8) else {
+        return nil
+    }
     let digestLength = Int(CC_SHA256_DIGEST_LENGTH) // 32
-
-    let cStr = s.cString(using: String.Encoding.utf8)!
     let cStrLen = Int(s.lengthOfBytes(using: String.Encoding.utf8))
-
+    
     // Confirm that the length of C string is small enough
     // to be recast when calling the hash function.
     if cStrLen > UINT32_MAX {
         print("C string too long to hash: \(s)")
         return nil
     }
-
+    
     let md = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLength)
-
     CC_SHA256(cStr, CC_LONG(cStrLen), md)
-
     // Convert the array of bytes into a string showing its hex represention.
     let hash = NSMutableString()
     for i in 0..<digestLength {
-
         // Add a dash every four bytes, for readability.
         if i != 0 && i%4 == 0 {
             //hash.append("-")
         }
         hash.appendFormat("%02x", md[i])
     }
-
     md.deallocate()
-
+    
     return hash as String
 }
 ```
@@ -360,11 +335,8 @@ func removeStoreObserver() {
 
 ```
 @objc private func processPurchaseNotification(_ notification: Notification) {
-
     self.hideLoading()
-
     self.purchaseInfo = (notification.object as! DYFStore.NotificationInfo)
-
     switch self.purchaseInfo.state! {
     case .purchasing:
         self.showLoading("Purchasing...")
@@ -385,7 +357,6 @@ func removeStoreObserver() {
         DYFStoreLog("Deferred")
         break
     }
-
 }
 ```
 
@@ -393,9 +364,7 @@ func removeStoreObserver() {
 
 ```
 @objc private func processDownloadNotification(_ notification: Notification) {
-
     self.downloadInfo = (notification.object as! DYFStore.NotificationInfo)
-
     switch self.downloadInfo.downloadState! {
     case .started:
         DYFStoreLog("The download started")
@@ -405,7 +374,7 @@ func removeStoreObserver() {
         break
     case .cancelled:
         DYFStoreLog("The download cancelled")
-        reak
+        break
     case .failed:
         DYFStoreLog("The download failed")
         break
@@ -439,7 +408,6 @@ private let productUrl = "https://buy.itunes.apple.com/verifyReceipt"
 /// - Returns: A tuple that contains status code and the description of status code.
 public func matchMessage(withStatus status: Int) -> (Int, String) {
     var message: String = ""
-    
     switch status {
     case 0:
         message = "The receipt as a whole is valid."
@@ -475,7 +443,6 @@ public func matchMessage(withStatus status: Int) -> (Int, String) {
         message = "Internal data access error."
         break
     }
-    
     return (status, message)
 }
 ```
@@ -495,9 +462,9 @@ lazy var receiptVerifier: DYFStoreReceiptVerifier = {
 2、实现协议 `DYFStoreReceiptVerifierDelegate`
 
 ```
-@objc func verifyReceiptDidFinish(_ verifier: DYFStoreReceiptVerifier, didReceiveData data: [String : Any])
+public func verifyReceiptDidFinish(_ verifier: DYFStoreReceiptVerifier, didReceiveData data: [String : Any]) {}
 
-@objc func verifyReceipt(_ verifier: DYFStoreReceiptVerifier, didFailWithError error: NSError)
+public func verifyReceipt(_ verifier: DYFStoreReceiptVerifier, didFailWithError error: NSError) {}
 ```
 
 3、验证收据
@@ -505,6 +472,8 @@ lazy var receiptVerifier: DYFStoreReceiptVerifier = {
 ```
 // Fetches the data of the bundle’s App Store receipt. 
 let data = receiptData
+or
+let data = try? Data(contentsOf: DYFStore.receiptURL())
 
 self.receiptVerifier.verifyReceipt(data)
 
@@ -526,31 +495,26 @@ self.receiptVerifier.verifyReceipt(data)
 DYFStore.default.finishTransaction(transaction)
 ```
 
-### 交易信息存储
+### 交易持久化
 
-`DYFStore` 提供了两种数据存储方式 `DYFStoreKeychainPersistence` 和 `DYFStoreUserDefaultsPersistence`。
+`DYFStore`提供了一个可选的引用实现，用于将交易信息存储在 NSUserDefaults（`DYFStoreUserDefaultsPersistence`）中。
 
-当客户端在付款过程中发生崩溃，导致 App 闪退，这时存储交易信息尤为重要。当 StoreKit 再次通知未完成的付款时，直接从 Keychain 中取出数据，进行收据验证，直至完成交易。
+当客户端在付款过程中发生崩溃，导致 App 闪退，这时存储交易信息尤为重要。当 StoreKit 再次通知未完成的付款时，直接文件中取出数据，进行收据验证，直至完成交易。
 
 *  存储交易信息
 
 ```
 func storeReceipt() {
-
     guard let url = DYFStore.receiptURL() else {
         self.refreshReceipt()
         return
     }
-    
     do {
         let data = try Data(contentsOf: url)
-        
         let info = self.purchaseInfo!
-        let store = DYFStore.default
-        let persister = store.keychainPersister!
+        let persister =  DYFStoreUserDefaultsPersistence()
         
         let transaction = DYFStoreTransaction()
-        
         if info.state! == .succeeded {
             transaction.state = DYFStoreTransactionState.purchased.rawValue
         } else if info.state! == .restored {
@@ -567,18 +531,10 @@ func storeReceipt() {
         transaction.transactionReceipt = data.base64EncodedString()
         persister.storeTransaction(transaction)
         
-        // Makes the backup data.
-        let uPersister = DYFStoreUserDefaultsPersistence()
-        if !uPersister.containsTransaction(info.transactionIdentifier!) {
-            uPersister.storeTransaction(transaction)
-        }
-        
         self.verifyReceipt(data)
     } catch let error {
-        
         DYFStoreLog("error: \(error.localizedDescription)")
         self.refreshReceipt()
-        
         return
     }
 }
@@ -587,28 +543,24 @@ func storeReceipt() {
 *  移除交易信息
 
 ```
-DispatchQueue.main.asyncAfter(delay: 1.5) {
-    let info = self.purchaseInfo!
-    let store = DYFStore.default
-    let persister = store.keychainPersister!
-    let identifier = info.transactionIdentifier!
-    
-    if info.state! == .restored {
-        
-        let transaction = store.extractRestoredTransaction(identifier)
-        store.finishTransaction(transaction)
-        
-    } else {
-        
-        let transaction = store.extractPurchasedTransaction(identifier)
-        // The transaction can be finished only after the client and server adopt secure communication and data encryption and the receipt verification is passed. In this way, we can avoid refreshing orders and cracking in-app purchase. If we were unable to complete the verification, we want `StoreKit` to keep reminding us that there are still outstanding transactions.
-        store.finishTransaction(transaction)
-    }
-    
-    persister.removeTransaction(identifier)
-    if let id = info.originalTransactionIdentifier {
-        persister.removeTransaction(id)
-    }
+let info = self.purchaseInfo!
+let store = DYFStore.default
+let persister = DYFStoreUserDefaultsPersistence()
+let identifier = info.transactionIdentifier!
+
+if info.state! == .restored {
+    let transaction = store.extractRestoredTransaction(identifier)
+    store.finishTransaction(transaction)
+} else {
+    let transaction = store.extractPurchasedTransaction(identifier)
+    // The transaction can be finished only after the receipt verification passed under the client and the server can adopt the communication of security and data encryption. In this way, we can avoid refreshing orders and cracking in-app purchase. If we were unable to complete the verification we want StoreKit to keep reminding us of the transaction.
+    store.finishTransaction(transaction)
+}
+
+persister.removeTransaction(identifier)
+
+if let id = info.originalTransactionIdentifier {
+    persister.removeTransaction(id)
 }
 ```
 
