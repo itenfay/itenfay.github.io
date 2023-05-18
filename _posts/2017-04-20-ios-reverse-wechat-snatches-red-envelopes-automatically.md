@@ -13,6 +13,32 @@ tag: iOSre
 说干就干，逆向工程哪是那么容易的一件事。首先，我们要从一些优秀书籍和一些大神的博客中学习基础知识，文章后面会提到。有了一定的基础之后，于是我将学习过程写了下来。
 
 
+## 实现展示
+
+- 插件设置
+
+![s-1](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_settings.png)
+![s-2](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_xwtx1.png)
+![s-3](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png)
+
+- 自动抢红包
+
+![redenv.gif](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_redenv.gif)
+
+- 屏蔽消息
+
+![s-4](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png)
+![s-5](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_pbxx.png)
+
+- 伪定位
+
+![Fake Location](https://github.com/chenxing640/WeChat_tweak/raw/master/images/fake_location.png)
+
+- 防止撤回消息
+
+![s-6](https://github.com/chenxing640/WeChat_tweak/raw/master/images/prevent_msg_revoc.png)
+
+
 ## 打开终端
 
 Terminal 一般 Mac 电脑自带，打开 Terminal 执行后续操作。
@@ -89,7 +115,7 @@ export THEOS=/opt/theos
 iOSOpenDev 集成在 Xcode 中，提供了一些模板，可直接使用 Xcode 进行开发。只是这个工具停止更新，对高版本的 Xcode 不能很好地支持。本人安装遇到了许多问题，通过查阅许多的资料，最后在 Xcode 中显示了该工具。若安装失败，则参考 [iOSOpenDev Wiki](https://github.com/kokoabim/iOSOpenDev/wiki) 或者其它资料。
 
 
-## tweak
+## Tweak
 
 ### 何谓 tweak ?
 
@@ -248,6 +274,8 @@ warning ：添加的方法需要在 @interface 中进行声明。 <br />
 
 使用 `make` 进行编译，若想重新编译，则先 `make clean` 。make 编译完成后，在当前文件夹下面将生成两个文件夹: .theos 与 obj ，其中编译完成的动态库就在 .thoes/obj/debug 的下面，与工程名相同。
 
+#### 问题描述和解决方法
+
 - 问题1
 
 ```
@@ -280,7 +308,6 @@ make: *** [before-all] Error 1
 ```
 
 解决办法：在终端执行命令 `sudo xcode-select --switch /Applications/Xcode.app` 即可。
-
 
 - 问题4 (代码报错)
 
@@ -345,7 +372,7 @@ _THEOS_PLATFORM_DPKG_DEB_COMPRESSION ?= gzip
         - [010Editor 最新版 8.0.1 逆向分析](https://www.52pojie.cn/forum.php?mod=viewthread&tid=684119&page=)
     - MachOView - 用于对 mach-o 文件分析的工具。
     - DYFCodesign - 用于对 iOS app 进行脚本重签名。
-    - [ios-app-signer](https://github.com/chenxing640/OpenSource#Mac) - 打包 ipa 与重签名图形化工具。
+    - [ios-app-signer](https://github.com/chenxing640/OpenSource#MacOS) - 打包 ipa 与重签名图形化工具。
     - iOSOpenDev - Xcode 增强工具，通过它生成用于注入的 dylib 库。建议用 theos 编译 tweak 项目生成注入的 dylib 库。
 - [Resources](https://github.com/chenxing640/WeChat_tweak/Resources) - AppIcon 目录 (带抢红包的Icon) 和 Audios 目录 (音频文件)。
 - [WeChatPluginDev](https://github.com/chenxing640/WeChat_tweak/WeChatPluginDev/wapleodtcorexpc) - 微信插件 tweak 源码开发。
@@ -437,11 +464,7 @@ scp root@<your.device.ip>:/private/var/mobile/Documents/Dumped/WeChat.ipa ~/Desk
 ```
 
 
-## 注入动态库和重签名打包应用
-
-本文的重点内容，动态库可以到我的 [GitHub仓库](https://github.com/chenxing640/WeChat_tweak/Dynamic%20library) 里下载。接下来请按照以下步骤操作执行：
-
-### 解压 ipa (Unzip ipa)
+## 解压 ipa
 
 ```
 # cd <微信ipa下载目录>
@@ -450,14 +473,14 @@ cd ~/Downloads/
 # 以 微信-7.0.5 版本为例，注意：下载的版本必须为破解版，如何查看？请阅读查看 app 是否被加密 (Check app)
 unzip -o 微信-7.0.5\(越狱应用\).ipa -d ./
 
-# 静默解压
+# 静默解压 (Unzip ipa)
 # unzip -q -o 微信-7.0.5\(越狱应用\).ipa -d ./
 
 # 将 Payload 移至桌面
 mv ./Payload/ ~/Desktop/
 ```
 
-### 查看 app 是否被加密 (Check app)
+## 查看 app 是否被加密
 
 otool 可以输出 app 的 load commands，然后通过查看 cryptid 这个标志位来判断 app 是否被加密，1：代表加密，0：代表被解密。
 
@@ -480,27 +503,32 @@ otool -l Payload/WeChat.app/WeChat | grep -B 2 crypt
       cryptid 0
 ```
 
-### 克隆仓库 (Clone Repository)
+
+## 导出动态库
+
+### 克隆仓库
 
 ```
 # 进入桌面
 cd ~/Desktop/
 
-# 克隆
+# 克隆 (Clone Repository)
 git clone https://github.com/chenxing640/WeChat_tweak.git
 ```
 
-### 编译 tweak 项目 (Compile Tweak Project)
+### 编译 tweak 项目 
 
 ```
 cd WeChat_tweak/WeChatPluginDev/wapleodtcorexpc/
-# compile
+# compile tweak project
 make
 ```
 
 ![tweak_make](https://github.com/chenxing640/WeChat_tweak/raw/master/images/tweak_make.png)
 
-编译时出现的问题或错误，请查看上述 **tweak** 小节中提及的 [编译（问题描述和解决方法）](#编译)。
+编译时出现的问题或错误，请查看上述 **Tweak** 小节中 **编译** 提及的 [问题描述和解决方法](#问题描述和解决方法)。
+
+### 导出
 
 将动态库拷贝至桌面：
 
@@ -512,7 +540,8 @@ cp .theos/obj/debug/wapleodtcorexpc.dylib ~/Desktop/
 # open .theos/obj/debug/
 ```
 
-### 更改动态库的依赖 (Change Dynamic Library Dependencies)
+
+## 更改动态库的依赖
 
 将 libsubstrate.dylib 库拷贝至桌面：
 
@@ -530,7 +559,7 @@ cp WeChat_tweak/Dynamic\ library/dylib/libsubstrate.dylib ~/Desktop/
 
 同理，右键 libsubstrate.dylib ，选择显示简介，在名称与扩展名处将 libsubstrate.dylib 修改成 waplesubstrate ，回车并移除。
 
-执行更改动态库的依赖命令：
+执行更改动态库的依赖 (Change Dynamic Library Dependencies) 命令：
 
 ```
 install_name_tool -change /Library/Frameworks/CydiaSubstrate.framework/CydiaSubstrate @loader_path/waplesubstrate wapleodtcorexpc
@@ -573,9 +602,10 @@ wapleodtcorexpc (architecture arm64):
 
 CydiaSubstrate 只有越狱的手机上才有，因此我们需要手动更改并导入。从上可见，`/Library/Frameworks/CydiaSubstrate.framework/CydiaSubstrate` 更改成了 `@loader_path/waplesubstrate` ，这表明动态库的依赖更改成功。
 
-### 移除架构 (Remove Architectures) 
 
-对于没有强迫证的同学来说，这步可略过。目前 `WeChat` 可执行文件只有 `arm64` 架构，在以前版本中，若移除 `armv7` 架构，则可以大大减少包的大小，以节省手机空间。
+## 移除架构
+
+对于没有强迫证的同学来说，可略过这步 (Remove Architectures) 。目前 `WeChat` 可执行文件只有 `arm64` 架构，在以前版本中，若移除 `armv7` 架构，则可以大大减少包的大小，以节省手机空间。
 
 ```
 # 进入桌面，确保当前在桌面上操作
@@ -598,13 +628,14 @@ lipo -info wapleodtcorexpc
 # Architectures in the fat file: wapleodtcorexpc are: arm64
 ```
 
-### 注入动态库 (Install Dynamic Libraries)
+
+## 注入动态库
 
 ```
 # 进入桌面，确保当前在桌面上操作
 # cd ~/Desktop/
 
-# @executable_path 是一个环境变量，指的是二进制文件所在的路径
+# @executable_path 是一个环境变量，指的是二进制文件所在的路径 (Install Dynamic Libraries)
 ./WeChat_tweak/Hook-Tools/optool install -c load -p "@executable_path/wapleodtcorexpc" -t Payload/WeChat.app/WeChat
 ```
 
@@ -627,11 +658,14 @@ Writing executable to Payload/WeChat.app/WeChat...
 cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 ```
 
-### 打开 WeChat.app 目录 (Open WeChat.app)
 
-- 进入 WeChat.app 目录
+## 修改 app 配置
+
+- 进入 WeChat 目录
 
 ![Show WeChat.app](https://github.com/chenxing640/WeChat_tweak/raw/master/images/show_wechatapp_dir.png)
+
+> 注：右键 WeChat.app ，选择显示包内容，进入 WeChat 目录。
 
 - 找出 Info.plist 文件
 
@@ -660,7 +694,14 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
   删除  Entitlements_wx_for_ext.plist  <br />
   删除  Entitlements_wx.plist  <br />
 
-### 重签名动态库 (Resign Dynamic Libraries)
+## 获取动态库
+
+- 使用自己编译完成的动态库
+
+- 已编译完成的动态库下载 ==> [Here](https://github.com/chenxing640/WeChat_tweak/Dynamic%20library)
+
+
+## 重签名动态库
 
 打开钥匙串访问
 
@@ -668,7 +709,7 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 点击登录 -> 我的证书，找出要签名的证书，右击显示简介，找到常用名称，然后拷贝后面的字符串。
 
-执行重签名：
+执行重签名 (Resign Dynamic Libraries)：
 
 ```
 codesign -f -s "iPhone Developer: xxx@qq.com (9ZU3R2F3D4)" Payload/WeChat.app/waplesubstrate 
@@ -696,7 +737,8 @@ codesign -f -s "iPhone Developer: xxx@qq.com (9ZU3R2F3D4)" Payload/WeChat.app/Fr
 # Payload/WeChat.app/Frameworks/ProtobufLite.framework: replacing existing signature
 ```
 
-### 重签名应用 (Resign app)
+
+## 重签名应用
 
 打开 Provisioning Profiles 目录
 
@@ -721,7 +763,7 @@ cat ~/Library/MobileDevice/Provisioning\ Profiles/269bffd1-3743-4014-bf07-4eb94c
 cp ~/Library/MobileDevice/Provisioning\ Profiles/269bffd1-3743-4014-bf07-4eb94c048460.mobileprovision ~/Desktop/wcpl_adhoc.mobileprovision
 ```
 
-执行重签名应用：
+执行重签名应用 (Resign app)：
 
 ```
 # 进入桌面，确保当前在桌面上操作
@@ -731,7 +773,8 @@ cd ~/Desktop/
 # /Users/xxx/Desktop/Payload/WeChat.app: replacing existing signature
 ```
 
-### 打包应用 (Package app)
+
+## 打包应用
 
 - 方法一
 
@@ -773,7 +816,7 @@ Applications -> 右键 Xcode.app -> 显示包内容 -> Contents -> Developer -> 
 cp ~/Downloads/PackageApplication /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin
 ```
 
-执行打包：
+执行打包 (Package app)：
 
 ```
 xcrun -sdk iphoneos PackageApplication -v Payload/WeChat.app -o ~/Desktop/WeChat_705_New.ipa
@@ -786,47 +829,23 @@ xcrun -sdk iphoneos PackageApplication -v Payload/WeChat.app -o ~/Desktop/WeChat
 2. 使用 Xcode -> Window -> Devices and Simulators ，右击自己的设备，选择 Connect via IP Adress...，输入设备的IP，然后点击 Connect ，最后在 INSTALLED APPS 处点击 “+” 号，然后选择 WeChat_705_New.ipa ，点击 Open ，然后漫长地等待安装，大约1 ~ 3分钟。
 
 
-## 最终效果展示
-
-- 插件设置
-
-![s-1](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_settings.png)
-![s-2](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_xwtx1.png)
-![s-3](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png)
-
-- 自动抢红包
-
-![redenv.gif](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_redenv.gif)
-
-- 屏蔽消息
-
-![s-4](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png)
-![s-5](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_pbxx.png)
-
-- 伪定位
-
-![Fake Location](https://github.com/chenxing640/WeChat_tweak/raw/master/images/fake_location.png)
-
-- 防止撤回消息
-
-![s-6](https://github.com/chenxing640/WeChat_tweak/raw/master/images/prevent_msg_revoc.png)
-
-
 ## 💰打赏作者
 
 如果觉得这个插件对你有帮助 (帮你抢到了比之前更多的红包，帮你发在国外高大尚的朋友圈，帮你屏蔽了厌烦并叨扰的人和群，帮你不再错过任何消息，...) ，那么不妨请我喝杯**咖啡☕**。
 
-![alipay_paymentcode](https://chenxing640.github.io/images/qrcode/alipay_paymentcode.jpg)
-![wechat_apprcode](https://chenxing640.github.io/images/qrcode/wechat_apprcode.jpg)
+|      AliPay       |      WeChatPay    |
+| :---------------: | :---------------: |
+| ![alipay_paymentcode](https://chenxing640.github.io/images/qrcode/alipay_paymentcode.jpg) | ![wechat_apprcode](https://chenxing640.github.io/images/qrcode/wechat_apprcode.jpg) |
+| | ![wechat_paymentcode](https://chenxing640.github.io/images/qrcode/wechat_paymentcode.jpg) |
 
 
 ## Hook 版本下载
 
-Hook 的版本只需要按照解压 ipa (Unzip ipa)，重签名应用 (Resign app) ，打包应用 (Package app) ，安装 ipa 等步骤执行即可。
-
 - 百度网盘下载：
 
 [https://pan.baidu.com/s/1KCwmMWzchaZDeZQSlNt6qg - 提取码：3eqb](https://pan.baidu.com/s/1KCwmMWzchaZDeZQSlNt6qg)
+
+Hook 的版本只需要按照[解压 ipa](#解压-ipa)，[重签名应用](#重签名应用)，[打包应用](#打包应用)，[安装 ipa](#安装-ipa)等步骤执行即可。
 
 
 ## 坐标拾取
@@ -840,7 +859,7 @@ Hook 的版本只需要按照解压 ipa (Unzip ipa)，重签名应用 (Resign ap
 
 ## 建议
 
-可以将动态库 **wapleodtcorexpc** 和 **waplesubstrate** 修改自己想要的名字，只需要将 **wapleodtcorexpc** 工程名和 **Makefile、control、xxx.plist** 文件内的部分信息一并修改，然后从步骤 **[编译 tweak 项目 (Compile Tweak Project)](#编译-tweak-项目-compile-tweak-project)** 重新开始操作。
+如果您要将动态库 **wapleodtcorexpc** 和 **waplesubstrate** 修改成自定义的名字，那么只要将 **wapleodtcorexpc** 工程名和 **Makefile、control、xxx.plist** 文件内的部分信息一并修改，然后从步骤 **[编译 tweak 项目](#编译-tweak-项目)** 重新开始操作。
 
 
 ## 免责声明
