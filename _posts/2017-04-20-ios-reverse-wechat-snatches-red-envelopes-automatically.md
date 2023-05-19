@@ -17,33 +17,33 @@ tag: iOSre
 
 - 插件设置
 
-![s-1](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_settings.png)
-![s-2](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_xwtx1.png)
-![s-3](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_xwtx2.png)
+![s-1](https://chenxing640.github.io/images/reverse/wcplugin_settings.png)
+![s-2](https://chenxing640.github.io/images/reverse/wcplugin_xwtx1.png)
+![s-3](https://chenxing640.github.io/images/reverse/wcplugin_xwtx2.png)
 
 - 自动抢红包
 
-![redenv.gif](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_redenv.gif)
+![redenv.gif](https://chenxing640.github.io/images/reverse/wcplugin_redenv.gif)
 
 - 屏蔽消息
 
-![s-4](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_pbqxx.png)
-![s-5](https://github.com/chenxing640/WeChat_tweak/raw/master/images/wcplugin_pbxx.png)
+![s-4](https://chenxing640.github.io/images/reverse/wcplugin_pbqxx.png)
+![s-5](https://chenxing640.github.io/images/reverse/wcplugin_pbxx.png)
 
 - 伪定位
 
-![Fake Location](https://github.com/chenxing640/WeChat_tweak/raw/master/images/fake_location.png)
+![Fake Location](https://chenxing640.github.io/images/reverse/fake_location.png)
 
 - 防止撤回消息
 
-![s-6](https://github.com/chenxing640/WeChat_tweak/raw/master/images/prevent_msg_revoc.png)
+![s-6](https://chenxing640.github.io/images/reverse/prevent_msg_revoc.png)
 
 
 ## 打开终端
 
 Terminal 一般 Mac 电脑自带，打开 Terminal 执行后续操作。
 
-![terminal](https://github.com/chenxing640/WeChat_tweak/raw/master/images/terminal.png)
+![terminal](https://chenxing640.github.io/images/reverse/terminal.png)
 
 ## 安装 theos
 
@@ -133,7 +133,7 @@ tweak 定义是：对复杂的系统—通常是电子设备—进行微调或�
 
 如下图所示：
 
-![nic_create_tweak](https://github.com/chenxing640/WeChat_tweak/raw/master/images/nic_create_tweak.png)
+![nic_create_tweak](https://chenxing640.github.io/images/reverse/nic_create_tweak.png)
 
 完成后会看到四个文件( make 后将生成 .theos 、obj 文件夹)：**Makefile,&nbsp; wcodtplugin.plist,&nbsp; control,&nbsp; Tweak.xm**。
 
@@ -172,7 +172,7 @@ after-install::
 
 该文件中的 Bundles : 指定 bundle 为 tweak 的作用对象，也可添加多个 bundle ，指定多个为 tweak 作用对象。
 
-![tweak_plist](https://github.com/chenxing640/WeChat_tweak/raw/master/images/tweak_plist.png)
+![tweak_plist](https://chenxing640.github.io/images/reverse/tweak_plist.png)
 
 - control
 
@@ -524,7 +524,7 @@ cd WeChat_tweak/WeChatPluginDev/wapleodtcorexpc/
 make
 ```
 
-![tweak_make](https://github.com/chenxing640/WeChat_tweak/raw/master/images/tweak_make.png)
+![tweak_make](https://chenxing640.github.io/images/reverse/tweak_make.png)
 
 编译时出现的问题或错误，请查看上述 **Tweak** 小节中 **编译** 提及的 [问题描述和解决方法](#问题描述和解决方法)。
 
@@ -555,7 +555,7 @@ cp WeChat_tweak/Dynamic\ library/dylib/libsubstrate.dylib ~/Desktop/
 
 右键 wapleodtcorexpc.dylib ，选择显示简介，在名称与扩展名处将 wapleodtcorexpc.dylib 修改成 wapleodtcorexpc ，回车并移除。
 
-![Remove Ext](https://github.com/chenxing640/WeChat_tweak/raw/master/images/rm_ext.png)
+![Remove Ext](https://chenxing640.github.io/images/reverse/rm_ext.png)
 
 同理，右键 libsubstrate.dylib ，选择显示简介，在名称与扩展名处将 libsubstrate.dylib 修改成 waplesubstrate ，回车并移除。
 
@@ -663,19 +663,19 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 - 进入 WeChat 目录
 
-![Show WeChat.app](https://github.com/chenxing640/WeChat_tweak/raw/master/images/show_wechatapp_dir.png)
+![Show WeChat.app](https://chenxing640.github.io/images/reverse/show_wechatapp_dir.png)
 
 > 注：右键 WeChat.app ，选择显示包内容，进入 WeChat 目录。
 
 - 找出 Info.plist 文件
 
-![Find Info.plist](https://github.com/chenxing640/WeChat_tweak/raw/master/images/found_Info.plist.png)
+![Find Info.plist](https://chenxing640.github.io/images/reverse/found_Info.plist.png)
 
   双击，默认 Xcode 打开，修改 Info.plist 中的 Bundle display name 和 Bundle identifier，将 WeChatBundleVersion 的 Value 修改成 Bundle version 的 Value，将 URL types -> URL identifier 修改成新的 Bundle identifier，删除 build_time, by, path, rev, tag, uuid, ver 等 Key。
 
 - 删除 PlugIns 和 Watch 目录中的文件
 
-![Del Files](https://github.com/chenxing640/WeChat_tweak/raw/master/images/del_files.png)
+![Del Files](https://chenxing640.github.io/images/reverse/del_files.png)
 
 - 删除 _CFBundleDisplayName
 
@@ -705,7 +705,7 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 打开钥匙串访问
 
-![Keychain Access](https://github.com/chenxing640/WeChat_tweak/raw/master/images/keychain_access.png)
+![Keychain Access](https://chenxing640.github.io/images/reverse/keychain_access.png)
 
 点击登录 -> 我的证书，找出要签名的证书，右击显示简介，找到常用名称，然后拷贝后面的字符串。
 
