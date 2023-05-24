@@ -3,7 +3,7 @@
 
 #### [我的博客在这里→](https://chenxing640.github.io)
 
-![](https://github.com/chenxing640/dgynfi.github.io/raw/master/images/hansen-blog.png)
+![](https://github.com/chenxing640/dgynfi.github.io/raw/master/images/chenxing-blog.png)
 
 
 ## 各版本特性
