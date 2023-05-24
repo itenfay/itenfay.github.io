@@ -3,7 +3,7 @@ title: Chenxing's Blog
 SEOTitle: Chenxing's Blog | 辰星的博客
 header-img: images/home-bg.jpg
 email: chenxing640@foxmail.com
-maintainer: chenxing640
+maintainer: chenxing
 description: ""
 keyword: ""
 url: "https://chenxing640.github.io" # your host, for absolute URL
@@ -73,8 +73,8 @@ featured-condition-size: 0 # A tag will be featured if the size of it is more th
 
 # QRcode settings
 qrcode: true # whether or not showing QRcode
-qrcode-ios-description: Group I - iOS/macOS X  # TC Group => Technical Communication Group
-qrcode-other-description: Group II - Other Dev Language # TC Group => Technical Communication Group
+qrcode-ios-description: Group I (iOS/macOS)  # TC Group => Technical Communication Group
+qrcode-other-description: Group II (Other Dev Language) # TC Group => Technical Communication Group
 
 
 # Friends
