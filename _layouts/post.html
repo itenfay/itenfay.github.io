@@ -33,7 +33,7 @@ layout: default
                     <!-- 
                         <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span> 
                     -->
-                    <span class="meta">| <a href="https://github.com/dgynfi" title="dgynfi">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</a> | {{ page.date | date: "%Y-%m-%d" }} | 
+                    <span class="meta">| <a href="https://github.com/chenxing640" title="chenxing640">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</a> | {{ page.date | date: "%Y-%m-%d" }} | 
                     <span class="tags">
                         {% for tag in page.tags %}
                         <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
@@ -90,12 +90,14 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                        <!-- Previous Post -->
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; 上一篇</a>
                     </li>
                     {% endif %}
                     {% if page.next.url %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                        <!-- Next Post -->
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">下一篇 &rarr;</a>
                     </li>
                     {% endif %}
                 </ul>
