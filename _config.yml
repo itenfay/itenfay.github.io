@@ -14,7 +14,8 @@ baseurl: "/" # for example, '/blog' if your blog hosted on 'host/blog'
 RSS: false
 github_username: chenxing640
 jianshu_username: u/7fc76f1179cc
-zhihu_username: focusontech
+# focusontech
+zhihu_username: c9ea1793a9a09c1af2b689c0676940b8
 #weibo_username: u/2617525300
 #twitter_username:  
 #facebook_username:  
