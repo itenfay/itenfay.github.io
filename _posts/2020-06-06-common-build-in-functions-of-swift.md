@@ -8,7 +8,7 @@ tag: iOS
 
 Swift包含了74个内置函数，这里针对几个我常用的内置函数做一些总结。(内置函数是指无需引入任何Module就可以直接使用的函数)
 
-##### 1.断言 assert，如果参数为 ture，则继续，否则抛出异常
+### 1.断言 assert，如果参数为 ture，则继续，否则抛出异常
 
 *> 示例*
 
@@ -30,7 +30,7 @@ assertion failed: num 不大于 3
 * Optional类型数据为nil值，引发的程序crash
 ```
 
-##### 2.获取序列的元素个数 characters.count (~~countElements~~)
+### 2.获取序列的元素个数 characters.count (~~countElements~~)
 
 *> 示例*
 
@@ -44,7 +44,7 @@ print("count == \(str.characters.count)")
  count == 3
 ```
 
-##### 3.将原有序列转换成以元组作为元素的序列输出 enumerated()
+### 3.将原有序列转换成以元组作为元素的序列输出 enumerated()
 
 *> 示例*
 
@@ -61,7 +61,7 @@ for (i,j) in arr.enumerated() {
 1:K
 ````
 
-##### 4.返回最大最小值 min(), max()
+### 4.返回最大最小值 min(), max()
 
 *> 示例*
 
@@ -70,7 +70,7 @@ min(2, 6)  //返回 2
 max(1, 3, 8)  //返回 9
 ```
 
-##### 排序 sorted (~~sort~~)
+### 排序 sorted (~~sort~~)
 
 *> 示例*
 
@@ -94,7 +94,7 @@ print(arr2)
 ["Z", "Y", "X"]
 ```
 
-##### 6.map 函数
+### 6.map 函数
 
 *> 示例*
 
@@ -123,7 +123,7 @@ print(groupArr)
 [(2, "2"), (1, "1"), (3, "3")]
 ```
 
-##### 7.flapMap 函数
+### 7.flapMap 函数
 
 *> 示例*
 
@@ -138,7 +138,7 @@ print(flapMapArr)
 ["B", "A", "C", "1", "5"] // 二维数组变成了一维
 ```
 
-##### 8.筛选函数 filter
+### 8.筛选函数 filter
 
 *> 示例*
 
@@ -153,7 +153,7 @@ print(evens)
 [2, 4, 6]
 ```
 
-##### 9.reduce 函数
+### 9.reduce 函数
 
 *> 示例*
 
@@ -174,7 +174,8 @@ print(product)
 //打印结果
 8
 ```
-##### 10.在编程中经常会用到的一些函数
+
+### 10.在编程中经常会用到的一些函数
 
 ```
 1. abs(-1) == 1 //获取绝对值
