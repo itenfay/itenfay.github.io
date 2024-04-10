@@ -24,8 +24,6 @@ tag: iOS
 
 ## 预览
 
-**1. 本地视频**
-
 ![PRV_IMG_1739.gif](https://chenxing640.github.io/images/qplayer/PRV_IMG_1739.gif)
 
 
