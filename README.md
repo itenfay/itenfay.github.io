@@ -1,4 +1,4 @@
-## TengFei's Blog 
+## Teng Fei's Blog 
 
 
 #### [我的博客在这里→](https://chenxing640.github.io)
@@ -55,9 +55,9 @@
 
 ```
 # Site settings
-title: TengFei's Blog                # 你的博客网站标题
-SEOTitle: TengFei's Blog | 腾飞的博客  # 在后面会详细谈到
-description: "TengFei's Blog"        # 随便说点，描述一下
+title: Teng Fei's Blog                # 你的博客网站标题
+SEOTitle: Teng Fei's Blog | 腾飞的博客  # 在后面会详细谈到
+description: "Teng Fei's Blog"        # 随便说点，描述一下
 
 # SNS settings      
 github_username: chenxing640      # 你的github账号
@@ -222,7 +222,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### SEO Title
 
-我的博客标题是 **“TengFei's Blog”**，但是我想要在搜索的时候显示 **“TengFei's Blog | 腾飞的博客”** ，这个就需要 **SEO Title** 来定义了。
+我的博客标题是 **“Teng Fei's Blog”**，但是我想要在搜索的时候显示 **“Teng Fei's Blog | 腾飞的博客”** ，这个就需要 **SEO Title** 来定义了。
 
 其实这个 **SEO Title** 就是定义了<head><title>标题</title></head>，这个里面的东西和多说分享的标题，你可以自行修改的。
 
