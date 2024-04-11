@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS 多线程技术导图"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-09-08
 tag: iOS
 ---

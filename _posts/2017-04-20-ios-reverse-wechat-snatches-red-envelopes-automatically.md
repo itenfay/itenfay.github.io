@@ -2,7 +2,7 @@
 layout: post
 title: "iOS逆向学习：免越狱给微信添加新功能"
 header-img: "images/reverse/rev_bg.jpg"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-04-20
 tag: iOSre
 ---

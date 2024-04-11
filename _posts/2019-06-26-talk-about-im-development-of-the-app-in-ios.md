@@ -2,7 +2,7 @@
 layout: post
 title: "谈谈 iOS 应用中的 IM 开发"
 header-img: "images/im/im_cover.png"
-author: "chenxing"
+author: "Teng Fei"
 date: 2019-06-26
 tag: IM
 ---

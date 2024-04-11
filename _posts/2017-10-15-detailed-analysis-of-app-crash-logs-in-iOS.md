@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS Crash 闪退日志详细解析教程"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-10-15
 tag: iOS
 ---

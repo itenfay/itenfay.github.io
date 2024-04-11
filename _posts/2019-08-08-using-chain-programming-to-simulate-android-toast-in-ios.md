@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS 链式编程之仿真安卓 Toast"
-author: "chenxing640"
+author: "Teng Fei"
 date: 2019-08-08
 tag: iOS
 ---

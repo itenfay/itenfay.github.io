@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "谈谈 iOS 中对图像的模糊处理"
-author: "chenxing"
+author: "Teng Fei"
 date: 2019-08-08
 tag: iOS
 ---

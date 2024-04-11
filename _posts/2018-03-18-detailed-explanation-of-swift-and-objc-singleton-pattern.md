@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Swift 和 Objective-C 单例模式详解"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-06-29
 tag: iOS
 ---

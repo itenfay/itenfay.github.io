@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "消除 iOS 代码中的警告"
-author: "chenxing"
+author: "Teng Fei"
 date: 2016-06-22
 tag: iOS
 ---

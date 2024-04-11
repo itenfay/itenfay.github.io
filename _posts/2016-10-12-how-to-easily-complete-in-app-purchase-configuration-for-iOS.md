@@ -2,7 +2,7 @@
 layout: post
 title: "如何轻松搞定 iOS 内购配置"
 header-img: "images/iap/asc_bg.png"
-author: "chenxing"
+author: "Teng Fei"
 date: 2016-10-12
 tag: iOS
 ---

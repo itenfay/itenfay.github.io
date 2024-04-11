@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "苹果 iOS14 正式发布：80多项更新、续航有亮点"
-author: "chenxing"
+author: "Teng Fei"
 date: 2020-06-23
 tag: iOS
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "安装 CocoaPods 及使用详解"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-11-08
 tag: tool
 ---

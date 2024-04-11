@@ -2,7 +2,7 @@
 layout: post
 title: "iOS 内购完整的编程指南"
 header-img: "images/iap/asc_bg.png"
-author: "chenxing"
+author: "Teng Fei"
 date: 2016-10-16
 tag: iOS
 ---

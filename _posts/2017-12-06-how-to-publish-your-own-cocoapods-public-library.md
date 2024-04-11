@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS 如何发布自己的 CocoaPods 公开库？"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-12-06
 tag: CMD
 ---

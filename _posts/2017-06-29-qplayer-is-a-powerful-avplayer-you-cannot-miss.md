@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "iOS一款好用的视频播放器QPlayer"
+title: "谈谈一款好用的iOS视频播放器QPlayer"
 header-img: "images/qplayer/post-bg-qplayer.png"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-06-29
 tag: iOS
 ---

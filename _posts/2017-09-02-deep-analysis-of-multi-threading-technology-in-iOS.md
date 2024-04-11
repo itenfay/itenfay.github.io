@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "怎么在 Mac 上将视频文件转成 gif 文件？"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-09-02
 tag: iOS
 ---

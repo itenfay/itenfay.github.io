@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS13 快速读懂深色模式 API"
-author: "chenxing"
+author: "Teng Fei"
 date: 2020-05-27
 tag: iOS
 ---

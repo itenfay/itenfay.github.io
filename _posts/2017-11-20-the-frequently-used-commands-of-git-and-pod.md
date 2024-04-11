@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "git 和 pod 常用命令"
-author: "chenxing"
+author: "Teng Fei"
 date: 2017-11-20
 tag: CMD
 ---

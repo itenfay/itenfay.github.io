@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "手把手教会你用 Markdown 写作"
-author: "chenxing"
+author: "Teng Fei"
 date: 2015-06-09
 tag: tool
 ---

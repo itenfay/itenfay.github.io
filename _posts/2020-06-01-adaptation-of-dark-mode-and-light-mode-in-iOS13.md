@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS13 深色模式与浅色模式适配讲解"
-author: "chenxing640"
+author: "Teng Fei"
 date: 2020-06-01
 tag: iOS
 ---

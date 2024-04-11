@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Swift 常见内置函数"
-author: "chenxing"
+author: "Teng Fei"
 date: 2020-06-06
 tag: iOS
 ---
