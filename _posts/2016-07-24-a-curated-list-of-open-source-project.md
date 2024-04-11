@@ -16,6 +16,7 @@ tag: IT
 
 🔥🔥🔥
 
+
 ## Group
 
 |  ID             |  QRCode            | Description       |
@@ -24,11 +25,10 @@ tag: IT
 | 155353383 | ![155353383](https://github.com/chenxing640/Awesome/raw/master/images/qq155353383.jpg) | Technology communication group for other development language |
 
 
-## Catalog
+## 目录
 
-- [Awesome](#Awesome)
 - [Group](#Group)
-- [iOS/MacOS](#iOS-Catalog)
+- [iOS/MacOS](#iOS目录)
 - [Apple Developer](#Apple-Developer)
 - [HarmonyOS Development](#HarmonyOS-Development)
 - [Flutter](#Flutter)
@@ -43,7 +43,7 @@ tag: IT
 - [Scripts](#Scripts)
 - [Others](#Others)
 
-## iOS Catalog
+## iOS目录
 
 - [iOS](#iOS)
    - [AFNetworking & Alamofire](#AFNetworking-Alamofire)
