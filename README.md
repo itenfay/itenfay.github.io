@@ -1,9 +1,9 @@
-## Chenxing's Blog 
+## TengFei's Blog 
 
 
 #### [我的博客在这里→](https://chenxing640.github.io)
 
-![](https://github.com/chenxing640/dgynfi.github.io/raw/master/images/chenxing-blog.png)
+![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/chenxing-blog.png)
 
 
 ## 各版本特性
@@ -55,9 +55,9 @@
 
 ```
 # Site settings
-title: Chenxing's Blog                # 你的博客网站标题
-SEOTitle: Chenxing's Blog | 辰星的博客  # 在后面会详细谈到
-description: "Chenxing's Blog"        # 随便说点，描述一下
+title: TengFei's Blog                # 你的博客网站标题
+SEOTitle: TengFei's Blog | 腾飞的博客  # 在后面会详细谈到
+description: "TengFei's Blog"        # 随便说点，描述一下
 
 # SNS settings      
 github_username: chenxing640      # 你的github账号
@@ -82,7 +82,7 @@ layout:     post
 title:      "Hello 2015"
 subtitle:   "Hello World, Hello Blog"
 date:       2015-01-29 12:00:00
-author:     "chenxing"
+author:     "Teng Fei"
 header-img: "images/post-bg-distance.jpg"
 tags: Life
 ---
@@ -222,7 +222,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### SEO Title
 
-我的博客标题是 **“Chenxing's Blog”**，但是我想要在搜索的时候显示 **“Chenxing's Blog | 辰星的博客”** ，这个就需要 **SEO Title** 来定义了。
+我的博客标题是 **“TengFei's Blog”**，但是我想要在搜索的时候显示 **“TengFei's Blog | 腾飞的博客”** ，这个就需要 **SEO Title** 来定义了。
 
 其实这个 **SEO Title** 就是定义了<head><title>标题</title></head>，这个里面的东西和多说分享的标题，你可以自行修改的。
 
@@ -237,7 +237,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 ## 模板
 
-如果你需要构建自己的 GitHub 技术博客，你就从[这里](https://github.com/chenxing640/hstemplate.github.io.git)克隆模板。
+如果你需要构建自己的 GitHub 技术博客，你就从[这里](https://github.com/chenxing640/chenxing640.github.io.git)克隆模板。
 
 
 ## 欢迎反馈
