@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "谈谈如何使用Swift写出iOS断点续传下载大文件"
+header-img: "images/workenv-bg.jpg"
 author: "Teng Fei"
 date: 2020-09-09
 tag: iOS
 ---
-
-![](https://chenxing640.github.io/images/workenv-bg.jpg)
 
 本篇讲述实现iOS文件下载功能，包含大文件下载，后台下载，杀死进程，重新启动时继续下载，设置下载并发数，监听网络改变等。
 
@@ -14,7 +13,7 @@ tag: iOS
 
 ![IMG_0686.gif](https://chenxing640.github.io/images/iosdownload/IMG_0686.gif)
 
-**附上[Demo地址](https://github.com/chenxing640/CXDownload)，如果觉得还行呢，就麻烦顺手给个`star`**。
+> **附上[Demo地址](https://github.com/chenxing640/CXDownload)，如果觉得还行呢，就麻烦顺手给个`star`**。
 
 ## 下载功能的实现
 
