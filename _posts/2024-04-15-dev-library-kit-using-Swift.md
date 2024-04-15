@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "谈谈如何使用Swift写出iOS断点续传下载大文件"
+title: "Swift开发：功能非常强大的的Swift库！！！"
 header-img: "images/swiftkit/swift_iosdev.jpeg"
 author: "Teng Fei"
 date: 2024-04-15
