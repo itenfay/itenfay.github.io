@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Swift开发：功能非常强大的的Swift库！！！"
+title: "Swift开发之Handy Kit！！！"
 header-img: "images/swiftkit/swift_iosdev.jpeg"
 author: "Teng Fei"
 date: 2024-04-15
 tag: Swift
 ---
 
-在我们实际开发过程中，为了提高代码的复用率和提升开发效率，经常会在项目中设计一些工具类、扩展和模块化组件。
+在实际的App开发迭代过程中，为了提高代码的复用率和提升开发效率，我们经常会在项目中设计一些工具类、扩展和模块化组件。
 
-为了进一步让大家解放双手🙌🏻，今天推荐一款功能非常强大的[Swift库](https://github.com/chenxing640/CXSwiftKit)。如果好用呢，就麻烦顺手给个`star`!
+为了进一步让大家解放双手🙌🏻，今天推荐一款开发便捷的[Swift库](https://github.com/chenxing640/CXSwiftKit)。
 
 ## 预览
 
@@ -156,7 +156,7 @@ CXSwiftKit
   ┃    ┣ CXKingfisherReferer.swift // Anti theft chains for files such as images and videos, and so on.
   ┃    ┗ ImageView+kfwrapper.swift
   ┃
-  ┣ KingfisherWrapper
+  ┣ SDWebImageWrapper
        ┗ SDWebImageWrapper.swift // The wrapper for SDWebImage.
 ```
 
