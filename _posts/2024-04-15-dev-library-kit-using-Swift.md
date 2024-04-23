@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Swift开发之Handy Kit！！！"
+title: "Swift 便捷工具库(一)"
 header-img: "images/swiftkit/swift_iosdev.jpeg"
 author: "Teng Fei"
 date: 2024-04-15
@@ -9,7 +9,7 @@ tag: Swift
 
 在实际的App开发迭代过程中，为了提高代码的复用率和提升开发效率，我们经常会在项目中设计一些工具类、扩展和模块化组件。
 
-为了进一步让大家解放双手🙌🏻，今天推荐一款开发便捷的[Swift库](https://github.com/chenxing640/CXSwiftKit)。
+为了让大家进一步解放双手🙌🏻，今天推荐一款 Swift 便捷工具库-[CXSwiftKit](https://github.com/chenxing640/CXSwiftKit)。
 
 ## 预览
 
@@ -19,7 +19,7 @@ tag: Swift
 
 > **如果觉得还行呢，就麻烦顺手给个[star](https://github.com/chenxing640/CXSwiftKit)！**
 
-## 功能
+## 特色
 
 - **ApplePay**`(可选)`：用于苹果支付。
 - **AVToolbox**：用于录音、音视频格式转换。
@@ -38,7 +38,36 @@ tag: Swift
 - **Widget**：自定义控件。
 - **SDWebImageWrapper**`(可选)`：SDWebImage的防盗链设置和常用功能封装。
 
-## 树结构说明
+## 要求
+
+* `Xcode 14.0+`
+* `iOS 11.0, tvOS 11.0, macOS 10.15, watchOS 5.0`
+
+## 安装
+
+通过[CocoaPods](https://cocoapods.org)获得。安装只需将下面的添加到您的Podfile中:
+
+* CXSwiftKit
+```ruby
+pod 'CXSwiftKit'
+```
+
+* ApplePay
+```
+pod 'CXSwiftKit/ApplePay'
+```
+
+* KingfisherWrapper
+```
+pod 'CXSwiftKit/KingfisherWrapper'
+```
+
+* SDWebImageWrapper
+```
+pod 'CXSwiftKit/SDWebImageWrapper'
+```
+
+## 结构说明
 
 ```
 CXSwiftKit
@@ -170,5 +199,3 @@ CXSwiftKit
 ## 反馈
 
 附上**[Demo地址](https://github.com/chenxing640/CXSwiftKit)**，有任何遇到的问题，欢迎留言或提issue。
-
----
