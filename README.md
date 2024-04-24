@@ -1,9 +1,9 @@
-## Teng Fei's Blog 
+## TF's Blog 
 
 
 #### [我的博客在这里→](https://chenxing640.github.io)
 
-![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/tengfei-blog.png)
+![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/tf-blog.png)
 
 
 ## 各版本特性
@@ -51,13 +51,13 @@
 
 #### Get Started
 
-你可以通用修改 `_config.yml`文件来轻松的开始搭建自己的博客:
+你可以通用修改`_config.yml`文件来轻松的开始搭建自己的博客:
 
 ```
 # Site settings
-title: Teng Fei's Blog                # 你的博客网站标题
-SEOTitle: Teng Fei's Blog | 腾飞的博客  # 在后面会详细谈到
-description: "Teng Fei's Blog"        # 随便说点，描述一下
+title: TF's Blog                # 你的博客网站标题
+SEOTitle: 腾飞的博客 | TF's Blog  # 在后面会详细谈到
+description: "TF's Blog"        # 随便说点，描述一下
 
 # SNS settings      
 github_username: chenxing640      # 你的github账号
@@ -86,7 +86,6 @@ author:     "Teng Fei"
 header-img: "images/post-bg-distance.jpg"
 tags: Life
 ---
-
 ```
 
 #### SideBar
@@ -94,7 +93,7 @@ tags: Life
 长这样:
 ![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/blog-sidebar.png)
 
-设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
+设置是在`_config.yml`文件里面的`Sidebar settings`那块。
 ```
 # Sidebar settings
 sidebar: true  #添加侧边栏
@@ -130,7 +129,7 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 
 好友链接部分。这会在全部页面显示。
 
-设置是在 `_config.yml`文件里面的`Friends`那块，自己加吧。
+设置是在`_config.yml`文件里面的`Friends`那块，自己加吧。
 
 ```
 # Friends
@@ -204,7 +203,7 @@ ga_domain: chenxing640.com
 
 #### Customization
 
-如果你喜欢折腾，你可以去自定义我的这个模板的 code ，[Grunt](gruntjs.com) 的环境已经搭好了。（非常感谢 Clean Blog 这个模板）
+如果你喜欢折腾，你可以去自定义我的这个模板的code ，[Grunt](gruntjs.com) 的环境已经搭好了。（非常感谢 Clean Blog 这个模板）
 
 There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt ` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
 
@@ -222,7 +221,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### SEO Title
 
-我的博客标题是 **“Teng Fei's Blog”**，但是我想要在搜索的时候显示 **“Teng Fei's Blog | 腾飞的博客”** ，这个就需要 **SEO Title** 来定义了。
+我的博客标题是 **“TF's Blog”**，但是我想要在搜索的时候显示 **“腾飞的博客 | TF's Blog”** ，这个就需要 **SEO Title** 来定义了。
 
 其实这个 **SEO Title** 就是定义了<head><title>标题</title></head>，这个里面的东西和多说分享的标题，你可以自行修改的。
 
@@ -242,4 +241,4 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 ## 欢迎反馈
 
-如果你注意到任何问题，被卡住或只是想聊天，请随意创建一个问题。我很乐意帮助你。
+如果你遇到到任何问题被卡住，请随意创建一个问题。我很乐意帮助你。
