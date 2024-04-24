@@ -168,9 +168,9 @@ iframe 在不同的设备中，将会自动的调整大小。保留内边距是�
 
 #### Comment
 
-博客不仅支持多说 [duoshuo](http://duoshuo.com) 评论系统，也支持 [disqus](http://disqus.com) 评论系统。
+博客支持[utterances](https://github.com/apps/utterances) <!-- https://utteranc.es/?installation_id=50003744&setup_action=install -->评论系统，支持多说 [duoshuo](http://duoshuo.com) 评论系统，也支持 [disqus](http://disqus.com) 评论系统。
 
-disqus 国际比较流行，界面也很大气、简介，如果有人评论，还能实时通知，直接回复通知的邮件就行了。缺点是评论必须要去注册一个 disqus 账号，分享一般只有 Facebook 和 Twitter ，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点 [这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
+utterances安装配置简单，界面简洁，支持Markdown，利用github issues进行评论。disqus 国际比较流行，界面也很大气、简洁，如果有人评论，还能实时通知，直接回复通知的邮件就行了。缺点是评论必须要去注册一个 disqus 账号，分享一般只有 Facebook 和 Twitter ，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点 [这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
 
 多说国内主流社交软件都有分享按钮，登陆方便，比较好管理，就是界面丑了一点。当然你是可以自定义界面的 css 的，详情请看多说开发者文档。
 
@@ -197,7 +197,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'  # Format: UA-xxxxxx-xx
-ga_domain: chenxing640.com
+ga_domain: tengfei.com
 ```
 
 
