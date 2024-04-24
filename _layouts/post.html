@@ -122,7 +122,14 @@ layout: default
                 </div>
                 <!-- disqus 评论框 end -->
                 {% endif %}
-
+                
+                {% if site.utterances_username %}
+                <!-- utterances start -->
+                <script src="https://utteranc.es/client.js" repo="chenxing640/TFs-Blog-Comments" issue-term="pathname"
+                    theme="github-light" crossorigin="anonymous" async>
+                    </script>
+                <!-- utterances 公共JS代码 end -->
+                {% endif %}
             </div>
 
             <!-- Sidebar Container -->
