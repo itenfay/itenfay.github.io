@@ -77,8 +77,8 @@ featured-condition-size: 0 # A tag will be featured if the size of it is more th
 
 # QRcode settings
 qrcode: true # whether or not showing QRcode
-qrcode-ios-description: Group I (iOS/macOS)  # TC Group => Technical Communication Group
-qrcode-other-description: Group II (Other Dev Language) # TC Group => Technical Communication Group
+qrcode-ios-description: QGroup I · iOS & macOS  # TC Group I => QQ Technical Communication Group I.
+qrcode-other-description: QGroup II · Other DevLang # TC Group II => QQ Technical Communication Group II.
 
 
 # Friends
