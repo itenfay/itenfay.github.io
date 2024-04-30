@@ -7,5 +7,3 @@ node_modules
 
 # Mac crap
 .DS_Store
-*/.DS_Store
-*/*/.DS_Store
