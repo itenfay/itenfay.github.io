@@ -22,150 +22,156 @@ tag: IT
 |  ID             |  QRCode            | Description       |
 | :-------------: | :--------------------------------------: | :-------------------------------------: |
 | 614799921 | ![614799921](https://github.com/chenxing640/Awesome/raw/master/images/g614799921.jpg)  | Technology communication group for iOS & macOS |
-| 155353383 | ![155353383](https://github.com/chenxing640/Awesome/raw/master/images/qq155353383.jpg) | Technology communication group for other development language |
+| 155353383 | ![155353383](https://github.com/chenxing640/Awesome/raw/master/images/qq155353383.jpg) | Technology communication group for other Dev-Lang |
 
 
 ## 目录
 
-- [Group](#Group)
-- [iOS/MacOS](#iOS目录)
-- [Apple Developer](#Apple-Developer)
-- [HarmonyOS Development](#HarmonyOS-Development)
-- [Flutter](#Flutter)
-- [React Native](#React-Native)
-- [Weex](#Weex)
-- [H5](#H5)
-- [MiniProgram](#MiniProgram)
-- [C/C++](#C-and-Cplusplus)
-- [Blockchain](#Blockchain)
-- [Database](#Database)
-- [Games](#Games)
-- [Scripts](#Scripts)
-- [Others](#Others)
+- [Group](#group)
+- [iOS/MacOS](#ios目录)
+- [Apple Developer](#apple-developer)
+- [HarmonyOS Development](#harmonyos-development)
+- [Flutter](#flutter)
+- [React Native](#react-native)
+- [Weex](#weex)
+- [H5](#h5)
+- [MiniProgram](#miniProgram)
+- [C/C++](#c-and-cplusplus)
+- [Blockchain](#blockchain)
+- [Database](#database)
+- [Games](#games)
+- [Scripts](#scripts)
+- [Others](#others)
 
 ## iOS目录
 
-- [iOS](#iOS)
-   - [AFNetworking & Alamofire](#AFNetworking-Alamofire)
-   - [SDWebImage](#SDWebImage)
-   - [Kingfisher](#Kingfisher)
-   - [Nuke](#Nuke)
-   - [Masonry & SnapKit](#Masonry-SnapKit)
-   - [YYKit](#YYKit)
-   - [DataSources](#DataSources)
-   - [ReactiveCocoa & RxSwift](#ReactiveCocoa-RxSwift)
-   - [ReactiveSwift](#ReactiveSwift)
-   - [Moya](#Moya)
-   - [RestKit](#RestKit)
-   - [Charts](#Charts)
-   - [Messages](#Messages)
-   - [EmptyDataSet](#EmptyDataSet)
-   - [JSON](#JSON)
-   - [KeyboardManager](#KeyboardManager)
-   - [PhotoPicker](#PhotoPicker)
-   - [Deeplink](#Deeplink)
-   - [SwiftKit](#SwiftKit)
-   - [Hero](#Hero)
+- [iOS](#ios)
+   - [AFNetworking & Alamofire](#afnetworking-alamofire)
+   - [SDWebImage](#sdwebimage)
+   - [Kingfisher](#kingfisher)
+   - [Masonry & SnapKit](#masonry-snapkit)
+   - [YYKit](#yykit)
+   - [DataSources](#datasources)
+   - [ReactiveCocoa & RxSwift](#reactivecocoa-rxswift)
+   - [ReactiveSwift](#reactiveswift)
+   - [Moya](#moya)
+   - [RestKit](#restkit)
+   - [Charts](#charts)
+   - [Messages](#messages)
+   - [EmptyDataSet](#emptydataset)
+   - [JSON](#json)
+   - [KeyboardManager](#keyboardmanager)
+   - [PhotoPicker](#photopicker)
+   - [Deeplink](#deeplink)
+   - [SwiftKit](#swiftkit)
+   - [Hero](#hero)
    - [pop](#pop)
-   - [NVActivityIndicatorView](#NVActivityIndicatorView)
-   - [PageView](#PageView)
-   - [CyclePagerView](#CyclePagerView)
-   - [Code Quality](#Code-Quality)
-   - [Permission](#Permission)
-   - [Socket](#Socket)
-   - [R.swift](#Rswift)
-   - [SwiftGen](#SwiftGen)
-   - [TabBar](#TabBar)
-   - [AcknowList](#AcknowList)
-   - [FloatingPanel](#FloatingPanel)
-   - [HTTPCache](#HTTPCache)
-   - [ListView](#ListView)
-   - [Date](#Date)
-   - [Reachability](#Reachability)
-   - [CocoaLumberjack](#CocoaLumberjack)
-   - [AsyncDisplayKit](#AsyncDisplayKit)
+   - [NVActivityIndicatorView](#nvactivityindicatorview)
+   - [PageView](#pageview)
+   - [CyclePagerView](#cyclepagerview)
+   - [Code Quality](#code-quality)
+   - [Permission](#permission)
+   - [Socket](#socket)
+   - [R.swift](#rswift)
+   - [SwiftGen](#swiftGen)
+   - [TabBar](#tabbar)
+   - [AcknowList](#acknowlist)
+   - [FloatingPanel](#floatingPanel)
+   - [HTTPCache](#httpcache)
+   - [ListView](#listview)
+   - [Date](#date)
+   - [Reachability](#reachability)
+   - [CocoaLumberjack](#cocoalumberjack)
+   - [AsyncDisplayKit](#asyncdisplaykit)
+   - [JVFloatLabeledTextField](#jvfloatlabeledtextfield)
+   - [FLAnimatedImage](#flanimatedimage)
+   - [TABAnimated](#tabanimated)
    - [lottie-ios](#lottie-ios)
-   - [JVFloatLabeledTextField](#JVFloatLabeledTextField)
-   - [FLAnimatedImage](#FLAnimatedImage)
-   - [DKNightVersion](#DKNightVersion)
-   - [PaperOnboarding](#PaperOnboarding)
-   - [APNGKit](#APNGKit)
-   - [GraphQL](#GraphQL)
-   - [HTML Parser](#HTML-Parser)
-   - [Rx Series](#Rx-Series)
-   - [AR & VR](#AR-VR)
-   - [Graphs Processing And Rendering](#Graphs-Processing-And-Rendering)
-      - [OpenGL & OpenGLES](#OpenGL-OpenGLES)
-      - [Metal](#Metal)
-      - [OpenCV](#OpenCV)
-      - [GPUImage](#GPUImage)
-      - [Beauty Filters and Effects](#Beauty-Filters-and-Effects)
-      - [CoreGraphics](#CoreGraphics)
-   - [Payment](#Payment)
-      - [In-App Purchases](#In-App-Purchases)
-      - [ApplePay](#ApplePay)
-      - [ThirdPay](#ThirdPay)
-   - [SVG](#SVG)
+   - [APNGKit](#apngkit)
+   - [webp](#webp)
+   - [Nuke](#nuke)
+   - [VAP](#vap) 
+   - [SVGAPlayer](#svgaplayer)
+   - [SVG](#svg)
+   - [DKNightVersion](#dknightversion)
+   - [PaperOnboarding](#paperonboarding)
+   - [GraphQL](#graphql)
+   - [OOM & Leaks & Crash](#oom-leaks-crash)
+   - [HTML Parser](#html-parser)
+   - [Rx Series](#rx-series)
+   - [AR & VR](#ar-vr)
+   - [Graphs Processing And Rendering](#graphs-processing-and-rendering)
+      - [OpenGL & OpenGLES](#opengl-opengles)
+      - [Metal](#metal)
+      - [OpenCV](#opencv)
+      - [GPUImage](#gpuimage)
+      - [Beauty Filters and Effects](#beauty-filters-and-effects)
+      - [CoreGraphics](#coregraphics)
+   - [Payment](#payment)
+      - [In-App Purchases](#in-app-purchases)
+      - [ApplePay](#applepay)
+      - [ThirdPay](#thirdpay)
    - [Player](#Player)
-      - [Video Player](#Video-Player) 
-      - [Audio Player](#Audio-Player)
-   - [RTC](#RTC)
-   - [IM & Live](#IM-Live)
-   - [AutoLayout](#AutoLayout)
-   - [FlowLayout](#FlowLayout)
+      - [Video Player](#video-player) 
+      - [Audio Player](#audio-player)
+   - [RTC](#rtc)
+   - [IM & Live](#im-live)
+   - [WiFi File Transfer](#wifi-file-transfer)
+   - [AutoLayout](#autoLayout)
+   - [FlowLayout](#flowlayout)
    - [逆向开发](#逆向开发)
       - [fishhook](#fishhook)
       - [逆向辅助工具](#逆向辅助工具)
       - [逆向案例](#逆向案例)
    - [安全攻防和应用加固](#安全攻防和应用加固)
    - [数据安全和算法](#数据安全和算法)
-   - [Zip](#Zip)
-   - [Blockchain](#Blockchain)
-   - [Networks](#Networks)
-   - [Navigation](#Navigation)
-   - [Runtime](#Runtime)
-   - [Data Persistence](#Data-Persistence)
-   - [Side Drawer](#Side-Drawer)
-   - [Bluetooth](#Bluetooth)
-   - [Gesture-Biometric Unlock](#Gesture-Biometric-Unlock)
-   - [BlurView](#BlurView)
-   - [PhotoViewer](#PhotoViewer)
-   - [Panorama](#Panorama)
-   - [Find The Most Relevant Colors](#Find-The-Most-Relevant-Colors)
-   - [Scan](#Scan)
-   - [Refresh](#Refresh)
-   - [HUD & Indicator](#HUD-Indicator)
-   - [Toast](#Toast)
-   - [Menu & PopupView](#Menu-PopupView)
-   - [Slider](#Slider)
-   - [PageControl](#PageControl)
-   - [WebView & ProgressBar](#WebView-ProgressBar)
-   - [WebP](#WebP)
-   - [Animation](#Animation)
-   - [Picker](#Picker)
-   - [Searching)](#Searching)
-   - [Sharing](#Sharing)
-   - [CodeUnit & AuthenticationCode](#CodeUnit-AuthenticationCode)
-   - [Device Info](#Device-Info)
-   - [Ad](#Ad)
-   - [Star View](#Star-View)
-   - [Categories & Extensions](#Categories-Extensions)
-   - [Jailbreak Detector](#Jailbreak-Detector)
-   - [Sensor](#Sensor)
-   - [TextView](#TextView)
-   - [Label](#Label)
-   - [ImageView](#ImageView)   
-   - [Crop video cover](#Crop-video-cover)
-   - [Waver](#Waver)
-   - [Doodling](#Doodling)
-   - [CheckBox](#CheckBox)
-   - [Theme Change](#Theme-Change)
-   - [Architecture Design Pattern](#Architecture-Design-Pattern)
-   - [Ping](#Ping)
-   - [Uncategorized](#Uncategorized)
-   - [SwiftUI Learning](#SwiftUI-Learning)
-   - [Projects & Demo](#Projects-Demo)
-- [MacOS](#MacOS)
+   - [Zip](#zip)
+   - [Blockchain](#blockchain)
+   - [Networks](#networks)
+   - [Navigation](# navigation)
+   - [Runtime](#runtime)
+   - [Data Persistence](#data-persistence)
+   - [Side Drawer](#side-drawer)
+   - [Bluetooth](#bluetooth)
+   - [Gesture-Biometric Unlock](#gesture-biometric-unlock)
+   - [BlurView](#blurview)
+   - [PhotoViewer](#photoviewer)
+   - [Panorama](#panorama)
+   - [Find The Most Relevant Colors](#find-the-most-relevant-colors)
+   - [Scan](#scan)
+   - [Refresh](#refresh)
+   - [HUD & Indicator](#hud-indicator)
+   - [Toast](#toast)
+   - [Menu & PopupView](#menu-popupView)
+   - [Slider](#slider)
+   - [PageControl](#pagecontrol)
+   - [WebView & ProgressBar](#webview-progressbar)
+   - [WebP](#webp)
+   - [Animation](#animation)
+   - [Picker](#picker)
+   - [Searching)](#searching)
+   - [Sharing](#sharing)
+   - [CodeUnit & AuthenticationCode](#codeunit-authenticationcode)
+   - [Device Info](#device-info)
+   - [Ad](#ad)
+   - [Star View](#star-view)
+   - [Categories & Extensions](#categories-extensions)
+   - [Jailbreak Detector](#jailbreak-detector)
+   - [Sensor](#sensor)
+   - [TextView](#textView)
+   - [Label](#label)
+   - [ImageView](#imageview)   
+   - [Crop video cover](#crop-video-cover)
+   - [Waver](#waver)
+   - [Doodling](#doodling)
+   - [CheckBox](#checkbox)
+   - [Theme Change](#theme-change)
+   - [Architecture Design Pattern](#architecture-design-pattern)
+   - [Ping](#ping)
+   - [Uncategorized](#uncategorized)
+   - [SwiftUI Learning](#swiftui-learning)
+   - [Projects & Demo](#projects-demo)
+- [MacOS](#macos)
 
 
 ## Apple Developer
@@ -319,10 +325,6 @@ tag: IT
     <img src="https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/logo.png" width="50%" />
     </div>
 
-### Nuke
-
-- [Nuke](https://github.com/kean/Nuke) - Image loading system.
-
 ### Masonry-SnapKit
 
 *链式编程，AutoLayout*
@@ -469,12 +471,12 @@ RxSwift comprises five separate components depending on eachother in the followi
 
 - [HXPHPicker](https://github.com/SilenceLove/HXPHPicker) - Photo/Video Selector-Supports LivePhoto, GIF selection, online download of resources on iCloud, and editing of photos/videos.
     <div align=center>
-    <img src="https://camo.githubusercontent.com/475f8b33413bf52e66e133447845477e5915c7566aa3a26423dea92682c7a4a9/687474703a2f2f74736e72686170702e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f63686172746c652f687870687069636b6572707265766965772e706e67" width="50%" />
+    <img src="https://github.com/SilenceLove/HXPHPicker/raw/main/Documentation/Support/sample_graph_en.png" width="50%" />
     </div>
 
 - [HXPhotoPicker](https://github.com/SilenceLove/HXPhotoPicker) - 图片/视频选择器 - 支持LivePhoto、GIF图片选择、3DTouch预览、在线下载iCloud上的资源、编辑图片/视频、浏览网络图片 功能 Imitation wx photo/image picker - support for LivePhoto, GIF image selection, 3DTouch preview, Download the resources on iCloud online, browse the web image function.
     <div align=center>
-    <img src="https://camo.githubusercontent.com/cb83c5169e00c04ee716035909869de54116899d0c4b4325361920cb11d8a4a2/687474703a2f2f74736e72686170702e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f63686172746c652f73686f775f7469705f322e706e67" width="30%" />
+    <img src="https://github.com/SilenceLove/PictureMaterial/raw/main/HXPhotoPicker/README/sample_graph.png?raw=true" width="30%" />
     </div>
     
 - [TZImagePickerController](https://github.com/banchichen/TZImagePickerController) - 一个支持多选、选原图和视频的图片选择器，同时有预览、裁剪功能，支持iOS6+。 A clone of UIImagePickerController, support picking multiple photos、original photo、video, also allow preview photo and video, support iOS6+.
@@ -498,7 +500,7 @@ RxSwift comprises five separate components depending on eachother in the followi
 
 ### SwiftKit
 
-- [CXSwiftKit](https://github.com/chenxing640/CXSwiftKit) - CXSwiftKit provides rich extensions of swift language, also supports Objective-C.
+- [CXSwiftKit](https://github.com/chenxing640/CXSwiftKit) - 提供Swift丰富的扩展和实用工具类(This provides the utilities and rich extensions of Swift.)。
 
 - [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift) - A handy collection of more than 500 native Swift extensions to boost your productivity.
     <div align=center>
@@ -687,10 +689,6 @@ RxSwift comprises five separate components depending on eachother in the followi
 
 - [AsyncDisplayKit](https://github.com/facebookarchive/AsyncDisplayKit) - Smooth asynchronous user interfaces for iOS apps.
 
-### lottie-ios
-
-- [lottie-ios](https://github.com/airbnb/lottie-ios) - An iOS library to natively render After Effects vector animations.
-
 ### JVFloatLabeledTextField
 
 - [JVFloatLabeledTextField](https://github.com/jverdi/JVFloatLabeledTextField) - UITextField subclass with floating labels - inspired by Matt D. Smith's design: https://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction?list=users
@@ -698,6 +696,40 @@ RxSwift comprises five separate components depending on eachother in the followi
 ### FLAnimatedImage
 
 - [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage) - Performant animated GIF engine for iOS.
+
+### TABAnimated
+
+- [TABAnimated](https://github.com/tigerAndBull/TABAnimated) - A skeleton screen loading framework based on native for iOS. (一个由iOS原生组件映射出骨架屏的框架，包含快速植入，低耦合，兼容复杂视图等特点，提供国内主流骨架屏动画的加载方案，同时支持上拉加载更多、自定制动画。)
+
+### lottie-ios
+
+- [lottie-ios](https://github.com/airbnb/lottie-ios) - An iOS library to natively render After Effects vector animations.
+
+### APNGKit
+
+- [APNGKit](https://github.com/onevcat/APNGKit) - High performance and delightful way to play with APNG format in iOS.
+
+### webp
+
+- [libwebp](https://github.com/webmproject/libwebp) - WebP codec is a library to encode and decode images in WebP format. This package contains the library that can be used in other programs to add WebP support, as well as the command line tools 'cwebp' and 'dwebp' to compress and decompress images respectively. See https://developers.google.com/speed/webp for details on the image format.
+
+- [SDWebImageWebPCoder](https://github.com/SDWebImage/SDWebImageWebPCoder) - SDWebImageWebPCoder supports both WebP decoding and encoding, for Static WebP or Animated WebP as well.
+
+### Nuke
+
+- [Nuke](https://github.com/kean/Nuke) - Image loading system.
+
+### VAP
+
+- [vap](https://github.com/Tencent/vap) - VAP（Video Animation Player）是企鹅电竞开发，用于播放酷炫动画的实现方案，相比Webp, Apng动图方案，具有高压缩率(素材更小)、硬件解码(解码更快)的优点；相比Lottie，能实现更复杂的动画效果(比如粒子特效)。| VAP(Video Animation Player) is a fantastic animation player. It can play video with alpha channel. Compared with Webp or Apng animation, it has the advantages of high compression rate (smaller material) and hardware decoding. Compared with Lottie, it can achieve more complex animation effects (such as particle effects).
+
+### SVGAPlayer
+
+- [SVGAPlayer](https://github.com/svga/SVGAPlayer-iOS) - Similar to Lottie. Render After Effects / Animate CC (Flash) animations natively on Android and iOS, Web. 使用 SVGAPlayer 在 Android、iOS、Web中播放 After Effects / Animate CC (Flash) 动画。【 [svga.io](https://svga.io/) 】
+
+### SVG
+
+- [SVGKit](https://github.com/SVGKit/SVGKit) - Display and interact with SVG Images on iOS / OS X, using native rendering (CoreAnimation).
 
 ### DKNightVersion
 
@@ -707,13 +739,26 @@ RxSwift comprises five separate components depending on eachother in the followi
 
 - [paper-onboarding](https://github.com/Ramotion/paper-onboarding) - PaperOnboarding is a material design UI slider. Swift UI library by @Ramotion.
 
-### APNGKit
-
-- [APNGKit](https://github.com/onevcat/APNGKit) - High performance and delightful way to play with APNG format in iOS.
-
 ### GraphQL
 
 - [apollo-ios](https://github.com/apollographql/apollo-ios) - 📱 A strongly-typed, caching GraphQL client for iOS, written in Swift.
+
+
+## OOM-Leaks-Crash
+
+- [MLeaksFinder](https://github.com/Tencent/MLeaksFinder) - Find memory leaks in your iOS app at develop time.
+
+- [AMLeaksFinder](https://github.com/liangdahong/AMLeaksFinder) - A small tool for automatically detecting the [controller, view memory leak] in the project. 一款用于自动检测项目中【控制器内存泄漏，View 内存泄漏】的小工具，支持 ObjC，Swift。
+
+- [FBRetainCycleDetector](https://github.com/facebook/FBRetainCycleDetector) - iOS library to help detecting retain cycles in runtime.
+
+- [WKVCDeallocMonitor](https://github.com/WangKunKun/WKVCDeallocMonitor) - ViewController 未释放时 进行UI层级提示。
+
+- [OOMDetector](https://github.com/Tencent/OOMDetector) - OOMDetector是一个iOS内存监控组件，应用此组件可以帮助你轻松实现OOM监控、大内存分配监控、内存泄漏检测等功能。| OOMDetector is a memory monitoring component for iOS which provides you with OOM monitoring, memory allocation monitoring, memory leak detection and other functions.
+
+- [FBAllocationTracker](https://github.com/facebookarchive/FBAllocationTracker) - FBAllocationTracker is a tool that can be used as an interface to Objective-C objects allocated in memory. It can be used to query all instances of given class, or you can (as in Instruments) mark generations and query for objects created only in scope of one generation.
+
+- [AvoidCrash](https://github.com/chenfanfang/AvoidCrash) - This framework can effective avoid crash by potential error code. For example : If you insert a nil into a mutable array, this framework can avoid crash and note you that where cause crash.
 
 
 ### HTML Parser
@@ -1009,13 +1054,6 @@ RxSwift comprises five separate components depending on eachother in the followi
 - [stripe-ios](https://github.com/stripe/stripe-ios) - The Stripe iOS SDK makes it quick and easy to build an excellent payment experience in your iOS app. We provide powerful and customizable UI screens and elements that can be used out-of-the-box to collect your users' payment details. We also expose the low-level APIs that power those UIs so that you can build fully custom experiences.
 
 
-#### SVG
-
-- [SVGAPlayer-iOS](https://github.com/svga/SVGAPlayer-iOS) - Similar to Lottie. Render After Effects / Animate CC (Flash) animations natively on Android and iOS, Web. 使用 SVGAPlayer 在 Android、iOS、Web中播放 After Effects / Animate CC (Flash) 动画。【 [svga.io](https://svga.io/) 】
-
-- [SVGKit](https://github.com/SVGKit/SVGKit) - Display and interact with SVG Images on iOS / OS X, using native rendering (CoreAnimation).
-
-
 ### Player
 
 #### Video Player
@@ -1176,6 +1214,15 @@ RxSwift comprises five separate components depending on eachother in the followi
 - [Signal-iOS ](https://github.com/signalapp/Signal-iOS)  - Signal is a free, open source, messaging app for simple private communication with friends.
 
 
+### WiFi File Transfer
+
+- [GCDWebServer](https://github.com/swisspol/GCDWebServer) - GCDWebServer is a modern and lightweight GCD based HTTP 1.1 server designed to be embedded in iOS, macOS & tvOS apps.
+- [GCDWebServerDemo](https://github.com/sjxjjx/GCDWebServerDemo) - 使用GCDWebServer框架实现wifi局域网传输文件到iPhone的功能。
+
+- [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer) - CocoaHTTPServer is a small, lightweight, embeddable HTTP server for Mac OS X or iOS applications.
+- [HTTPServerDemo](https://github.com/sjxjjx/HTTPServerDemo) - 使用CocoaHTTPServer框架实现wifi局域网传输文件到iPhone的功能。
+
+
 ### AutoLayout
 
 - [Masonry](https://github.com/SnapKit/Masonry) - Harness the power of AutoLayout NSLayoutConstraints with a simplified, chainable and expressive syntax. Supports iOS and OSX Auto Layout.
@@ -1254,7 +1301,7 @@ class MyViewController: UIViewController {
 
 - [fishhook](https://github.com/facebook/fishhook) - A library that enables dynamically rebinding symbols in Mach-O binaries running on iOS. 
     <div align=center>
-    <img src="https://camo.githubusercontent.com/18243516844d12b1bd158ce3687635d6e48d2e2e/687474703a2f2f692e696d6775722e636f6d2f4856587148437a2e706e67" width="50%" />
+    <img src="https://camo.githubusercontent.com/a2126f2d085fd979a91b9eb576a18c735d2c69aaf6d8e4738fb19671fbac7722/687474703a2f2f692e696d6775722e636f6d2f4856587148437a2e706e67" width="50%" />
     </div>
 
 #### 逆向辅助工具
@@ -2030,17 +2077,6 @@ __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
 ### Sensor
 
 - [SensorDemo](https://github.com/wsl2ls/SensorDemo) - 指纹识别、运动传感器、加速计、环境光感、距离传感器、指南针、陀螺仪等传感器示例集锦。【 [Priview 1](https://camo.githubusercontent.com/339dfa9c656084dc5d29496ec168c43426a8e201/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313730383434372d373764333332623832386363336261332e6769663f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970) 】
-
-
-- [WKVCDeallocMonitor](https://github.com/WangKunKun/WKVCDeallocMonitor) - ViewController 未释放时 进行UI层级提示。
-
-- [FBRetainCycleDetector](https://github.com/facebook/FBRetainCycleDetector) - iOS library to help detecting retain cycles in runtime.
-
-- [MLeaksFinder](https://github.com/Tencent/MLeaksFinder) - Find memory leaks in your iOS app at develop time.
-
-- [AMLeaksFinder](https://github.com/liangdahong/AMLeaksFinder) - A small tool for automatically detecting the [controller, view memory leak] in the project. 一款用于自动检测项目中【控制器内存泄漏，View 内存泄漏】的小工具，支持 ObjC，Swift。
-
-- [AvoidCrash](https://github.com/chenfanfang/AvoidCrash) - This framework can effective avoid crash by potential error code. For example : If you insert a nil into a mutable array, this framework can avoid crash and note you that where cause crash.
 
 
 ### TextView
