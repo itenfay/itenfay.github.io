@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "怎么在 Mac 上将视频文件转成 gif 文件？"
+title: "iOS 多线程技术深度解析"
 author: "Teng Fei"
 date: 2017-09-02
 tag: iOS
