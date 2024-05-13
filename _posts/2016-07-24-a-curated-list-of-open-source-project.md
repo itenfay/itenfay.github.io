@@ -12,7 +12,7 @@ tag: IT
 
 既然我们在 GitHub 上做了这么多事情，我们就来思索一下，在 GitHub 上有哪些值得关注学习的开源项目呢？
 
-不知道的没有关系，在这里我汇总了许多 [精选 Github 优秀的开源项目](https://github.com/chenxing640/OpenSource)。提供iOS精选列表，包含Objective-C和Swift项目，涉及鸿蒙开发、Flutter、React Native、Weex、H5、小程序、区块链、数据库、游戏开发等教程。
+不知道的没有关系，在这里我汇总了许多 [精选 Github 优秀的开源项目](https://github.com/chenxing640/Awesome)。提供iOS精选列表，包含Objective-C和Swift项目，涉及鸿蒙开发、Flutter、React Native、Weex、H5、小程序、区块链、数据库、游戏开发等教程。
 
 🔥🔥🔥
 
