@@ -3,7 +3,7 @@
 
 #### [我的博客在这里→](https://itenfay.github.io)
 
-![](https://github.com/itenfay/itenfay.github.io/raw/master/images/tf-blog.png)
+![](https://github.com/itenfay/itenfay.github.io/raw/master/images/tenfay-blog.png)
 
 
 ## 各版本特性
@@ -197,7 +197,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'  # Format: UA-xxxxxx-xx
-ga_domain: tengfei.com
+ga_domain: tenfay.com
 ```
 
 
@@ -221,7 +221,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### SEO Title
 
-我的博客标题是 **“TF's Blog”**，但是我想要在搜索的时候显示 **“腾飞的博客 | TF's Blog”** ，这个就需要 **SEO Title** 来定义了。
+我的博客标题是 **“Tenfay's Blog”**，但是我想要在搜索的时候显示 **“腾飞的博客 | Tenfay's Blog”** ，这个就需要 **SEO Title** 来定义了。
 
 其实这个 **SEO Title** 就是定义了<head><title>标题</title></head>，这个里面的东西和多说分享的标题，你可以自行修改的。
 
