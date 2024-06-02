@@ -2,22 +2,22 @@
 layout: post
 title: "Swift 便捷工具库(一)"
 header-img: "images/swiftkit/swift_iosdev.jpeg"
-author: "Teng Fei"
+author: "Tenfay"
 date: 2024-04-15
 tag: Swift
 ---
 
 在实际的App开发迭代过程中，为了提高代码的复用率和提升开发效率，我们经常会在项目中设计一些工具类、扩展和模块化组件。
 
-为了让大家进一步解放双手🙌🏻，今天推荐一款 Swift 便捷工具库-[CXSwiftKit](https://github.com/chenxing640/CXSwiftKit)。
+为了让大家进一步解放双手🙌🏻，今天推荐一款 Swift 便捷工具库-[CXSwiftKit](https://github.com/itenfay/CXSwiftKit)。
 
 ## 预览
 
 **更多内容需要你来探索。**
 
-![IMG_0717.gif](https://chenxing640.github.io/images/swiftkit/IMG_0717.gif)
+![IMG_0717.gif](https://itenfay.github.io/images/swiftkit/IMG_0717.gif)
 
-> **如果觉得还行呢，就麻烦顺手给个[star](https://github.com/chenxing640/CXSwiftKit)！**
+> **如果觉得还行呢，就麻烦顺手给个[star](https://github.com/itenfay/CXSwiftKit)！**
 
 ## 特色
 
@@ -191,11 +191,11 @@ CXSwiftKit
 
 ## 推荐
 
-- [CXDownload](https://github.com/chenxing640/CXDownload) - 实现Swift断点续传下载，包含大文件下载，后台下载，杀死进程，重新启动时继续下载，设置下载并发数，监听网络改变等。
-- [MarsUIKit](https://github.com/chenxing640/MarsUIKit) - `MarsUIKit`封装一些常用的UI组件，如：”`Toast, Messages, HUD, EmptyDataSet, SVGA, and so on.`“。
-- [RxListDataSource](https://github.com/chenxing640/RxListDataSource) - `RxListDataSource` 为`UITableView`或`UICollectionView`提供数据源和数据绑定。
-- [CXNetwork-Moya](https://github.com/chenxing640/CXNetwork-Moya) - `CXNetwork-Moya`基于`Moya`和`ObjectMapper`封装的一个网络请求库。
+- [CXDownload](https://github.com/itenfay/CXDownload) - 实现Swift断点续传下载，包含大文件下载，后台下载，杀死进程，重新启动时继续下载，设置下载并发数，监听网络改变等。
+- [MarsUIKit](https://github.com/itenfay/MarsUIKit) - `MarsUIKit`封装一些常用的UI组件，如：”`Toast, Messages, HUD, EmptyDataSet, SVGA, and so on.`“。
+- [RxListDataSource](https://github.com/itenfay/RxListDataSource) - `RxListDataSource` 为`UITableView`或`UICollectionView`提供数据源和数据绑定。
+- [CXNetwork-Moya](https://github.com/itenfay/CXNetwork-Moya) - `CXNetwork-Moya`基于`Moya`和`ObjectMapper`封装的一个网络请求库。
 
 ## 反馈
 
-附上**[Demo地址](https://github.com/chenxing640/CXSwiftKit)**，有任何遇到的问题，欢迎留言或提issue。
+附上**[Demo地址](https://github.com/itenfay/CXSwiftKit)**，有任何遇到的问题，欢迎留言或提issue。

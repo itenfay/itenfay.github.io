@@ -2,7 +2,7 @@
 layout: post
 title: "iOS逆向学习：免越狱给微信添加新功能"
 header-img: "images/reverse/rev_bg.jpg"
-author: "Teng Fei"
+author: "Tenfay"
 date: 2017-04-20
 tag: iOSre
 ---
@@ -17,33 +17,33 @@ tag: iOSre
 
 - 插件设置
 
-![s-1](https://chenxing640.github.io/images/reverse/wcplugin_settings.png)
-![s-2](https://chenxing640.github.io/images/reverse/wcplugin_xwtx1.png)
-![s-3](https://chenxing640.github.io/images/reverse/wcplugin_xwtx2.png)
+![s-1](https://itenfay.github.io/images/reverse/wcplugin_settings.png)
+![s-2](https://itenfay.github.io/images/reverse/wcplugin_xwtx1.png)
+![s-3](https://itenfay.github.io/images/reverse/wcplugin_xwtx2.png)
 
 - 自动抢红包
 
-![redenv.gif](https://chenxing640.github.io/images/reverse/wcplugin_redenv.gif)
+![redenv.gif](https://itenfay.github.io/images/reverse/wcplugin_redenv.gif)
 
 - 屏蔽消息
 
-![s-4](https://chenxing640.github.io/images/reverse/wcplugin_pbqxx.png)
-![s-5](https://chenxing640.github.io/images/reverse/wcplugin_pbxx.png)
+![s-4](https://itenfay.github.io/images/reverse/wcplugin_pbqxx.png)
+![s-5](https://itenfay.github.io/images/reverse/wcplugin_pbxx.png)
 
 - 伪定位
 
-![Fake Location](https://chenxing640.github.io/images/reverse/fake_location.png)
+![Fake Location](https://itenfay.github.io/images/reverse/fake_location.png)
 
 - 防止撤回消息
 
-![s-6](https://chenxing640.github.io/images/reverse/prevent_msg_revoc.png)
+![s-6](https://itenfay.github.io/images/reverse/prevent_msg_revoc.png)
 
 
 ## 打开终端
 
 Terminal 一般 Mac 电脑自带，打开 Terminal 执行后续操作。
 
-![terminal](https://chenxing640.github.io/images/reverse/terminal.png)
+![terminal](https://itenfay.github.io/images/reverse/terminal.png)
 
 ## 安装 theos
 
@@ -133,7 +133,7 @@ tweak 定义是：对复杂的系统—通常是电子设备—进行微调或�
 
 如下图所示：
 
-![nic_create_tweak](https://chenxing640.github.io/images/reverse/nic_create_tweak.png)
+![nic_create_tweak](https://itenfay.github.io/images/reverse/nic_create_tweak.png)
 
 完成后会看到四个文件( make 后将生成 .theos 、obj 文件夹)：**Makefile,&nbsp; wcodtplugin.plist,&nbsp; control,&nbsp; Tweak.xm**。
 
@@ -172,7 +172,7 @@ after-install::
 
 该文件中的 Bundles : 指定 bundle 为 tweak 的作用对象，也可添加多个 bundle ，指定多个为 tweak 作用对象。
 
-![tweak_plist](https://chenxing640.github.io/images/reverse/tweak_plist.png)
+![tweak_plist](https://itenfay.github.io/images/reverse/tweak_plist.png)
 
 - control
 
@@ -358,8 +358,8 @@ _THEOS_PLATFORM_DPKG_DEB_COMPRESSION ?= gzip
 
 ## 目录介绍
 
-- [Dynamic library](https://github.com/chenxing640/WeChat_tweak/Dynamic%20library) - dylib 目录 (Raw Dynamic Library) 和 modify 目录 (Modified Dynamic Library) ，可直接拿来注入。
-- [Hook-Tools](https://github.com/chenxing640/WeChat_tweak/Hook-Tools) - Hook 使用的工具。
+- [Dynamic library](https://github.com/itenfay/WeChat_tweak/Dynamic%20library) - dylib 目录 (Raw Dynamic Library) 和 modify 目录 (Modified Dynamic Library) ，可直接拿来注入。
+- [Hook-Tools](https://github.com/itenfay/WeChat_tweak/Hook-Tools) - Hook 使用的工具。
     - dumpdecrypted - 用于解密 iOS 的可执行文件，砸壳时可不需要。
     - otool - 一般 Mac 自带，用于查看解密后文件的依赖项检查。
     - install_name_tool - 一般 Mac 自带，更改动态库的依赖。
@@ -372,10 +372,10 @@ _THEOS_PLATFORM_DPKG_DEB_COMPRESSION ?= gzip
         - [010Editor 最新版 8.0.1 逆向分析](https://www.52pojie.cn/forum.php?mod=viewthread&tid=684119&page=)
     - MachOView - 用于对 mach-o 文件分析的工具。
     - DYFCodesign - 用于对 iOS app 进行脚本重签名。
-    - [ios-app-signer](https://github.com/chenxing640/OpenSource#MacOS) - 打包 ipa 与重签名图形化工具。
+    - [ios-app-signer](https://github.com/itenfay/OpenSource#MacOS) - 打包 ipa 与重签名图形化工具。
     - iOSOpenDev - Xcode 增强工具，通过它生成用于注入的 dylib 库。建议用 theos 编译 tweak 项目生成注入的 dylib 库。
-- [Resources](https://github.com/chenxing640/WeChat_tweak/Resources) - AppIcon 目录 (带抢红包的Icon) 和 Audios 目录 (音频文件)。
-- [WeChatPluginDev](https://github.com/chenxing640/WeChat_tweak/WeChatPluginDev/wapleodtcorexpc) - 微信插件 tweak 源码开发。
+- [Resources](https://github.com/itenfay/WeChat_tweak/Resources) - AppIcon 目录 (带抢红包的Icon) 和 Audios 目录 (音频文件)。
+- [WeChatPluginDev](https://github.com/itenfay/WeChat_tweak/WeChatPluginDev/wapleodtcorexpc) - 微信插件 tweak 源码开发。
 
 
 ## 获取砸壳版本的微信
@@ -513,7 +513,7 @@ otool -l Payload/WeChat.app/WeChat | grep -B 2 crypt
 cd ~/Desktop/
 
 # 克隆 (Clone Repository)
-git clone https://github.com/chenxing640/WeChat_tweak.git
+git clone https://github.com/itenfay/WeChat_tweak.git
 ```
 
 ### 编译 tweak 项目 
@@ -524,7 +524,7 @@ cd WeChat_tweak/WeChatPluginDev/wapleodtcorexpc/
 make
 ```
 
-![tweak_make](https://chenxing640.github.io/images/reverse/tweak_make.png)
+![tweak_make](https://itenfay.github.io/images/reverse/tweak_make.png)
 
 编译时出现的问题或错误，请查看上述 **Tweak** 小节中 **编译** 提及的 [问题描述和解决方法](#问题描述和解决方法)。
 
@@ -555,7 +555,7 @@ cp WeChat_tweak/Dynamic\ library/dylib/libsubstrate.dylib ~/Desktop/
 
 右键 wapleodtcorexpc.dylib ，选择显示简介，在名称与扩展名处将 wapleodtcorexpc.dylib 修改成 wapleodtcorexpc ，回车并移除。
 
-![Remove Ext](https://chenxing640.github.io/images/reverse/rm_ext.png)
+![Remove Ext](https://itenfay.github.io/images/reverse/rm_ext.png)
 
 同理，右键 libsubstrate.dylib ，选择显示简介，在名称与扩展名处将 libsubstrate.dylib 修改成 waplesubstrate ，回车并移除。
 
@@ -663,19 +663,19 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 - 进入 WeChat 目录
 
-![Show WeChat.app](https://chenxing640.github.io/images/reverse/show_wechatapp_dir.png)
+![Show WeChat.app](https://itenfay.github.io/images/reverse/show_wechatapp_dir.png)
 
 > 注：右键 WeChat.app ，选择显示包内容，进入 WeChat 目录。
 
 - 找出 Info.plist 文件
 
-![Find Info.plist](https://chenxing640.github.io/images/reverse/found_Info.plist.png)
+![Find Info.plist](https://itenfay.github.io/images/reverse/found_Info.plist.png)
 
   双击，默认 Xcode 打开，修改 Info.plist 中的 Bundle display name 和 Bundle identifier，将 WeChatBundleVersion 的 Value 修改成 Bundle version 的 Value，将 URL types -> URL identifier 修改成新的 Bundle identifier，删除 build_time, by, path, rev, tag, uuid, ver 等 Key。
 
 - 删除 PlugIns 和 Watch 目录中的文件
 
-![Del Files](https://chenxing640.github.io/images/reverse/del_files.png)
+![Del Files](https://itenfay.github.io/images/reverse/del_files.png)
 
 - 删除 _CFBundleDisplayName
 
@@ -698,14 +698,14 @@ cp waplesubstrate wapleodtcorexpc Payload/WeChat.app/
 
 - 使用自己编译完成的动态库
 
-- 已编译完成的动态库下载 ==> [Here](https://github.com/chenxing640/WeChat_tweak/Dynamic%20library)
+- 已编译完成的动态库下载 ==> [Here](https://github.com/itenfay/WeChat_tweak/Dynamic%20library)
 
 
 ## 重签名动态库
 
 打开钥匙串访问
 
-![Keychain Access](https://chenxing640.github.io/images/reverse/keychain_access.png)
+![Keychain Access](https://itenfay.github.io/images/reverse/keychain_access.png)
 
 点击登录 -> 我的证书，找出要签名的证书，右击显示简介，找到常用名称，然后拷贝后面的字符串。
 
@@ -800,7 +800,7 @@ zip -r WeChat_705_New.ipa Payload/
 
 2. Github下载：
 
-[https://github.com/chenxing640/WeChat_tweak/tree/master/Hook-Tools/](https://github.com/chenxing640/WeChat_tweak/tree/master/Hook-Tools/)
+[https://github.com/itenfay/WeChat_tweak/tree/master/Hook-Tools/](https://github.com/itenfay/WeChat_tweak/tree/master/Hook-Tools/)
 
 将下载的 **PackageApplication** 执行以下命令，并设置可执行权限：
 
@@ -835,8 +835,8 @@ xcrun -sdk iphoneos PackageApplication -v Payload/WeChat.app -o ~/Desktop/WeChat
 
 |     WeChatPay     |       AliPay      |
 | :---------------: | :---------------: |
-| ![wechat_paymentcode](https://chenxing640.github.io/images/qrcode/wechat_paymentcode.jpg) | ![alipay_paymentcode](https://chenxing640.github.io/images/qrcode/alipay_paymentcode.jpg) |
-| ![wechat_apprcode](https://chenxing640.github.io/images/qrcode/wechat_apprcode.jpg) | |
+| ![wechat_paymentcode](https://itenfay.github.io/images/qrcode/wechat_paymentcode.jpg) | ![alipay_paymentcode](https://itenfay.github.io/images/qrcode/alipay_paymentcode.jpg) |
+| ![wechat_apprcode](https://itenfay.github.io/images/qrcode/wechat_apprcode.jpg) | |
 
 
 ## Hook 版本下载
@@ -869,7 +869,7 @@ Hook 的版本只需要按照[解压 ipa](#解压-ipa)，[重签名应用](#重�
 
 ## QQ群 (ID:614799921)
 
-![qq-614799921](https://chenxing640.github.io/images/qrcode/g614799921.jpg)
+![qq-614799921](https://itenfay.github.io/images/qrcode/g614799921.jpg)
 
 
 ## 参考文章
@@ -890,4 +890,4 @@ Hook 的版本只需要按照[解压 ipa](#解压-ipa)，[重签名应用](#重�
 
 最后，想了解更多详情，请查看我的 GitHub，记得给个 Star，😝😝
 
-👉 GitHub：[戳这里](https://github.com/chenxing640/WeChat_tweak)
+👉 GitHub：[戳这里](https://github.com/itenfay/WeChat_tweak)

@@ -2,7 +2,7 @@
 layout: post
 title: "谈谈一款好用的iOS视频播放器QPlayer"
 header-img: "images/qplayer/post-bg-qplayer.png"
-author: "Teng Fei"
+author: "Tenfay"
 date: 2017-06-29
 tag: iOS
 ---
@@ -24,7 +24,7 @@ tag: iOS
 
 ## 预览
 
-![PRV_IMG_1739.gif](https://chenxing640.github.io/images/qplayer/PRV_IMG_1739.gif)
+![PRV_IMG_1739.gif](https://itenfay.github.io/images/qplayer/PRV_IMG_1739.gif)
 
 
 ## 免责声明
@@ -35,7 +35,7 @@ tag: iOS
 
 ## QQ群 (ID:614799921)
 
-![614799921](https://chenxing640.github.io/images/qrcode/g614799921.jpg)
+![614799921](https://itenfay.github.io/images/qrcode/g614799921.jpg)
 
 
 ## 要求
@@ -52,4 +52,4 @@ iOS 11.0+, iPhone and iPad, Xcode14+.
 
 ## 最后
 
-附上`QPlayer`的[源码地址](https://github.com/chenxing640/QPlayer)，如果你觉得还行呢，麻烦顺手给个`star`。
+附上`QPlayer`的[源码地址](https://github.com/itenfay/QPlayer)，如果你觉得还行呢，麻烦顺手给个`star`。

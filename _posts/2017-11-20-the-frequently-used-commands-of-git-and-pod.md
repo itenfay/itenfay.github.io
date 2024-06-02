@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "git 和 pod 常用命令"
-author: "Teng Fei"
+author: "Tenfay"
 date: 2017-11-20
 tag: CMD
 ---
@@ -42,7 +42,7 @@ git push --tags #将本地创建的tag推到远程库
 git tag -d '1.0.1' #删除版本为1.0.1的tag
 git push origin :1.0.1 #从远程库删除版本为1.0.1的tag
 
-git remote set-url origin https://token@github.com/chenxing640/xxx.git/ #设置用token提交
+git remote set-url origin https://token@github.com/itenfay/xxx.git/ #设置用token提交
 git remote #不带参数，列出已经存在的远程分支
 git remote -v #列出详细信息，在每一个名字后面列出其远程url，-v 选项(译注: 此为 -verbose 的简写，取首字母)。
 git remote add [shortname] [url] # 添加一个新的远程仓库，可以指定一个简单的名字，以便将来引用。
@@ -50,8 +50,8 @@ git remote add origin2 git@github.com:tianqixin/runoob-git-test.git #添加仓�
 git remote rm [别名] #删除远程仓库你可以使用命令
 git remote rm origin2 #删除仓库origin2
 
-git clone https://github.com/chenxing640/DYFToast.git #从远程库中克隆
-git clone https://github.com/chenxing640/DYFToast.git Toast #从远程库中克隆到指定的目录 (Toast)
+git clone https://github.com/itenfay/DYFToast.git #从远程库中克隆
+git clone https://github.com/itenfay/DYFToast.git Toast #从远程库中克隆到指定的目录 (Toast)
 
 git log #查看历史记录
 git reflog #查看历史记录的版本号id

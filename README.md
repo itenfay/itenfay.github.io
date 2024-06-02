@@ -1,9 +1,9 @@
-## TF's Blog 
+## Tenfay's Blog 
 
 
-#### [我的博客在这里→](https://chenxing640.github.io)
+#### [我的博客在这里→](https://itenfay.github.io)
 
-![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/tf-blog.png)
+![](https://github.com/itenfay/itenfay.github.io/raw/master/images/tf-blog.png)
 
 
 ## 各版本特性
@@ -18,7 +18,7 @@
 ## 支持
 
 * 你可以自由的 fork 。如果你能将我的信息和 github 的地址放在你的页面底部做成链接，我将非常感谢你。
-* 如果你喜欢我的这个博客模板，请在 `chenxing640.github.io` 这个 repository 点个赞（右上角 **star** 一下）。
+* 如果你喜欢我的这个博客模板，请在 `itenfay.github.io` 这个 repository 点个赞（右上角 **star** 一下）。
 
 
 ## 说明文档
@@ -55,16 +55,16 @@
 
 ```
 # Site settings
-title: TF's Blog                # 你的博客网站标题
-SEOTitle: 腾飞的博客 | TF's Blog  # 在后面会详细谈到
-description: "TF's Blog"        # 随便说点，描述一下
+title: Tenfay's Blog                # 你的博客网站标题
+SEOTitle: 腾飞的博客 | Tenfay's Blog  # 在后面会详细谈到
+description: "Tenfay's Blog"        # 随便说点，描述一下
 
 # SNS settings      
-github_username: chenxing640      # 你的github账号
-weibo_username: u/2617525300      # 你的微博账号，底部链接会自动更新的。
+github_username: itenfay      # 你的github账号
+weibo_username: u/2617525300  # 你的微博账号，底部链接会自动更新的。
 
 # Build settings
-# paginate: 10                    # 一页你准备放几篇文章
+# paginate: 10                # 一页你准备放几篇文章
 ```
 
 Jekyll 官方网站还有很多的参数可以调，比如设置文章的链接形式...网址在这里：[Jekyll - Official Site](http://jekyllrb.com/) 中文版的在这里：[Jekyll中文](http://jekyllcn.com/)。
@@ -82,16 +82,16 @@ layout:     post
 title:      "Hello 2015"
 subtitle:   "Hello World, Hello Blog"
 date:       2015-01-29 12:00:00
-author:     "Teng Fei"
+author:     "Tenfay"
 header-img: "images/post-bg-distance.jpg"
-tags: Life
+tags: iOS
 ---
 ```
 
 #### SideBar
 
 长这样:
-![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/blog-sidebar.png)
+![](https://github.com/itenfay/itenfay.github.io/raw/master/images/blog-sidebar.png)
 
 设置是在`_config.yml`文件里面的`Sidebar settings`那块。
 ```
@@ -150,7 +150,7 @@ friends: [
 
 HTML5 幻灯片的排版：
 
-![](https://github.com/chenxing640/chenxing640.github.io/raw/master/images/blog-keynote.png)
+![](https://github.com/itenfay/itenfay.github.io/raw/master/images/blog-keynote.png)
 
 这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放 html 幻灯的功能呢~
 
@@ -159,7 +159,7 @@ HTML5 幻灯片的排版：
 ```
 ---
 layout: keynote
-iframe: "http://chenxing640.com/js-module-7day/"
+iframe: "http://itenfay.com/js-module-7day/"
 ---
 ```
 
@@ -212,7 +212,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### Header Image
 
-标题底图是可以自己选的，看看几篇示例post你就知道如何设置了，详情请见：[【_posts】](https://github.com/chenxing640/chenxing640.github.io/tree/master/_posts)。
+标题底图是可以自己选的，看看几篇示例post你就知道如何设置了，详情请见：[【_posts】](https://github.com/itenfay/itenfay.github.io/tree/master/_posts)。
   
 标题底图的选取完全是看个人的审美了，我也帮不了你。每一篇文章可以有不同的底图，你想放什么就放什么，最后宽度要够，大小不要太大，否则加载慢啊。
 
@@ -236,7 +236,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 ## 模板
 
-如果你需要构建自己的 GitHub 技术博客，你就从[这里](https://github.com/chenxing640/chenxing640.github.io.git)克隆模板。
+如果你需要构建自己的 GitHub 技术博客，你就从[这里](https://github.com/itenfay/itenfay.github.io.git)克隆模板。
 
 
 ## 欢迎反馈

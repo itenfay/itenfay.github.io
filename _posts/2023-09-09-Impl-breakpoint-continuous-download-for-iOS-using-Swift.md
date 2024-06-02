@@ -2,7 +2,7 @@
 layout: post
 title: "谈谈如何使用Swift写出iOS断点续传下载大文件"
 header-img: "images/workenv-bg.jpg"
-author: "Teng Fei"
+author: "Tenfay"
 date: 2023-09-09
 tag: iOS
 ---
@@ -11,9 +11,9 @@ tag: iOS
 
 ## 预览效果
 
-![IMG_0686.gif](https://chenxing640.github.io/images/iosdownload/IMG_0686.gif)
+![IMG_0686.gif](https://itenfay.github.io/images/iosdownload/IMG_0686.gif)
 
-> **附上[Demo地址](https://github.com/chenxing640/CXDownload)，如果觉得还行呢，就麻烦顺手给个`star`**。
+> **附上[Demo地址](https://github.com/itenfay/CXDownload)，如果觉得还行呢，就麻烦顺手给个`star`**。
 
 ## 下载功能的实现
 
@@ -92,7 +92,7 @@ public func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSessio
 
 ## 监听网络改变
 
-用AFN监听，可以[点击这里查看](https://github.com/chenxing640/CXDownload/blob/master/Example/CXDownload/Modules/Common/Objc/DLNetworkReachabilityManager.m)
+用AFN监听，可以[点击这里查看](https://github.com/itenfay/CXDownload/blob/master/Example/CXDownload/Modules/Common/Objc/DLNetworkReachabilityManager.m)
 
 为了增加用户体验，往往在设置中会给用户一个选项， 选择蜂窝网络下是否允许下载。URLSessionConfiguration本身就有一个属性allowsCellularAccess，默认为YES，允许蜂窝网络下载。如果不需要用户随时变更这个选项，是可以用这个属性。但是对于正在下载的任务，修改这个属性是无效的，即我们已经通过session创建了task对象，开启了任务，再试图用。
 ```
@@ -126,7 +126,7 @@ private func setup() {
 
 ## 数据保存
 
-用FMDB存储数据，可以[点击这里查看](https://github.com/chenxing640/CXDownload/blob/master/CXDownload/Classes/Core/CXDownloadDatabaseManager.swift)
+用FMDB存储数据，可以[点击这里查看](https://github.com/itenfay/CXDownload/blob/master/CXDownload/Classes/Core/CXDownloadDatabaseManager.swift)
 
 ## 下载速度计算
 

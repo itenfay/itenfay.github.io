@@ -1,18 +1,18 @@
 # Site settings
-title: TF's Blog
-SEOTitle: 腾飞的博客 | TF's Blog
+title: Tenfay's Blog
+SEOTitle: 腾飞的博客 | Tenfay's Blog
 header-img: images/home-bg.jpg
 email: hansen981@126.com
-maintainer: Teng Fei
+maintainer: Tenfay
 description: ""
-keyword: "Teng Fei"
-url: "https://chenxing640.github.io" # your host, for absolute URL
+keyword: "Tenfay"
+url: "https://itenfay.github.io" # your host, for absolute URL
 baseurl: "/" # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 # SNS settings
 RSS: false
-github_username: chenxing640
+github_username: itenfay
 jianshu_username: u/7fc76f1179cc
 # focusontech
 zhihu_username: c9ea1793a9a09c1af2b689c0676940b8
@@ -61,7 +61,7 @@ utterances_username: utterances
 # ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 # ga_track_id: 'UA-49627206-1' # Format: UA-xxxxxx-xx
-# ga_domain: chenxing640.com
+# ga_domain: itenfay.com
 
 
 # Sidebar settings

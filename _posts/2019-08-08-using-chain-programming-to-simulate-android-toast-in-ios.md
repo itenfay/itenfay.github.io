@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS 链式编程之仿真安卓 Toast"
-author: "Teng Fei"
+author: "Tenfay"
 date: 2019-08-08
 tag: iOS
 ---
@@ -122,4 +122,4 @@ pod 'DYFToast'
 
 ## 最后
 
-附上 `DYFToast` 项目地址：[https://github.com/chenxing640/DYFToast](https://github.com/chenxing640/DYFToast)，觉得还行呢，麻烦顺手给个star。对开发实现 Toast 或者喜欢研究的小伙伴，希望能够解决你的一些问题。即使不能，也希望能给你提供一些思路。
+附上 `DYFToast` [项目地址](https://github.com/itenfay/DYFToast)，觉得还行呢，麻烦顺手给个star。

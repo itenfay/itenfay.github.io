@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "iOS 多线程技术深度解析"
-author: "Teng Fei"
+author: "Tenfay"
 date: 2017-09-02
 tag: iOS
 ---
 
 
-![](https://chenxing640.github.io/images/objc_thread/objc_thread_figure.png)
+![](https://itenfay.github.io/images/objc_thread/objc_thread_figure.png)
 
 
 ## 一、多线程概念
@@ -59,7 +59,7 @@ tag: iOS
 
 ## 二、多线程实现方案
 
-![](https://chenxing640.github.io/images/objc_thread/objc_thread_scheme.jpg)
+![](https://itenfay.github.io/images/objc_thread/objc_thread_scheme.jpg)
 
 下面讲解一下多线程实现的四种方案：
 
@@ -162,7 +162,7 @@ NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run)
 
 **2.3）NSThread 线程的状态**
 
-![](https://chenxing640.github.io/images/objc_thread/objc_thread_state.png)
+![](https://itenfay.github.io/images/objc_thread/objc_thread_state.png)
 
 线程的状态
 
@@ -184,7 +184,7 @@ NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run)
 
 一块资源可能会被多个线程共享，也就是多个线程可能会访问同一块资源，比如多个线程访问同一个对象、同一个变量、同一个文件。当多个线程访问同一块资源时，很容易引发**数据错乱**和**数据安全问题**。
 
-![](https://chenxing640.github.io/images/objc_thread/objc_thread_flaw.png)
+![](https://itenfay.github.io/images/objc_thread/objc_thread_flaw.png)
 
 **2.4.2 安全隐患分析**
 
@@ -192,7 +192,7 @@ NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run)
 
 解决方法：添加互斥锁，请看下图：
 
-![](https://chenxing640.github.io/images/objc_thread/objc_thread_lock.png)
+![](https://itenfay.github.io/images/objc_thread/objc_thread_lock.png)
 
 **2.4.3 安全隐患解决**
 
@@ -276,13 +276,13 @@ c. 互斥锁的优缺点
 
 当没有加互斥锁的时候，我们看一下输出：
 
-![](https://chenxing640.github.io/images/objc_thread/objc_thread_nolock_r0.png)
+![](https://itenfay.github.io/images/objc_thread/objc_thread_nolock_r0.png)
 
 从没有加互斥锁的输出中，我们发现第29张，第27张都被销售了3次，这显然是不允许的，这就是数据错乱，那么当我们加上互斥锁时，其锁定的时候其他线程没有办法访问锁定的内容，等其访问完毕之后，其他线程才可以访问。
 
 当加上互斥锁的时候，我们再来看一下输出：
 
-![](https://chenxing640.github.io/images/objc_thread/objc_thread_lock_r0.png)
+![](https://itenfay.github.io/images/objc_thread/objc_thread_lock_r0.png)
 
 加上了互斥锁后，此时就不会出现同一张票被多次出售的数据错乱的情况了。
 
@@ -558,7 +558,7 @@ dispatch_sync(queue, ^{
 
 看一下控制台输出日志
 
-![](https://chenxing640.github.io/images/objc_thread/objc_queue_sync_concurrent.png)
+![](https://itenfay.github.io/images/objc_thread/objc_queue_sync_concurrent.png)
 
 从输出日志得出结论：同步函数会阻塞线程，立即执行。
 
@@ -594,7 +594,7 @@ dispatch_sync(queue, ^{
 
 看一下控制台输出日志
 
-![](https://chenxing640.github.io/images/objc_thread/objc_queue_async_concurrent.png)
+![](https://itenfay.github.io/images/objc_thread/objc_queue_async_concurrent.png)
 
 从输出日志得出结论：异步函数不会阻塞当前线程。
 
@@ -686,7 +686,7 @@ dispatch_barrier_async(queue, ^{
 
 看一下输出
 
-![](https://chenxing640.github.io/images/objc_thread/objc_gcd_barrier.png)
+![](https://itenfay.github.io/images/objc_thread/objc_gcd_barrier.png)
 
 结论：栅栏函数可以控制任务执行的顺序，栅栏函数之前的执行完毕之后，执行栅栏函数，然后在执行栅栏函数之后的任务。
 
@@ -725,7 +725,7 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), 
 }
 ```
 
-一次性代码主要应用在单例模式中，关于单例模式详解大家可以去看[《Swift 和 Objective-C 单例模式详解》](https://chenxing640.github.io/2018/03/18/detailed-explanation-of-swift-and-objc-singleton-pattern)，这里不在赘述。
+一次性代码主要应用在单例模式中，关于单例模式详解大家可以去看[《Swift 和 Objective-C 单例模式详解》](https://itenfay.github.io/2018/03/18/detailed-explanation-of-swift-and-objc-singleton-pattern)，这里不在赘述。
 
 4、快速迭代（开多个线程并发完成迭代操作）
 
