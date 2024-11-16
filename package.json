@@ -1,9 +1,9 @@
 {
-    "name": "hansen-blog",
-    "title": "hansen-blog",
+    "name": "tenfay-blog",
+    "title": "tenfay-blog",
     "version": "1.0.0",
-    "homepage": "dgynfi.github.io",
-    "author": "dgynfi",
+    "homepage": "itenfay.github.io",
+    "author": "Tenfay",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/dgynfi/dgynfi.github.io"
+        "url": "https://github.com/itenfay/itenfay.github.io"
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
